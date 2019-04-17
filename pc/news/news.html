@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>新闻页面</title>
+    <link rel="stylesheet" href="./css/news.css">
+    <link rel="stylesheet" href="./css/bootstrap.min.css">
+	<link rel="stylesheet" href="../css/index.css">
+    <link rel="stylesheet" href="../css/mainLi.css">
+    <link rel="stylesheet" href="../leftHover/animate.css">
+    <link rel="stylesheet" href="../leftHover/leftTree.css">
+    <style>
+        .top-left img{width:39px;}
+        .box .ul-bg{left: 192px;
+            top: -1px;}
+		/* 本例子css */
+		.slideBox{ width:450px; height:267px; overflow:hidden; position:relative;}
+		.slideBox .hd{ height:15px; overflow:hidden; position:absolute; right:5px; bottom:5px; z-index:1; }
+		.slideBox .hd ul{ overflow:hidden; zoom:1; float:left;  }
+		.slideBox .hd ul li{ float:left; margin-right:2px;  width:15px; height:15px; line-height:14px; text-align:center; background:#fff; cursor:pointer; }
+		.slideBox .hd ul li.on{ background:#f00; color:#fff; }
+		.slideBox .bd{ position:relative; height:100%; z-index:0;   }
+		.slideBox .bd li{ zoom:1; vertical-align:middle; }
+		.slideBox .bd img{ width:450px; height:267px; display:block;  }
+		.content .content01{box-sizing:border-box;padding:10px;}
+    </style>
+</head>
+
+<body>
+    <div class="liHeader"></div>
+    <!--<div class="banner" id="banner" style="height:auto;">-->
+        <!--&lt;!&ndash; <img src="./images/banner.png" alt=""> &ndash;&gt;-->
+    <!--</div>-->
+
+    <div class="content container" style="margin-top: 20px;">
+        <div class="content01">
+            <h2><i></i>新闻中心</h2>
+            <ul class="nav1" id='nav1'>
+                <li>新闻中心</li>
+                <li>
+                最新咨询
+                <span>&gt;</span>
+                <ul class="nav-list">
+                    <a href="javascript:;">最新咨询</a>
+                </ul>
+                </li>
+                <li>
+                    艺术交流
+                    <span>&gt;</span>
+                    <ul class="nav-list">
+                        <a href="/pc/src/艺术交流a/yishu-fenlei.html">公派艺术节</a>
+                        <a href="/pc/src/艺术交流a/yishu-fenlei.html">国际艺术节</a>
+                        <a href="/pc/src/艺术交流a/yishu-fenlei.html">大师课堂</a>
+                    </ul>
+                </li>
+                <li>
+                    海外游学
+                     <span>&gt;</span>
+                    <ul class="nav-list">
+                        <a href="/pc/src/海外游学首页/youxue-jingping.html">精品游学</a>
+                        <a href="/pc/src/海外游学首页/youxue-yanxue.html">研学之旅</a>
+                        <a href="/pc/src/海外游学首页/youxue-jingdian.html">经典游学</a>
+                    </ul>
+                </li>
+
+                <!-- <ul class="ul01" id="ul01"> -->
+                <!-- </ul> -->
+            </ul>
+        </div>
+        <div class="content02">
+            <div class="content02-t">
+                <ul id="ul03">
+                    <li>
+						<div id="slideBox" class="slideBox">
+							<div class="bd">
+								<ul id="before5img">
+									<li><a href="./news-xiang.html"><img src="./images/1.jpg"></a></li>
+									<li><a href="./news-xiang.html"><img src="./images/1.jpg"></a></li>
+									<li><a href="./news-xiang.html"><img src="./images/1.jpg"></a></li>
+								</ul>
+							</div>
+						</div>
+                    </li>
+                    <li id="img6">
+                        <a href="./news-xiang.html"><img src="./images/2.jpg" alt=""></a>
+                    </li>
+                    <li id="img7">
+                        <a href="./news-xiang.html"><img src="./images/3.jpg" alt=""></a>
+                    </li>
+                </ul>
+            </div>
+            <div class="content02-b">
+                <ul id="ul04" style="margin-bottom: 50px;"></ul>
+                 <div class="fenye" id="fenye">
+                  <!--  <nav aria-label="Page navigation">
+                        <ul class="pagination">
+                            <li>
+                                <a href="#" aria-label="Previous">
+                                    <span aria-hidden="true">&laquo;</span>
+                                </a>
+                            </li>
+                            <li><a href="#">1</a></li>
+                            <li><a href="#">2</a></li>
+                            <li><a href="#">3</a></li>
+                            <li><a href="#">4</a></li>
+                            <li><a href="#">5</a></li>
+                            <li>
+                                <a href="#" aria-label="Next">
+                                    <span aria-hidden="true">&raquo;</span>
+                                </a>
+                            </li>
+                        </ul>
+                   </nav>-->
+                </div> 
+            </div>
+        </div>
+        <div class="content03">
+            <h2>热门新闻</h2>
+            <ul class="ul02" id="ul02">
+            </ul>
+        </div>
+    </div>
+
+    <div class="liFooter"></div>
+
+    <script src="../js/jquery.min.js"></script>
+    <script src="../js/template-web.js"></script>
+	<script src="../js/jquery.SuperSlide.2.1.1.js"></script>
+    <script src="./js/news.js"></script>
+	<script type="text/html" id="fenyeHtml">
+		<nav aria-label="Page navigation">
+			<ul class="pagination">
+				<li>
+					<a href="#" aria-label="Previous">
+						<span aria-hidden="true">&laquo;</span>
+					</a>
+				</li>
+				{{each fenye}}
+				<li><a href="#">{{$value}}</a></li>
+				{{/each}}
+				<li>
+					<a href="#" aria-label="Next">
+						<span aria-hidden="true">&raquo;</span>
+					</a>
+				</li>
+			</ul>
+	   </nav>
+	</script>
+    <script>
+	jQuery(".slideBox").slide({mainCell:".bd ul",autoPlay:true});
+	$(function(){
+		$(".liHeader").load("../liHeader.html")
+		$(".liFooter").load("../liFooter.html")
+	})
+	//侧边框
+    $("#left-panel-link").mouseover(function () {
+        $("#left-panel").addClass("animated fadeInLeftBig");
+        $("#left-panel").css("display","block");
+
+    });
+    $("#left-panel-link").mouseout(function () {
+        $("#left-panel").removeClass("fadeInLeftBig");
+        $("#left-panel").mouseover(function () {
+            $(this).css("display","block")
+        });
+        $("#left-panel").mouseout(function () {
+            $(this).css("display","none")
+        })
+    });
+    $(".box ul li a").mouseover(function () {
+        $(this).find("img").attr("src","/pc/images/iconRightBlue.png");
+    });
+    $(".box ul li a").mouseout(function () {
+        $(this).find("img").attr("src","/pc/images/iconRight.png");
+    });
+    //search
+    $(".icon-top-search").click(function () {
+        $(this).hide();
+        $(this).siblings(".search").show(1000);
+    });
+    $(".search img").click(function () {
+        $(this).parent().hide(1000);
+        $(this).parent().siblings(".icon-top-search").show();
+    });
+    </script>
+</body>
+
+</html>

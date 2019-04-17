@@ -1,0 +1,410 @@
+body,
+ul,
+li,
+div,
+a,
+p,
+h1,
+h2,
+h3,
+h4,
+dl,
+dt,
+dd {
+    margin: 0;
+    padding: 0;
+    text-decoration: none;
+    list-style: none;
+}
+
+body {
+    width: 100%;
+    background-color: rgba(242, 242, 242, 1);
+}
+
+.container {
+    width: 1200px;
+    margin: 0 auto;
+}
+
+
+/* 导航开始 */
+
+.top {
+    width: 100%;
+    height: 48px;
+    background-color: #0F205C;
+    position: relative;
+}
+
+.top .top-logo {
+    float: left;
+}
+
+.top .top-logo .top-logo-l {
+    position: absolute;
+    left: 14px;
+    top: 10px;
+    width: 26px;
+    height: 26px;
+    /* background-color: rgba(255, 255, 255, 1); */
+}
+
+.top .top-logo .top-logo-r {
+    position: absolute;
+    left: 67px;
+    top: 5px;
+    width: 223px;
+    height: 33px;
+}
+
+.top .top-left {
+    float: right;
+    position: relative;
+}
+
+.search {
+    float: left;
+    margin-top: 2px;
+    position: relative;
+}
+
+.search img {
+    width: 19px;
+    height: 19px;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    right: 5px;
+}
+
+.top .top-left input {
+    width: 230px;
+    height: 44px;
+    line-height: 20px;
+    color: #fff;
+    float: left;
+    background-color: rgba(255, 255, 255, 0.22);
+    text-align: left;
+    border: 0px;
+    padding: 0px 38px 0px 18px;
+}
+
+.top .top-left input::placeholder {
+    color: #fff;
+}
+
+.top .top-left ul {
+    float: left;
+    height: 48px;
+    line-height: 48px;
+    margin: 0px 25px;
+}
+
+.top .top-left ul li {
+    float: left;
+    opacity: 0.75;
+    color: white;
+    font-size: 12px;
+    text-align: center;
+    font-family: SourceHanSansSC-regular;
+}
+
+.top .top-left ul li::after {
+    content: "";
+    display: inline-block;
+    width: 1px;
+    height: 17px;
+    background-color: #fff;
+    vertical-align: middle;
+    margin: 0px 18px;
+}
+
+.top .top-left ul li:nth-last-of-type(1)::after {
+    display: none;
+}
+
+.top .top-left ul li a {
+    display: inline-block;
+    vertical-align: middle;
+    color: white;
+}
+
+
+/* logo导航结束 */
+
+
+/* 文字导航开始 */
+
+.top2 {
+    width: 100%;
+    height: 50px;
+    line-height: 20px;
+    background-color: rgba(255, 255, 255, 1);
+    box-shadow: 0px 1px 5px 1px rgba(170, 170, 170, 1);
+    border: 1px solid rgba(255, 255, 255, 0);
+    box-sizing: border-box;
+}
+
+.top2 ul li {
+    float: left;
+    line-height: 50px;
+    color: rgba(17, 30, 92, 1);
+    font-size: 16px;
+    text-align: left;
+    font-family: SourceHanSansSC-regular;
+    margin-right: 28px;
+}
+
+.top-logo-r img {
+    width: 223px;
+    margin-top: 5px;
+}
+
+.top2 ul li a {
+    color: rgba(17, 30, 92, 1);
+}
+
+.top2 ul li:nth-child(1) {
+    width: 32px;
+    height: 24px;
+    margin-left: 24px;
+}
+
+.top2 ul li:nth-child(2) {
+    width: 80px;
+    height: 24px;
+}
+
+.top2 ul li:nth-child(3) {
+    width: 64px;
+    height: 24px;
+}
+
+.top2 ul li:nth-child(4) {
+    width: 64px;
+    height: 24px;
+}
+
+.top2 ul li:nth-child(5) {
+    width: 64px;
+    height: 24px;
+}
+
+.top2 ul li:nth-child(6) {
+    width: 64px;
+    height: 24px;
+}
+
+.top2 ul li:nth-child(7) {
+    width: 64px;
+    height: 24px;
+}
+
+.top2 ul li:nth-child(8) {
+    width: 32px;
+    height: 24px;
+}
+
+.top2 ul li:nth-child(9) {
+    width: 32px;
+    height: 24px;
+}
+
+.top2 ul li:nth-child(10) {
+    width: 32px;
+    height: 24px;
+}
+
+
+/* 导航部分结束 */
+
+
+/* 文本内容开始 */
+
+.container {
+    width: 1200px;
+    margin: 0 auto;
+}
+
+.guojia {
+    height: 386px;
+    background-color: #fff;
+    margin-top: 18px;
+    margin-bottom: 14px;
+}
+
+.gx_type {
+    width: 100%;
+    height: auto;
+    border: 1px solid #e2e2e2;
+    padding-top: 0px;
+    margin-bottom: 19px;
+    overflow: hidden;
+}
+
+.gx_type #gjyx_tt {
+    border-bottom: 1px solid #e2e2e2;
+    font-size: 20px;
+    text-indent: 2px;
+    height: 52px;
+    line-height: 52px;
+}
+
+.gx_type p {
+    border-bottom: 1px solid #e2e2e2;
+    height: auto;
+    line-height: 38px;
+    background-color: #fff;
+}
+
+.gx_type p .c_r {
+    border-bottom: 1px solid #e2e2e2;
+    height: auto;
+    line-height: 39px;
+}
+
+.gx_type p a {
+    text-decoration: none;
+    color: #333333;
+    display: inline-block;
+    padding: 4px 13px;
+    margin: 0 3px;
+    height: 20px;
+    line-height: 20px;
+    font-size: 12px;
+}
+
+.gx_type #mdd {
+    padding-left: 12px;
+}
+
+.gx_type .p1 a:hover {
+    background: #098aca;
+    color: #FFF;
+}
+
+.gx_type p.pp a:nth-child(12) {
+    margin-left: 198px;
+}
+
+.gx_type .a_on {
+    background: #098aca;
+    color: #FFF;
+}
+
+.gx_type #yx_p {
+    border-bottom: 0;
+}
+
+.gx_type p span {
+    display: inline-block;
+    width: 129px;
+    height: 100%;
+    text-align: right;
+    background-color: rgba(66, 164, 211, 1);
+    padding-right: 19px;
+    box-sizing: border-box;
+    border: 1px solid rgba(255, 255, 255, 0);
+}
+
+.gx_type p:last-child {
+    border-bottom: 0;
+}
+
+.a_on input {
+    vertical-align: middle !important;
+}
+
+.demo {
+    width: 255px;
+}
+
+.slider-container {
+    margin-top: 32px;
+}
+
+#g1,
+#g2 {
+    margin-top: 50px
+}
+
+.xinxi {
+    padding: 62px 43px;
+    background-color: #fff;
+    box-sizing: border-box;
+    overflow: hidden;
+}
+
+.xinxi .xinxi-img {
+    width: 138px;
+    height: 138px;
+    float: left;
+    background-color: red;
+}
+
+.xinxi .xinxi-img img {
+    width: 138px;
+    height: 138px;
+}
+
+.xinxi .xinxi-r {
+    width: 792px;
+    float: left;
+    margin-left: 36px;
+}
+
+.xinxi .xinxi-r h2 {
+    width: 100%;
+    height: 36px;
+    color: rgba(66, 164, 211, 1);
+    font-size: 24px;
+    text-align: left;
+    float: left;
+    font-family: SourceHanSansSC-regular;
+}
+
+.xinxi .xinxi-r p {
+    float: left;
+    width: 100%;
+    margin-bottom: 20px;
+}
+
+.xinxi>ul>li {
+    float: left;
+    margin-top: 10px;
+    border-bottom: 1px solid red;
+}
+
+.xinxi .xinxi-r ul li {
+    float: left;
+    width: 158px;
+    height: 20px;
+    font-size: 14px;
+    margin-bottom: 20px;
+}
+
+.xinxi .xinxi-r ul li:nth-child(4n) {
+    /* float: left; */
+    width: 240px;
+    height: 20px;
+    font-size: 14px;
+}
+
+.xinxi .ckxiangqing {
+    display: inline-block;
+    width: 114px;
+    height: 39px;
+    line-height: 39px;
+    background-color: rgba(16, 35, 102, 1);
+    float: right;
+    margin-top: 100px;
+    box-shadow: 2px 2px 2px 0px rgba(170, 170, 170, 1);
+    /* border: 1px solid rgba(255, 255, 255, 0); */
+    text-align: center;
+    font-size: 18px;
+}
+
+.xinxi .ckxiangqing a {
+    color: rgba(255, 255, 255, 1);
+}

@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>银行卡</title>
+    <meta name = "viewport" content = "width = device-width, initial-scale = 1.0, maximum-scale = 1.0, user-scalable = 0" />
+    <meta name="format-detection" content="telephone=no" />
+    <meta name="format-detection" content="email=no" />
+    <link rel="stylesheet" href="../css/base.css">
+    <link rel="stylesheet" href="../css/main.css">
+    <link rel="stylesheet" href="css/mainMine.css">
+</head>
+<body>
+<div class="header pr">
+    邮箱
+    <a class="header-left pa flex" href="index.html">
+        <img src="../images/artExchange/iconLeft.png" alt="" >
+        <span>返回</span>
+    </a>
+</div>
+<div class="mine-desc base-msg">
+    <div class="item flex pass-setting">
+        <div class="item-desc flex">
+            <span>银行卡</span>
+        </div>
+        <div class="flex intro">
+            <span class="intro-desc">未设置</span>
+            <img src="../images/mine/iconRight.png" alt="" class="rightGo" >
+        </div>
+    </div>
+    <div class="item flex pass-update">
+        <div class="item-desc flex">
+            <span>变更银行卡</span>
+        </div>
+        <div class="flex intro">
+            <span class="intro-desc">未设置</span>
+            <img src="../images/mine/iconRight.png" alt="" class="rightGo" >
+        </div>
+    </div>
+</div>
+<!--设置密码 弹窗-->
+<div class="tan-pass undis tan-pass-set">
+    <div class="tan-bg pa"></div>
+    <div class="tan-desc pa">
+        <div class="tan-close pa"></div>
+        <h3><b>设置银行卡</b></h3>
+        <div class="tan-list">
+            <div class="item">
+                <input type="text" class="input" placeholder="请输入开户行">
+            </div>
+            <div class="item">
+                <input type="text" class="input" placeholder="请输入银行卡">
+            </div>
+        </div>
+        <a href="javascript:;" class="pass-save disBlock">确认</a>
+    </div>
+</div>
+<!--修改邮箱  弹窗-->
+<div class="tan-pass tan-pass-update undis">
+    <div class="tan-bg pa"></div>
+    <div class="tan-desc pa"  style="height: 450px;">
+        <div class="tan-close pa"></div>
+        <h3><b>更改银行卡</b></h3>
+        <div class="tan-list">
+            <div class="item">
+                深圳工商银行红荔支行
+            </div>
+            <div class="item">
+                622848*****45
+            </div>
+            <div class="item">
+                <input type="text" class="input" placeholder="请输入新开户行">
+            </div>
+            <div class="item">
+                <input type="text" class="input" placeholder="确认新银行卡">
+            </div>
+        </div>
+        <a href="javascript:;" class="pass-save disBlock">确认</a>
+    </div>
+</div>
+</body>
+<script src="../js/jquery-1.9.1.min.js"></script>
+<script>
+    $(".tan-close").click(function () {
+        $(this).parent().parent().addClass("undis");
+    });
+    $(".pass-setting").click(function () {
+        $(".tan-pass-set").removeClass("undis");
+    });
+
+    $(".pass-update").click(function () {
+        $(".tan-pass-update").removeClass("undis");
+    })
+</script>
+</html>

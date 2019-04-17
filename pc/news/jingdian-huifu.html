@@ -1,0 +1,249 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>新闻详情页</title>
+    <link rel="stylesheet" href="./css/news-xiangqing.css">
+    <link rel="stylesheet" href="../css/mainLi.css">
+    <link rel="stylesheet" href="../leftHover/animate.css">
+    <link rel="stylesheet" href="../leftHover/leftTree.css">
+    <style>.top-left img{width:38px;}</style>
+</head>
+
+<body>
+<div class="liHeader"></div>
+<div class="banner" id="banner">
+    <!-- <img src="./images/banner.png" alt=""> -->
+</div>
+
+<div class="content container">
+    <div class="content01">
+        <ul class="nav1">
+            <!-- <li>新闻中心 <span>></span> -->
+            <li><span>新闻中心<b>></b></span>
+
+                <ul class="ul01" id="ul01">
+                    <!-- <li>公司动态</li>
+                    <li>行业资讯</li>
+                    <li>最新活动</li>
+                    <li>游学资讯</li>
+                    <li>留学资讯</li>
+                    <li>海外教育</li>
+                    <li>成功案例</li>
+                    <li>精彩专题</li> -->
+                </ul>
+            </li>
+        </ul>
+    </div>
+    <div class="content02">
+        <div class="content02-t" id="content02-t">
+            <!-- <h1>全球海外学习定制服务商-西奥夫海外学院加大在华市场发展力度</h1>
+            <p>  发布日期：2018-10-17     点击：323次</p> -->
+        </div>
+        <div class="content02-tt"></div>
+        <div class="content02-b">
+            <ul id="ul06">
+                <!-- <li><p>1970年以来，西奥夫海外学院通过分布在世界各地的分支机构，为有志青少年及成年人提供高质量的短期课程
+                    和留学服务，及各类探索和主题类营地活动。帮助数万名学生体验了无与伦比的探索活动和国际课程，帮助数
+                    千名国际学生升入世界一流大学。值得一提的是，全球范围内，每年约超过1亿人，其中30000多个舞蹈、音乐
+                    和民间艺术团体，通过西奥夫在各国的分支机构参与各类艺术节庆活动。</p>
+                <img src="./images/1.jpg" alt=""></li>
+                <li>
+                    <p>1970年以来，西奥夫海外学院通过分布在世界各地的分支机构，为有志青少年及成年人提供高质量的短期课程
+                        和留学服务，及各类探索和主题类营地活动。帮助数万名学生体验了无与伦比的探索活动和国际课程，帮助数
+                        千名国际学生升入世界一流大学。值得一提的是，全球范围内，每年约超过1亿人，其中30000多个舞蹈、音乐
+                        和民间艺术团体，通过西奥夫在各国的分支机构参与各类艺术节庆活动。</p>
+                    <img src="./images/1.jpg" alt="">
+                </li> -->
+            </ul>
+            <div class="content02-b-1">
+                <p>上一篇：<span>西奥夫海外学院加大在华市场发展力度</span></p>
+                <div class="content02-b-2"></div>
+                <p>下一篇：<span>西奥夫海外学院加大在华市场发展力度</span></p>
+            </div>
+        </div>
+    </div>
+    <div class="content03">
+        <h2>热门新闻</h2>
+        <ul id="ul02">
+            <!-- <li><img src="./images/1-2.jpg" alt=""><p>这个城市曾引领全国潮流 首次办选
+美比赛。</p></li>
+            <li><img src="./images/1-2.jpg" alt=""><p>这个城市曾引领全国潮流 首次办选
+美比赛。</p></li>
+            <li><img src="./images/1-2.jpg" alt=""><p>这个城市曾引领全国潮流 首次办选
+美比赛。</p></li>
+            <li><img src="./images/1-2.jpg" alt=""><p>这个城市曾引领全国潮流 首次办选
+美比赛。</p></li> -->
+        </ul>
+    </div>
+</div>
+
+<div class="liFooter"></div>
+
+<script src="./js/jquery.min.js"></script>
+<script src="./js/news-xiangqing.js"></script>
+<script>
+    $(function(){
+        $(".liHeader").load("../liHeader.html")
+        $(".liFooter").load("../liFooter.html")
+    })
+    //侧边框
+    $("#left-panel-link").mouseover(function () {
+        $("#left-panel").addClass("animated fadeInLeftBig");
+        $("#left-panel").css("display","block");
+
+    });
+    $("#left-panel-link").mouseout(function () {
+        $("#left-panel").removeClass("fadeInLeftBig");
+        $("#left-panel").mouseover(function () {
+            $(this).css("display","block")
+        });
+        $("#left-panel").mouseout(function () {
+            $(this).css("display","none")
+        })
+    });
+    $(".box ul li a").mouseover(function () {
+        $(this).find("img").attr("src","/pc/images/iconRightBlue.png");
+    });
+    $(".box ul li a").mouseout(function () {
+        $(this).find("img").attr("src","/pc/images/iconRight.png");
+    });
+    //search
+    $(".icon-top-search").click(function () {
+        $(this).hide();
+        $(this).siblings(".search").show(1000);
+    });
+    $(".search img").click(function () {
+        $(this).parent().hide(1000);
+        $(this).parent().siblings(".icon-top-search").show();
+    });
+
+    var a = 'http://47.107.191.81:8080'
+
+    var abouturl = location.href; //获取地址
+    var id = abouturl.split("?")[1].split("=")[1]; //获取后面字符
+
+    $(function() {
+        // banner交互
+        $.ajax({
+            url: a + '/news/services/banner',
+            dataType: 'json',
+            type: 'get',
+            success: function(result) {
+                // console.log(result.resultData)
+                var arr = result.resultData
+                var html = "";
+                var s1 = arr[0].filePath;
+                var s2 = arr[0].id;
+
+                html += '<img id="' + s2 + '" src="' + a + s1 + '" >'
+
+                $('#banner').html(html)
+            }
+        })
+    })
+
+
+    $(function() {
+        // 左边新闻中心交互
+        $.ajax({
+            url: a + '/news/services/category',
+            dataType: 'json',
+            type: 'get',
+            success: function(result) {
+                // console.log(result.resultData)
+                var arr = result.resultData
+                var html = "";
+                $.each(arr, function(index, item) {
+                    var s1 = arr[index].name;
+                    var s2 = arr[index].id;
+                    html += '<li id=' + s2 + ' >' + s1 + '</li>'
+                })
+                $('#ul01').html(html)
+            }
+        })
+    })
+
+
+    // $(function () {
+    //     // 左边新闻中心交互
+    //         $.ajax({
+    //             url:a+'/news/services/detail/'+id+'',
+    //             dataType:'json',
+    //             type:'get',
+    //             success:function(result){
+    //                 console.log(result)
+    //                 // var arr=result.resultData
+    //                 // var html="";
+    //                 // $.each(arr,function(index,item){
+    //                 //     var s1=arr[index].name;
+    //                 //     var s2=arr[index].id;
+    //                 //      html+='<li id='+s2+' >'+s1+'</li>'
+    //                 // })
+    //                 // $('#ul01').html(html)
+    //             }
+    //         })
+    // })
+
+
+    $(function() {
+        // 中间新闻中心交互
+        $.ajax({
+            url: a + '/news/services/list/1/1',
+            dataType: 'json',
+            type: 'get',
+            success: function(result) {
+                console.log(result)
+                var arr = result.resultData.content
+                console.log(result.resultData.content)
+
+                var html = "";
+                var html1 = "";
+                $.each(arr, function(index, item) {
+                    var s1 = arr[index].content
+                    var s2 = arr[index].title
+                    var time1 = arr[index].lastUpdateDate
+                    var s3 = arr[index].clickCnt
+                    html += '<li>' + s1 + '</li>'
+                    html1 += '<h1>' + s2 + '</h1>' +
+                        '<p> 发布日期：' + time1 + '  点击：' + s3 + '次</p>'
+                })
+                $('#ul06').html(html)
+                $('#content02-t').html(html1)
+            }
+        })
+    })
+
+    $(function() {
+        // you边新闻中心交互
+        $.ajax({
+            url: a + '/news/services/hotnews/1/4',
+            dataType: 'json',
+            type: 'get',
+            success: function(result) {
+                // console.log(result.resultData.content)
+                var arr = result.resultData.content
+                var html = "";
+                $.each(arr, function(index, item) {
+                    var s1 = arr[index].banners;
+                    var s3 = "";
+                    $.each(s1, function(index, item) {
+                        s3 = s1[0].filePath
+                        // console.log(s1[0].filePath)
+                    })
+                    var s2 = arr[index].title;
+                    if (s3 != "") {
+                        html += '<li><img src="' + a + s3 + '"><p>' + s2 + '</p></li>'
+                    }
+                })
+                $('#ul02').html(html)
+            }
+        })
+    })
+</script>
+</body>
+
+</html>

@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>个人信息</title>
+    <meta name = "viewport" content = "width = device-width, initial-scale = 1.0, maximum-scale = 1.0, user-scalable = 0" />
+    <meta name="format-detection" content="telephone=no" />
+    <meta name="format-detection" content="email=no" />
+    <link rel="stylesheet" href="../css/base.css">
+    <link rel="stylesheet" href="../css/main.css">
+    <link rel="stylesheet" href="css/mainMine.css">
+</head>
+<body>
+<div class="header pr">
+    个人信息
+    <a class="header-left pa flex" href="index.html">
+        <img src="../images/artExchange/iconLeft.png" alt="" >
+        <span>返回</span>
+    </a>
+</div>
+<div class="mine-desc base-msg">
+    <div class="item flex">
+        <div class="item-desc flex">
+            <span>手机号</span>
+        </div>
+        <div class="flex intro">
+            <span class="intro-desc" id="personal_phone">155279****53</span>
+        </div>
+    </div>
+    <div class="item flex">
+        <div class="item-desc flex">
+            <span>用户类别</span>
+        </div>
+        <div class="flex intro">
+            <span class="intro-desc">普通用户</span>
+        </div>
+    </div>
+    <div class="item flex" onclick="psw();">
+        <div class="item-desc flex">
+            <span>密码</span>
+        </div>
+        <img src="../images/mine/iconRight.png" alt="" class="rightGo" >
+    </div>
+    <a class="item flex disBlock" href="emailMsg.html">
+        <div class="item-desc flex">
+            <span>邮箱</span>
+        </div>
+        <div class="flex intro">
+            <span class="intro-desc">未设置</span>
+            <img src="../images/mine/iconRight.png" alt="" class="rightGo" >
+        </div>
+    </a>
+</div>
+
+
+</body>
+<script src="../js/jquery-1.9.1.min.js"></script>
+<script>
+    $(function () {
+        let phone=localStorage.getItem('uphone');
+        $("#personal_phone").html(phone);
+    })
+    function psw() {
+        window.location.href="passUpdate.html";
+    }
+
+</script>
+</html>

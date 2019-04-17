@@ -1,0 +1,243 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>帮助页面</title>
+    <link rel="stylesheet" href="./css/help.css">
+	<link rel="stylesheet" href="../css/mainLi.css">
+    <link rel="stylesheet" href="../leftHover/animate.css">
+    <link rel="stylesheet" href="../leftHover/leftTree.css">
+
+</head>
+<style>
+    .isselect{
+        color:rgba(66, 164, 211, 1);
+    }
+</style>
+<body>
+    <div class="liHeader"></div>
+    <!--<div class="banner" id="banner">-->
+        <!--&lt;!&ndash; <img src="./images/banner.png" alt=""> &ndash;&gt;-->
+    <!--</div>-->
+
+    <div class="text container" style="margin-top: 20px;">
+        <div class="text-l">
+            <h2>一般信息</h2>
+            <ul class="ul01" id="ul03">
+                <!-- <li>在国外学习英语课程对我的职业选择更好吗？ <span>></span>
+                    <ul>
+                        <li>在我们所有的英语语言学校，我们都有地区和国家公共假期。在这些日子里，没有课程，大多数情况下学校将被关闭。请参阅此处的列表
+                            了解哪些公共假日关闭适用于您感兴趣的国家/地区。</li>
+                    </ul>
+                </li> -->
+            </ul>
+        </div>
+        <div class="text-r">
+            <div class="text-r1">
+                <input type="text" placeholder="问题搜索"><button><img src="./images/搜索.png" alt=""></button>
+            </div>
+            <div class="text-r2">
+                <div class="content03">
+                    <h2>按主题浏览</h2>
+                    <ul id="ul01">
+                        <!-- <li>一般信息</li>
+                        <li>英语课程</li>
+                        <li>住所</li>
+                        <li>价格和付款</li>
+                        <li>健康和安全</li>
+                        <li>投诉</li>
+                        <li>18岁以下</li> -->
+                    </ul>
+                </div>
+            </div>
+            <div class="text-r3">
+                <div class="content03">
+                    <h2>十大常见问题</h2>
+                    <div class="text-r3-1"></div>
+                    <ul id="ul02">
+                        <!-- <li>每节课有多少学生？</li>
+                        <li>第一天我需要知道什么？</li>
+                        <li>课程结束后我会获得证书和文凭吗？</li>
+                        <li>你的课程需要几周？</li>
+                        <li>Kaplan Internation使用什么教学模式呢？</li>
+                        <li>每个节有多少学生？</li>
+                        <li>第一天我需要知道什么？</li>
+                        <li>课程什么时候开始？</li>
+                        <li>您是否为所有英语水平的学生提供相同的教学呢</li>
+                        <li>我可以休假吗？</li> -->
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="liFooter"></div>
+    <script src="./js/jquery.min.js"></script>
+    <script src="./js/help.js"></script>
+    <script src="./js/jquery.min.js"></script>
+    <script src="./js/bootstrap.min.js"></script>
+    <!-- <script src="./js/news.js"></script> -->
+	<script>
+        $(function(){
+            $(".liHeader").load("../liHeader.html")
+            $(".liFooter").load("../liFooter.html")
+        })
+    //侧边框
+    $("#left-panel-link").mouseover(function () {
+        $("#left-panel").addClass("animated fadeInLeftBig");
+        $("#left-panel").css("display","block");
+
+    });
+    $("#left-panel-link").mouseout(function () {
+        $("#left-panel").removeClass("fadeInLeftBig");
+        $("#left-panel").mouseover(function () {
+            $(this).css("display","block")
+        });
+        $("#left-panel").mouseout(function () {
+            $(this).css("display","none")
+        })
+    });
+    $(".box ul li a").mouseover(function () {
+        $(this).find("img").attr("src","/pc/images/iconRightBlue.png");
+    });
+    $(".box ul li a").mouseout(function () {
+        $(this).find("img").attr("src","/pc/images/iconRight.png");
+    });
+    //search
+    $(".icon-top-search").click(function () {
+        $(this).hide();
+        $(this).siblings(".search").show(1000);
+    });
+    $(".search img").click(function () {
+        $(this).parent().hide(1000);
+        $(this).parent().siblings(".icon-top-search").show();
+    });
+</script>
+    <script>
+        // var a='http://47.107.191.81'
+        var a = 'http://47.107.191.81:8080'
+
+        $(function() {
+            // banner交互
+            $.ajax({
+                url: a + '/qa/services/banner',
+                dataType: 'json',
+                type: 'get',
+                success: function(result) {
+                    // console.log(result.resultData)
+                    var arr = result.resultData
+                    var html = "";
+                    var s1 = arr[0].filePath;
+                    var s2 = arr[0].id;
+
+                    html += '<img id="' + s2 + '" src="' + a + s1 + '" >'
+
+                    $('#banner').html(html)
+                }
+            })
+        })
+
+
+        $(function() {
+            // 主体浏览交互
+            $.ajax({
+                url: a + '/qa/services/category',
+                dataType: 'json',
+                type: 'get',
+                success: function(result) {
+                    // console.log(result.resultData)
+                    var arr = result.resultData
+                    var html = "";
+                    $.each(arr, function(index, item) {
+                        var s1 = arr[index].name;
+                        var s2 = arr[index].id;
+                        var code = arr[index].id;
+                        html += '<li id="cate' + s2 + '" onclick="getlist(1,'+code+','+code+')" >' + s1 + '</li>'
+                    })
+                    $('#ul01').html(html)
+                }
+            })
+        })
+        //十大问题
+        $(function() {
+            // 10大常见问题交互
+            $.ajax({
+                url: a + '/qa/services/common_qa/1/10',
+                dataType: 'json',
+                type: 'get',
+                success: function(result) {
+                    // console.log(result.resultData)
+                    var arr = result.resultData.content
+                    var html = "";
+                    $.each(arr, function(index, item) {
+                        var s1 = arr[index].question;
+                        var s2 = arr[index].id
+                        html += '<li id=' + s2 + ' >' + s1 + '</li>'
+                    })
+                    $('#ul02').html(html)
+                }
+            })
+			list(1,'');
+        })
+		//一般信息交互
+		function list(page,keywords){
+			$.ajax({
+				url: a + '/qa/services/general_qa/1/7',
+				dataType: 'json',
+				type: 'get',
+				data:{'keywords':keywords},
+				success: function(result) {
+					console.log(result)
+					var arr = result.resultData.content
+					var html = "";
+					$.each(arr, function(index, item) {
+						var s1 = arr[index].question
+						var s2 = arr[index].answer
+						html += '<li>' + s1 + '<span>></span>' +
+							'<ul>' +
+							'<li>' + s2 + '</li>' +
+							'</ul>' +
+							'</li>'
+					})
+					$('#ul03').html(html)
+				}
+			})
+		}
+		//主题查询
+        function getlist(page,id,selid,keywords){
+            console.log(id,'ID是')
+            console.log(selid,'ID是1')
+            //$("#cate"+selid).siblings('li').css({'color':'black'})
+            $("#cate"+selid).addClass('isselect');
+
+            $("#cate"+selid).siblings('li').removeClass('isselect');
+
+            $.ajax({
+                url: a + '/qa/services/get_by_category/'+id+'/1/7',
+                dataType: 'json',
+                type: 'get',
+                data:{'keywords':keywords},
+                success: function(result) {
+                    console.log(result)
+                    var arr = result.resultData.content
+                    var html = "";
+                    $.each(arr, function(index, item) {
+                        var s1 = arr[index].question
+                        var s2 = arr[index].answer
+                        html += '<li>' + s1 + '<span>></span>' +
+                            '<ul>' +
+                            '<li>' + s2 + '</li>' +
+                            '</ul>' +
+                            '</li>'
+                    })
+                    $('#ul03').html(html)
+                }
+            })
+        }
+    </script>
+</body>
+
+</html>

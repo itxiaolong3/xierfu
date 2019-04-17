@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>关于我们</title>
+    <link rel="stylesheet" href="../艺术交流a/css/yishu.css">
+    <link rel="stylesheet" href="/pc/src/海外留学/css/haiwailiuxue.css">
+    <link rel="stylesheet" href="/pc/src/海外留学/css/liLiuxue.css">
+    <link rel="stylesheet" href="./css/shengya.css">
+</head>
+
+<body>
+<!--加入头部  start-->
+<div class="liHeader"></div>
+<!--加入头部  end-->
+<!--生涯教育 start-->
+<img src="/pc/src/海外留学/images/banner.jpg" alt="" width="100%">
+<div class="about-header ">
+    <div class="lx-wrap overflow header">
+        <div class="item fl active">关于西奥夫</div>
+        <div class="item fl">西奥夫理念</div>
+        <div class="item fl">我们的荣誉</div>
+        <div class="item fl">关于我们</div>
+    </div>
+    <div class="lx-wrap about-desc">
+        <p>西奥夫教育科技集团（ CIOFFeducation group）始创于2007年1月份。隶属于联合国教科文组织（CIOFF）西奥夫理事会的成
+            员机构，总部位于美国洛杉矶。在德国法兰克福、奥地利维也纳、中国台北、加拿大多伦多、澳大利亚墨尔本设立了西奥夫国际运
+            营中心；<br>
+            中国运营总部设于北京，在上海、昆明、深圳、杭州、宁波、郑州、南京、成都设立了运营中心。集团旗下拥有国际游学、国内研
+            学、低龄留学和国际赛事四大平台项目。</p>
+        <img src="./images/shengya01.png" alt="" width="100%">
+        <p>依托联合国教科文组织西奥夫（CIOFF）理事会分布全球的96个会员成员国及地区的资源优势，结合国内10年的产品积累和市场
+            运作经验，西奥夫教育科技集团致力于帮助青少年建立多元思维和广阔视野，在行走世界的实践中收获感悟、筑造梦想。近年来，
+            西奥夫进入高速发展阶段，在中国大陆及港澳台地区的60个城市拥有服务网络，研发国际游学和国内研学项目近百个，涉及近30
+            个国家或地区，至今已累计有数万名学生参加西奥夫国际游学、高中留学等项目。</p>
+    </div>
+</div>
+<!--生涯教育 end-->
+<!--加入底部 start-->
+<div class="liFooter"></div>
+<!--加入底部 end-->
+<script src="./js/jquery.min.js"></script>
+<script src="/pc/src/海外留学/js/haiwailiuxue.js"></script>
+<script>
+   
+    //热门院校选择效果
+    $(function () {
+		//加入头部,加入尾部
+		$(".liHeader").load("../../liHeader.html")
+		$(".liFooter").load("../../liFooter.html")
+		
+        $(".chuxiao-own").on("mouseenter", "li", function() {
+            $(this).children().children().filter("div").css({
+                bottom: 150,
+            })
+        })
+        $(".chuxiao-own").on("mouseleave", "li", function() {
+            $(this).children().children().filter("div").css({
+                bottom: 60,
+            })
+        })
+    })
+</script>
+</body>
+
+</html>

@@ -1,0 +1,757 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>艺术-详情</title>
+    <link rel="stylesheet" href="./css/yishu-xiangqing.css">
+    <link rel="stylesheet" href="../../css/mainLi.css">
+    <link rel="stylesheet" href="../../leftHover/leftTree.css">
+	<style>
+	.layui-layer-page .layui-layer-content{
+		box-sizing:border-box;
+		padding:10px 20px 15px;
+	}
+	.gaikuang .gaikuang-l p{
+		line-height:31px;
+	}
+	.red-heart{
+		position:relative;
+		top:5px;
+		margin-right:5px;
+	}
+	</style>
+</head>
+
+<body>
+<div class="liHeader"></div>
+    <div class="swiper-container">
+        <div class="swiper-wrapper"></div>
+    </div>
+    <div class="banner-r">
+        <div class="container">
+            <ul>
+                <li class="on">
+                    <a href="#h2">概况 </a>
+                </li>
+                <li>
+                    <a href="#video">视频/图片 </a>
+                </li>
+                <li>
+                    <a href="#jigou">组织机构 </a>
+                </li>
+                <li>
+                    <a href="#jigou">活动特色 </a>
+                </li>
+                <li>
+                    <a href="#richengConetent">日程计划 </a>
+                </li>
+                <li>
+                    <a href="#richengConetent">学习交流 </a>
+                </li>
+                <li>
+                    <a href="#richengConetent">获得荣誉 </a>
+                </li>
+                <li>
+                    <a href="#huodong">活动场馆 </a>
+                </li>
+                <li>
+                    <a href="#canfang">参访 </a>
+                </li>
+                <li>
+                    <a href="#jiaoliu">交流 </a>
+                </li>
+                <li>
+                    <a href="#jingdian">景点 </a>
+                </li>
+                <li>
+                    <a href="#zhusu">食宿 </a>
+                </li>
+                <li>
+                    <a href="#p1">经典回顾 </a>
+                </li>
+                <li>
+                    <a href="#">评价 </a>
+                </li>
+            </ul>
+        </div>
+    </div>
+    <!--<div class="detail-box overflow">-->
+        <!--<div class="fl detail-desc">-->
+            <!--<h3>伦敦帝国理工学院表演，公派出演</h3>-->
+            <!--<div class="desc overflow">-->
+                <!--<div class="fl">-->
+                    <!--<img src="images/综合类.png" alt="">-->
+                    <!--<p>综合类</p>-->
+                <!--</div>-->
+                <!--<div class="fl">-->
+                    <!--<img src="images/语言表演.png" alt="">-->
+                    <!--<p>语言表演</p>-->
+                <!--</div>-->
+                <!--<div class="fl">-->
+                    <!--<img src="images/喜剧类.png" alt="">-->
+                    <!--<p>喜剧类</p>-->
+                <!--</div>-->
+                <!--<div class="fl">-->
+                    <!--<img src="images/舞蹈类.png" alt="">-->
+                    <!--<p>舞蹈类</p>-->
+                <!--</div>-->
+                <!--<div class="fl">-->
+                    <!--<img src="images/舞台演出.png" alt="">-->
+                    <!--<p>舞台演出</p>-->
+                <!--</div>-->
+                <!--<div class="fl">-->
+                    <!--<img src="images/声乐合唱.png" alt="">-->
+                    <!--<p>声乐合唱</p>-->
+                <!--</div>-->
+                <!--<div class="fl">-->
+                    <!--<img src="images/playType.png" alt="">-->
+                    <!--<p>名校交流</p>-->
+                <!--</div>-->
+                <!--<div class="fl">-->
+                    <!--<img src="images/上课天数.png" alt="">-->
+                    <!--<p>上课天数</p>-->
+                <!--</div>-->
+                <!--<div class="fl">-->
+                    <!--<img src="images/器乐类.png" alt="">-->
+                    <!--<p>器乐类</p>-->
+                <!--</div>-->
+                <!--<div class="fl">-->
+                    <!--<img src="images/美术类.png" alt="">-->
+                    <!--<p>美术类</p>-->
+                <!--</div>-->
+                <!--<div class="fl">-->
+                    <!--<img src="images/大师课堂.png" alt="">-->
+                    <!--<p>大师课堂</p>-->
+                <!--</div>-->
+                <!--<div class="fl">-->
+                    <!--<img src="images/技艺类.png" alt="">-->
+                    <!--<p>技艺类</p>-->
+                <!--</div>-->
+                <!--<div class="fl">-->
+                    <!--<img src="images/插班.png" alt="">-->
+                    <!--<p>插班上课</p>-->
+                <!--</div>-->
+            <!--</div>-->
+            <!--<div class="ct">我们有自己的海滩，体育馆，沙滩排球场，大屏幕电影院和自助服务亭以及许多其他运动和休-->
+                <!--闲设施。每间卧室均设有带淋浴的私人浴室。教室非常适合刺激语言教学，距离卧室只有几米-->
+                <!--远。我们每周的短途旅行都让您可以轻松抵达柏林的所有主要景点。</div>-->
+            <!--<div class="ct">我们有自己的海滩，体育馆，沙滩排球场，大屏幕电影院和自助服务亭以及许多其他运动和休-->
+                <!--闲设施。每间卧室均设有带淋浴的私人浴室。</div>-->
+        <!--</div>-->
+        <!--<div class="fr detail-price">-->
+            <!--<div class="price">-->
+                <!--<div class="price-fl fl">-->
+                    <!--<h5>价格</h5>-->
+                    <!--<p><span>$12900</span> 元/人</p>-->
+                <!--</div>-->
+                <!--<div class="price-fr fr">-->
+                    <!--<img src="images/iconCollected.png" alt="">-->
+                    <!--<span>收藏</span>-->
+                <!--</div>-->
+            <!--</div>-->
+            <!--<div class="price-list overflow">-->
+                <!--<div class="item fl"><img src="images/iconCountry.png" alt=""> 国家:澳大利亚</div>-->
+                <!--<div class="item fl"><img src="images/iconNum.png" alt=""> 人数:14</div>-->
+                <!--<div class="item fl"><img src="images/iconDays.png" alt=""> 天数:14天</div>-->
+                <!--<div class="item fl"><img src="images/iconType.png" alt=""> 表演类型:音乐</div>-->
+                <!--<div class="item fl"><img src="images/iconGrade.png" alt=""> 年级:小学生</div>-->
+            <!--</div>-->
+            <!--<div class="overflow">-->
+                <!--<a class="fr disBlock detail-btn">在线咨询</a>-->
+                <!--&lt;!&ndash;<a class="fr disBlock detail-btn">加入购物车</a>&ndash;&gt;-->
+            <!--</div>-->
+            <!--<div class="overflow">-->
+                <!--<a href="javascript:;" class="down-books disBlock">下载免费的XAF手册</a>-->
+            <!--</div>-->
+        <!--</div>-->
+    <!--</div>-->
+<div class="content">
+
+</div>
+    <!--<div class="detail-box2 overflow">-->
+        <!--<div class="fl">-->
+            <!--<img src="艺术交流a/留学交流详情/图片.jpg" alt="">-->
+            <!--<h4>活动特色</h4>-->
+            <!--<ul>-->
+                <!--<li><i></i>发现您的内在艺术家，探索创造性技巧，让您表达自己，-->
+                    <!--创造个人或团体艺术作品。</li>-->
+                <!--<li><i></i>发现您的内在艺术家，探索创造性技巧，</li>-->
+                <!--<li><i></i>让您表达自己，创造个人或团体艺术作品。</li>-->
+            <!--</ul>-->
+            <!--&lt;!&ndash;<a href="javascript:;" class="more disBlock">更多信息</a>&ndash;&gt;-->
+        <!--</div>-->
+        <!--<div class="fl">-->
+            <!--<img src="艺术交流a/留学交流详情/图片.jpg" alt="">-->
+            <!--<h4>活动特色</h4>-->
+            <!--<ul>-->
+                <!--<li><i></i>发现您的内在艺术家，探索创造性技巧，让您表达自己，-->
+                    <!--创造个人或团体艺术作品。</li>-->
+                <!--<li><i></i>发现您的内在艺术家，探索创造性技巧，</li>-->
+                <!--<li><i></i>让您表达自己，创造个人或团体艺术作品。</li>-->
+            <!--</ul>-->
+            <!--&lt;!&ndash;<a href="javascript:;" class="more disBlock">更多信息</a>&ndash;&gt;-->
+        <!--</div>-->
+    <!--</div>-->
+    <!--<div class="detail-box3">-->
+        <!--<h1>日程计划</h1>-->
+        <!--<p>我们有自己的海滩，体育馆，沙滩排球场，大屏幕电影院和自助服务亭以及许多其他运动和休闲设施。每间卧室均设-->
+            <!--有带淋浴的私人浴室。教室非常。</p>-->
+        <!--<image src="艺术交流a/留学交流详情/日程计划.jpg"></image>-->
+        <!--<div class="detail-box2 overflow">-->
+            <!--<div class="fl">-->
+                <!--<ul>-->
+                    <!--<li><i></i>发现您的内在艺术家，探索创造性技巧，让您表达自己，-->
+                        <!--创造个人或团体艺术作品。</li>-->
+                    <!--<li><i></i>发现您的内在艺术家，探索创造性技巧，</li>-->
+                    <!--<li><i></i>让您表达自己，创造个人或团体艺术作品。</li>-->
+                <!--</ul>-->
+                <!--&lt;!&ndash;<a href="javascript:;" class="more disBlock">更多信息</a>&ndash;&gt;-->
+            <!--</div>-->
+            <!--<div class="fl">-->
+                <!--<ul>-->
+                    <!--<li><i></i>发现您的内在艺术家，探索创造性技巧，让您表达自己，-->
+                        <!--创造个人或团体艺术作品。</li>-->
+                    <!--<li><i></i>发现您的内在艺术家，探索创造性技巧，</li>-->
+                    <!--<li><i></i>让您表达自己，创造个人或团体艺术作品。</li>-->
+                <!--</ul>-->
+                <!--&lt;!&ndash;<a href="javascript:;" class="more disBlock">更多信息</a>&ndash;&gt;-->
+            <!--</div>-->
+        <!--</div>-->
+    <!--</div>-->
+    <!--<div class="detail-box3">-->
+        <!--<h1>活动场馆</h1>-->
+        <!--<p>在柏林 - Werbellinsee参加德语课程，您将有机会沉浸在语言中，同时能够利用营地的双语性质。每天早晨举办标准，标准+私人或强化课程，以便您享受活跃-->
+            <!--的下午时光。你有很多机会在课后练习语言，激励教学技巧可以帮助你提高水平，发展你的勇气沟通。</p>-->
+        <!--<p>在柏林 - Werbellinsee参加德语课程，您将有机会沉浸在语言中，同时能够利用营地的双语性质。每天早晨举办标准，标准+私人或强化课程，</p>-->
+
+        <!--<div class="detail-pic">-->
+            <!--<img src="艺术交流a/留学交流详情/活动场馆3.jpg" alt="">-->
+            <!--<img src="艺术交流a/留学交流详情/活动场馆2.jpg" alt="">-->
+            <!--<img src="艺术交流a/留学交流详情/活动场馆1.jpg" alt="">-->
+        <!--</div>-->
+    <!--</div>-->
+    <!--<div class="detail-box4 overflow">-->
+        <!--<div class="fl">-->
+            <!--<h1>参访</h1>-->
+            <!--<p>在柏林 - Werbellinsee参加德语课程，您将有机会沉浸在语言中，同时能够利用营地的双语性质。-->
+                <!--每天早晨举办标准，标准+私人或强化课程，以便您享受活跃-->
+                <!--的下午时光。你有很多机会在课后练习语言，激励教学技巧可以帮助你提高水平，发展你的勇气沟通。</p>-->
+            <!--<h1 class="mt70">参访</h1>-->
+            <!--<p>在柏林 - Werbellinsee参加德语课程，您将有机会沉浸在语言中，同时能够利用营地的双语性质。-->
+                <!--每天早晨举办标准，标准+私人或强化课程，以便您享受活跃-->
+                <!--的下午时光。你有很多机会在课后练习语言，激励教学技巧可以帮助你提高水平，发展你的勇气沟通。</p>-->
+        <!--</div>-->
+        <!--<div class="fr">-->
+            <!--<img src="艺术交流a/留学交流详情/参访.jpg" alt="">-->
+        <!--</div>-->
+    <!--</div>-->
+    <!--<div class="detail-box3">-->
+        <!--<h1>活动场馆</h1>-->
+        <!--<p>在柏林 - Werbellinsee参加德语课程，您将有机会沉浸在语言中，同时能够利用营地的双语性质。每天早晨举办标准，标准+私人或强化课程，以便您享受活跃-->
+            <!--的下午时光。你有很多机会在课后练习语言，激励教学技巧可以帮助你提高水平，发展你的勇气沟通。</p>-->
+        <!--<p>在柏林 - Werbellinsee参加德语课程，您将有机会沉浸在语言中，同时能够利用营地的双语性质。每天早晨举办标准，标准+私人或强化课程，</p>-->
+
+
+    <!--</div>-->
+    <!--<div class="detaisl-pics">-->
+        <!--<img src="艺术交流a/留学交流详情/景点4.jpg" alt="">-->
+        <!--<img src="艺术交流a/留学交流详情/景点3.jpg" alt="">-->
+        <!--<img src="艺术交流a/留学交流详情/景点2.jpg" alt="">-->
+        <!--<img src="艺术交流a/留学交流详情/景点1.jpg" alt="">-->
+    <!--</div>-->
+
+    <!--<a href="javascript:;" class="xq-get-more disBlock">联系顾问了解 <p>更多信息</p></a>-->
+    <!--<div class="detail-box2 overflow">-->
+        <!--<div class="fl">-->
+            <!--<h4>活动特色</h4>-->
+            <!--<img src="艺术交流a/留学交流详情/图片.jpg" alt="">-->
+            <!--<p>学生宿舍是精心挑选的公寓，旅馆和宿舍，提供绝佳的生活体验。享受更独-->
+                <!--立的生活方式以及与新朋友共同生活的社交方面。</p>-->
+            <!--<ul>-->
+                <!--<li><i></i>发现您的内在艺术家，探索创造性技巧，让您表达自己，-->
+                    <!--创造个人或团体艺术作品。</li>-->
+                <!--<li><i></i>发现您的内在艺术家，探索创造性技巧，</li>-->
+                <!--<li><i></i>让您表达自己，创造个人或团体艺术作品。</li>-->
+            <!--</ul>-->
+            <!--&lt;!&ndash;<a href="javascript:;" class="more disBlock">更多信息</a>&ndash;&gt;-->
+        <!--</div>-->
+        <!--<div class="fl">-->
+            <!--<h4>活动特色</h4>-->
+            <!--<img src="艺术交流a/留学交流详情/图片.jpg" alt="">-->
+            <!--<p>学生宿舍是精心挑选的公寓，旅馆和宿舍，提供绝佳的生活体验。享受更独-->
+                <!--立的生活方式以及与新朋友共同生活的社交方面。</p>-->
+            <!--<ul>-->
+                <!--<li><i></i>发现您的内在艺术家，探索创造性技巧，让您表达自己，-->
+                    <!--创造个人或团体艺术作品。</li>-->
+                <!--<li><i></i>发现您的内在艺术家，探索创造性技巧，</li>-->
+                <!--<li><i></i>让您表达自己，创造个人或团体艺术作品。</li>-->
+            <!--</ul>-->
+            <!--&lt;!&ndash;<a href="javascript:;" class="more disBlock">更多信息</a>&ndash;&gt;-->
+        <!--</div>-->
+    <!--</div>-->
+    <!--<p class="p1 clearfix">经典回顾</p>-->
+    <!--<div class="hot-pic overflow">-->
+        <!--<a class="item fl pr disBlock" href="/pc/news/jingdian-huifu.html">-->
+            <!--<img src="../../images/目的地-大学.jpg" alt="">-->
+            <!--<div class="hot-title pa">第六届维也纳金色大厅夏季音乐会</div>-->
+            <!--<div class="undis pa item-a">-->
+                <!--<div class="hot-bg pa"></div>-->
+                <!--<div class="hot-desc pa">-->
+                    <!--<h3>梦想绽放2017-第六届维也纳金色大厅夏 季音乐会</h3>-->
+                    <!--<p>济州岛是韩国春天最早到来的地方每到初春,油菜花便 会率先开放，济州岛是韩国春天最早到来的地方每到 初春。</p>-->
+                <!--</div>-->
+            <!--</div>-->
+
+        <!--</a>-->
+        <!--<a class="item fl pr disBlock" href="/pc/news/jingdian-huifu.html">-->
+            <!--<img src="../../images/目的地-大学.jpg" alt="">-->
+            <!--<div class="hot-title pa">第六届维也纳金色大厅夏季音乐会</div>-->
+            <!--<div class="undis pa item-a">-->
+                <!--<div class="hot-bg pa"></div>-->
+                <!--<div class="hot-desc pa">-->
+                    <!--<h3>梦想绽放2017-第六届维也纳金色大厅夏 季音乐会</h3>-->
+                    <!--<p>济州岛是韩国春天最早到来的地方每到初春,油菜花便 会率先开放，济州岛是韩国春天最早到来的地方每到 初春。</p>-->
+                <!--</div>-->
+            <!--</div>-->
+        <!--</a>-->
+        <!--<a class="item fl pr disBlock" href="/pc/news/jingdian-huifu.html">-->
+            <!--<img src="../../images/目的地-大学.jpg" alt="">-->
+            <!--<div class="hot-title pa">第六届维也纳金色大厅夏季音乐会</div>-->
+            <!--<div class="undis pa item-a">-->
+                <!--<div class="hot-bg pa"></div>-->
+                <!--<div class="hot-desc pa">-->
+                    <!--<h3>梦想绽放2017-第六届维也纳金色大厅夏 季音乐会</h3>-->
+                    <!--<p>济州岛是韩国春天最早到来的地方每到初春,油菜花便 会率先开放，济州岛是韩国春天最早到来的地方每到 初春。</p>-->
+                <!--</div>-->
+            <!--</div>-->
+        <!--</a>-->
+        <!--<a class="item fl pr disBlock" href="/pc/news/jingdian-huifu.html">-->
+            <!--<img src="../../images/目的地-大学.jpg" alt="">-->
+            <!--<div class="hot-title pa">第六届维也纳金色大厅夏季音乐会</div>-->
+            <!--<div class="undis pa item-a">-->
+                <!--<div class="hot-bg pa"></div>-->
+                <!--<div class="hot-desc pa">-->
+                    <!--<h3>梦想绽放2017-第六届维也纳金色大厅夏 季音乐会</h3>-->
+                    <!--<p>济州岛是韩国春天最早到来的地方每到初春,油菜花便 会率先开放，济州岛是韩国春天最早到来的地方每到 初春。</p>-->
+                <!--</div>-->
+            <!--</div>-->
+        <!--</a>-->
+        <!--<a class="item fl pr disBlock" href="/pc/news/jingdian-huifu.html">-->
+            <!--<img src="../../images/目的地-大学.jpg" alt="">-->
+            <!--<div class="hot-title pa">第六届维也纳金色大厅夏季音乐会</div>-->
+            <!--<div class="undis pa item-a">-->
+                <!--<div class="hot-bg pa"></div>-->
+                <!--<div class="hot-desc pa">-->
+                    <!--<h3>梦想绽放2017-第六届维也纳金色大厅夏 季音乐会</h3>-->
+                    <!--<p>济州岛是韩国春天最早到来的地方每到初春,油菜花便 会率先开放，济州岛是韩国春天最早到来的地方每到 初春。</p>-->
+                <!--</div>-->
+            <!--</div>-->
+        <!--</a>-->
+        <!--<a class="item fl pr disBlock" href="/pc/news/jingdian-huifu.html">-->
+            <!--<img src="../../images/目的地-大学.jpg" alt="">-->
+            <!--<div class="hot-title pa">第六届维也纳金色大厅夏季音乐会</div>-->
+            <!--<div class="undis pa item-a">-->
+                <!--<div class="hot-bg pa"></div>-->
+                <!--<div class="hot-desc pa">-->
+                    <!--<h3>梦想绽放2017-第六届维也纳金色大厅夏 季音乐会</h3>-->
+                    <!--<p>济州岛是韩国春天最早到来的地方每到初春,油菜花便 会率先开放，济州岛是韩国春天最早到来的地方每到 初春。</p>-->
+                <!--</div>-->
+            <!--</div>-->
+        <!--</a>-->
+    <!--</div>-->
+
+<p class="p1">经典回顾</p>
+<div class="own appear">
+    <ul>
+    </ul>
+</div>
+    <div class="liFooter"></div>
+    <script src="../../js/jquery.min.js"></script>
+    <script>
+        $(function(){
+            $(".liHeader").load("../../liHeader.html")
+            $(".liFooter").load("../../liFooter.html")
+        })
+        //侧边框
+        $("#left-panel-link").mouseover(function () {
+            $("#left-panel").addClass("animated fadeInLeftBig");
+            $("#left-panel").css("display","block");
+
+        });
+        $("#left-panel-link").mouseout(function () {
+            $("#left-panel").removeClass("fadeInLeftBig");
+            $("#left-panel").mouseover(function () {
+                $(this).css("display","block")
+            });
+            $("#left-panel").mouseout(function () {
+                $(this).css("display","none")
+            })
+        });
+        $(".box ul li a").mouseover(function () {
+            $(this).find("img").attr("src","/studyAbordPc/images/iconRightBlue.png");
+        });
+        $(".box ul li a").mouseout(function () {
+            $(this).find("img").attr("src","/studyAbordPc/images/iconRight.png");
+        });
+        //search
+        $(".icon-top-search").click(function () {
+            $(this).hide();
+            $(this).siblings(".search").show(1000);
+        });
+        $(".search img").click(function () {
+            $(this).parent().hide(1000);
+            $(this).parent().siblings(".icon-top-search").show();
+        });
+
+    </script>
+
+    <script src="../../js/template-web.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Swiper/4.0.2/css/swiper.min.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Swiper/4.0.2/js/swiper.min.js"></script>
+    <script src="./js/yishu-xiangqing.js"></script>
+    <script type="text/html" id="banner">
+        {{set a = 'http://47.107.191.81:8080'}} {{each data}}
+        <div class="swiper-slide">
+            <img src="{{a}}{{$value.filePath}}" alt="">
+        </div>
+        {{/each}}
+    </script>
+    <script type="text/html" id="detail">
+        {{set a = 'http://47.107.191.81:8080'}}
+        <div class="wenben " id="wenben">
+            <div class="gaikuang container clearfix">
+                <div class="gaikuang-l">
+                    <h2 id="h2">{{data?data.title:''}}</h2>
+                    <ul>
+                        <li><img src="./images/perNum.png" alt="">
+                            <p>{{data?data.tags:''}}</p>
+                        </li>
+                        <li><img src="./images/perNum.png" alt="">
+                            <p>插班上课</p>
+                        </li>
+                        <!--<li><img src="./images/perNum.png" alt="">-->
+                            <!--<p>插班上课</p>-->
+                        <!--</li>-->
+                        <!--<li><img src="./images/perNum.png" alt="">-->
+                            <!--<p>插班上课</p>-->
+                        <!--</li>-->
+                        <!--<li><img src="./images/perNum.png" alt="">-->
+                            <!--<p>插班上课</p>-->
+                        <!--</li>-->
+                        <!--<li><img src="./images/perNum.png" alt="">-->
+                            <!--<p>插班上课</p>-->
+                        <!--</li>-->
+                        <!--<li><img src="./images/perNum.png" alt="">-->
+                            <!--<p>插班上课</p>-->
+                        <!--</li>-->
+                        <!--<li><img src="./images/perNum.png" alt="">-->
+                            <!--<p>插班上课</p>-->
+                        <!--</li>-->
+                        <!--<li><img src="./images/perNum.png" alt="">-->
+                            <!--<p>插班上课</p>-->
+                        <!--</li>-->
+                        <!--<li><img src="./images/perNum.png" alt="">-->
+                            <!--<p>插班上课</p>-->
+                        <!--</li>-->
+                        <!--<li><img src="./images/perNum.png" alt="">-->
+                            <!--<p>插班上课</p>-->
+                        <!--</li>-->
+                        <!--<li><img src="./images/perNum.png" alt="">-->
+                            <!--<p>插班上课</p>-->
+                        <!--</li>-->
+                        <!--<li><img src="./images/perNum.png" alt="">-->
+                            <!--<p>插班上课</p>-->
+                        <!--</li>-->
+                        <li></li>
+                        <li></li>
+                        <li></li>
+                    </ul>
+                    <p class="p1" id="p1">{{@data?data.description.replace(/\"/g,""):''}}</p>
+                </div>
+                <div class="gaikuang-r">
+                    <div class="price">
+                        <div class="price1">
+                            <p>价格</p>
+                            <h3><span id="price">¥{{data?data.price:''}}</span>/人</h3>
+                        </div>
+                        <div class="price2">
+                            <h3><img src="./images/redHeart.png" class="red-heart"/>收藏</h3>
+                        </div>
+                    </div>
+                    <div class="guojia" id="guojia">
+                        <ul>
+                            <li>
+                                <img src="./images/country.png" alt=""> {{if data&&data.country=="UK"}}
+                                <span>国家：英国</span> {{else if data&&data.country=="CA"}}
+                                <span>国家：加拿大</span> {{else if data&&data.country=="US"}}
+                                <span>国家：美国</span> {{else if data&&data.country=="EU"}}
+                                <span>国家：欧洲</span> {{else if data&&data.country=="JP"}}
+                                <span>国家：日本</span> {{else if data&&data.country=="RU"}}
+                                <span>国家：俄罗斯</span> {{else if data&&data.country=="FR"}}
+                                <span>国家：法国</span> {{else if data&&data.country=="AU"}}
+                                <span>国家：澳大利亚</span> {{else if data&&data.country=="DE"}}
+                                <span>国家：德国</span>{{else if data&&data.country=="FE"}}
+                                <span>国家：芬兰</span>{{else if data&&data.country=="SG"}}
+                                <span>国家：新加坡</span>{{else if data&&data.country=="TH"}}
+                                <span>国家：泰国</span>{{else}}
+                                <span>国家：全球</span>{{/if}}
+
+                            </li>
+                            <li>
+                                <img src="./images/grade.png" alt=""> {{if data&&data.age=="1"}}
+                                <span>年级：幼儿</span> {{else if data&&data.age=="2"}}
+                                <span>年级：小学生</span> {{else if data&&data.age=="3"}}
+                                <span>年级：初中生</span>{{else if data&&data.age=="4"}}
+                                <span>年级：高中生</span>{{else if data&&data.age=="5"}}
+                                <span>年级：大学生</span>{{else if data&&data.age=="6"}}
+                                <span>年级：成人</span>{{else}}
+                                <span>年级：社会</span>{{/if}}
+                            </li>
+                            <li>
+                                <img src="./images/perNum.png" alt="">
+                                <span>人数：{{data?data.persons:'不限'}}人</span>
+                            </li>
+                            <li>
+                                <img src="./images/playType.png" alt=""> {{if data&&data.joinType=="1"}}
+                                <span>表演类型：演唱、合唱</span>{{else if data&&data.age=="2"}}
+                                <span>表演类型：舞蹈</span>{{else if data&&data.age=="3"}}
+                                <span>表演类型：乐器演奏</span>{{else if data&&data.age=="4"}}
+                                <span>表演类型：才艺展示</span>{{else if data&&data.age=="5"}}
+                                <span>表演类型：传统游戏</span>{{else if data&&data.age=="6"}}
+                                <span>表演类型：展览会</span>{{else}}
+                                <span>表演类型：无</span> {{/if}}
+                            </li>
+                            <li>
+                                <img src="./images/dayTime.png" alt="">
+                                <span>天数：{{data?data.days:0}}天</span>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="guwen">
+                        <ul>
+                            <li>
+                                <a href="javascript:;" onclick="yishuContact(this)">
+                                    <p >联系顾问了解</p>
+                                    <span>更多信息</span>
+                                </a>
+                            </li>
+                            <li><a href="javascript:;" onclick="yishuApply(this)">艺术申请</a></li>
+                        </ul>
+                        <a href="{{a}}{{data.recruitFilePath}}" id="download">下载免费的 XAF手册</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="vido clearfix" id="video">
+            <ul class="clearfix container">
+               <!--  <li id="li05"><img src="./艺术交流a/留学交流详情/图片.jpg" alt=""></li> -->
+                <li id="li05">
+                    {{set a = 'http://47.107.191.81:8080'}}
+					{{each data.pictures}}
+					{{if $index == 0}}
+                    <img src="{{a}}{{$value.filePath}}" width="590" height="390" alt="">
+					{{/if}}
+                    {{/each}}
+                </li>
+
+                <li id="li06">
+                    <video src="{{a}}{{data.vedioes?data.vedioes[0].filePath:''}}" controls></video>
+                </li>
+            </ul>
+        </div>
+        <div class="jigou" id="jigou">
+            <ul class="clearfix container">
+                <li id="li01">
+                    <h3>组织机构</h3>
+                    <ul>
+                        <li>{{@data.organization?data.organization:""}}</li>
+                    </ul>
+                    <img src="./艺术交流a/留学交流详情/组织机构.jpg" alt="">
+                    <a href="#">更多信息</a>
+                </li>
+                <li id="li02">
+                    <h3>活动特色</h3>
+                    <ul>
+                        <li>{{@data.activity?data.activity:''}}</li>
+                    </ul>
+                    <img src="./艺术交流a/留学交流详情/活动特色.jpg" alt="">
+                    <a href="#">更多信息</a>
+                </li>
+            </ul>
+        </div>
+        <div class="richeng container" id="richengConetent">
+            <h2>日程计划</h2>
+            <div id="richeng">{{@data.schedule?data.schedule:''}}</div>
+        </div>
+        <div class="jiaoliu container">
+            <ul>
+                <li id="li03">
+                    <h3>学习交流</h3>
+                    <ul>
+                        <li>{{@data.study?data.study:''}}</li>
+                    </ul>
+                    <img src="./艺术交流a/留学交流详情/交流.jpg" alt="">
+                    <a href="#">更多信息</a>
+                </li>
+                <li id="li04">
+                    <h3>获得荣誉</h3>
+                    <ul>
+                        <li>{{@data.honor?data.honor:''}}</li>
+                    </ul>
+                    <img src="./艺术交流a/留学交流详情/荣誉.jpg" alt="">
+                    <a href="#">更多信息</a>
+                </li>
+            </ul>
+        </div>
+        <div class="Huodong">
+            <div class="huodong container" id="huodong">
+                <h2>活动场馆</h2>
+                {{@data.venue?data.venue:''}}
+                <ul>
+                    {{each data.pictures?data.pictures:''}}
+                   <li>
+                        <img src="{{a}}{{$value.filePath}}" alt="">
+                    </li>
+                    {{/each}}
+                </ul>
+            </div>
+            <div class="canfang container">
+                <div class="canfang-l">
+                    <div class="canfang-l-1" id="canfang">
+                        <h2>参访</h2>
+                        <p>{{@data.visit?data.visit:''}}</p>
+                    </div>
+                    <div class="canfang-l-2" id="jiaoliu">
+                        <h2>交流</h2>
+                        <p>{{@data.communication?data.communication:''}}</p>
+                    </div>
+                </div>
+                <div class="canfang-r">
+                    {{each data.pictures?data.pictures:''}}
+					{{if $index == 0}}
+						
+                   <img src="{{a}}{{$value.filePath}}" alt=""> 
+					{{/if}}
+				   {{/each}}
+                </div>
+            </div>
+        </div>
+        <div class="jingdian" id="jingdian">
+            <div class="jingdian1 container">
+                <h2>景点</h2>
+                {{@data.attraction?data.attraction:''}}
+            </div>
+            <!--<div class="jingdian2 appear">-->
+                <!--<ul>-->
+                    <!--<li>-->
+                        <!--<img src="./艺术交流a/留学交流详情/景点1.jpg" alt="">-->
+                        <!--<div class="jingdian-mask">-->
+                            <!--<h1>梦想绽放2017-第六届维也纳金色大厅夏季音乐会</h1>-->
+                            <!--<p>济州岛是韩国春天最早到来的地方每到初春,油菜花便会率先开放。</p>-->
+                        <!--</div>-->
+                    <!--</li>-->
+                    <!--<li>-->
+                        <!--<img src="./艺术交流a/留学交流详情/景点2.jpg" alt="">-->
+                        <!--<div class="jingdian-mask">-->
+                            <!--<h1>梦想绽放2017-第六届维也纳金色大厅夏季音乐会</h1>-->
+                            <!--<p>济州岛是韩国春天最早到来的地方每到初春,油菜花便会率先开放。</p>-->
+                        <!--</div>-->
+                    <!--</li>-->
+                    <!--<li>-->
+                        <!--<img src="./艺术交流a/留学交流详情/景点3.jpg" alt="">-->
+                        <!--<div class="jingdian-mask">-->
+                            <!--<h1>梦想绽放2017-第六届维也纳金色大厅夏季音乐会</h1>-->
+                            <!--<p>济州岛是韩国春天最早到来的地方每到初春,油菜花便会率先开放。</p>-->
+                        <!--</div>-->
+                    <!--</li>-->
+                    <!--<li>-->
+                        <!--<img src="./艺术交流a/留学交流详情/景点4.jpg" alt="">-->
+                        <!--<div class="jingdian-mask">-->
+                            <!--<h1>梦想绽放2017-第六届维也纳金色大厅夏季音乐会</h1>-->
+                            <!--<p>济州岛是韩国春天最早到来的地方每到初春,油菜花便会率先开放。</p>-->
+                        <!--</div>-->
+                    <!--</li>-->
+                <!--</ul>-->
+            <!--</div>-->
+            <a href="#">
+                <p>联系顾问了解</p>
+                <span>更多信息</span>
+            </a>
+        </div>
+        <div class="zhusu">
+            <div class="container">
+                <div class="zhusu1" id="zhusu">
+                    <h2>住宿</h2>
+                    <div class="zhusu1-1">
+                        <!--<img src="./艺术交流a/留学交流详情/住宿.jpg" alt="">-->
+                        <p>{{@data.accommodations?data.accommodations:""}}</p>
+                        <ul>
+                            <li style="display:none"></li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="zhusu2" id="yongshan">
+                    <h2>用膳</h2>
+                    <div class="zhusu2-1">
+                        <!--<img src="./艺术交流a/留学交流详情/用膳.jpg" alt="">-->
+                        <p>{{@data.foods?data.foods:''}}</p>
+                        <ul style='display:none'>
+                            <li>与同学一起生活，获得更多独立</li>
+                            <li>大多数住宅都是自炊式</li>
+                            <li>与新朋友一起生活和社交</li>
+                            <li>单人间，双床间，双人间，和宿舍间分布在不同地点</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </script>
+
+
+    <script type="text/html" id="review">
+        {{set a = "http://47.107.191.81:8080"}} {{each data}}
+        <li onclick="gotodetail({{$value.id}})">
+
+            <img src="{{a}}{{$value.banners[0]?$value.banners[0].filePath:''}}" alt="">
+            <div class="mobility">
+                <h2>{{$value.title}}</h2>
+                <p>{{$value.description}}</p>
+            </div>
+
+        </li>
+        {{/each}}
+    </script>
+	
+	<script src="../../layer/layer.js"></script>
+	<script>
+        function gotodetail(id) {
+            window.location.href="/pc/historydetail/huigu-xiang.html?id="+id;
+        }
+	function yishuContact(obj){
+	    //捕获页
+		layer.open({
+		  type: 1,
+		  shade: false,
+		  title: false, //不显示标题
+		  content: '<p style="color:#666;font-size:14px;line-height:35px;">请拨打电话：</p><p style="color:#666;font-size:14px;">400-8988-8891</p>', //捕获的元素，注意：最好该指定的元素要存放在body最外层，否则可能被其它的相对元素所影响
+		  cancel: function(){}
+		});
+	}
+	function yishuApply(obj){
+	    //捕获页
+		layer.open({
+		  type: 1,
+		  shade: false,
+		  title: false, //不显示标题
+		  content: '<p style="color:#666;font-size:14px;line-height:35px;">请拨打电话：</p><p style="color:#666;font-size:14px;">400-8988-8891</p>', //捕获的元素，注意：最好该指定的元素要存放在body最外层，否则可能被其它的相对元素所影响
+		  cancel: function(){}
+		});
+	}
+	</script>
+
+</body>
+
+</html>

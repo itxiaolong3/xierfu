@@ -1,0 +1,383 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>个人注册</title>
+    <link rel="stylesheet" href="./css/dailishang.css">
+    <!--<link rel="stylesheet" href="../../css/mainLi.css">-->
+    <link rel="stylesheet" href="../../leftHover/animate.css">
+    <link rel="stylesheet" href="../../leftHover/leftTree.css">
+    <script src="../../js/jquery.min.js"></script>
+	<script src="../../js/jquery.cookie.js"></script>
+</head>
+
+<body >
+    <div class="liHeader"></div>
+    <div class="banner">
+        <!--<div class="banner-l">-->
+            <img src="./images/bg1.jpg" alt="">
+        <!--</div>-->
+    </div>
+    <div class="remen">
+        <div class="tab">
+            <div class="hd one">
+                <ul>
+                    <li>个人注册</li>
+                    <li>代理商注册</li>
+                </ul>
+            </div>
+            <div class="bd two">
+                <div class=" protocol-min xieyi xieyi-new" style="padding:20px;">
+                    <h3>西奥夫注册协议</h3>
+                    <p>导言</p>
+                    <p>欢迎您使用西奥夫提供的服务!为使用开心夏令营提供的服务(以下简称:本服务),您应当阅读并遵守《开心夏令营课程发布者注册协议》(以下简称: 本协议)等相关协议、规则。
+                    </p>
+                    <p>请您务必审慎阅读、充分理解各条款内容,特别是免除或者限制责任的条款,以及开通或使用某项服务的单独协议、规则。除非您已阅读并接受本协 议及相关协议、规则等所有条款,否则,您无权使用西奥夫提供的本服务。您使用开心夏令营的本服务,即视为您已阅读并同意上述协议、规则等的约 束。
+                    </p>
+                    <p>您有违反本协议的任何行为时,开心夏令营有权依照违反情况,随时单方限制、中止或终止向您提供本服务,并有权追究您的相关责任。</p>
+                    <p>甲乙双方依据《中华人民共和国合同法》及其他相关法律规定,本着友好协商,精诚合作的原则,达成以下条款</p>
+                    <div class="xieyi-check">
+                        <input type="checkbox">我已阅读并同意此协议<span>温馨提示:阅读整个协议,才能进行下ー步。    </span>
+                    </div>
+
+                        <a href="javascript:;"  class="next-btn">下一步</a>
+
+                </div>
+                <div class="sh show guoji" style="display: none">
+                    <form method="post">
+                        <label>
+                            <span>手机号：</span>
+                            <input type="text" name="phone" size="18" id="phone" placeholder="请输入手机号">
+                        </label><br>
+                        <label class="wf">
+                            <span>短信验证码：</span>
+                             <input type="text" name="code" size="19" id="code"  placeholder="请输入手机验证码" />
+                             <input type="button" name="submit1" id="ugetcode" onclick="return getcode()" value="获取验证码"/>
+                        </label><br>
+                        <label class="zc">
+                             <input type="button"  value="注册" onclick="return check(this)">
+                         </label>
+                    </form>
+                </div>
+                <div class="sh means">
+                    <div class="inHd">
+                        <ul>
+                            <li>
+                                <span>1</span>
+                                签订诉诸协议
+                            </li>
+                            <li>
+                               <span>2</span>
+                                提交资料
+                            </li>
+                            <li>
+                               <span>3</span>
+                                入住审核
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="inBd">
+                        <div class="means-min protocol">
+                          <div class="protocol-min">
+                            <h3>西奥夫注册协议</h3>
+                            <p>导言</p>
+                            <p>欢迎您使用西奥夫提供的服务!为使用开心夏令营提供的服务(以下简称:本服务),您应当阅读并遵守《开心夏令营课程发布者注册协议》(以下简称: 本协议)等相关协议、规则。
+                            </p>
+                            <p>请您务必审慎阅读、充分理解各条款内容,特别是免除或者限制责任的条款,以及开通或使用某项服务的单独协议、规则。除非您已阅读并接受本协 议及相关协议、规则等所有条款,否则,您无权使用西奥夫提供的本服务。您使用开心夏令营的本服务,即视为您已阅读并同意上述协议、规则等的约 束。
+                            </p>
+                            <p>您有违反本协议的任何行为时,开心夏令营有权依照违反情况,随时单方限制、中止或终止向您提供本服务,并有权追究您的相关责任。</p>
+                            <p>甲乙双方依据《中华人民共和国合同法》及其他相关法律规定,本着友好协商,精诚合作的原则,达成以下条款</p>
+                            <p>一、协议内容</p>
+                            <p class="hp">1.甲方授权乙方开展其国际游学、国内冬夏令营、假日活动、亲子活动、常规课程的代理招生、课程咨询、代报名服务、教育推广服务。</p>
+                            <p class="hp">2.甲方须提供在有效期内具有开展以上教育业务的资质：办学许可证或营业执照</p>
+                            <p class="hp">3.组织机构代码甲方向乙方提供的招生办学信息,保证信息的准确性、服务承诺的真实性。</p>
+                            <p class="hp">4.甲方授权乙方进行服务或营销的教育产品须具有合法的知识产权(包括专利、著作权、版权、商标等)或授权。</p>
+                            <p>二、协议内容</p>
+                            <p class="hp">1.甲方授权乙方开展其国际游学、国内冬夏令营、假日活动、亲子活动、常规课程的代理招生、课程咨询、代报名服务、教育推广服务。</p>
+                            <p class="hp">2.甲方须提供在有效期内具有开展以上教育业务的资质：办学许可证或营业执照</p>
+                            <p class="hp">3.组织机构代码甲方向乙方提供的招生办学信息,保证信息的准确性、服务承诺的真实性。</p>
+                            <p class="hp">4.甲方授权乙方进行服务或营销的教育产品须具有合法的知识产权(包括专利、著作权、版权、商标等)或授权。</p>
+                            <div class="xieyi">
+                                <input type="checkbox">我已阅读并同意此协议
+                                <span>温馨提示:阅读整个协议,才能进行下ー步</span>
+                            </div>
+                          </div>
+                            <a class="net-dailishang" href="#">下一步</a>
+                        </div>
+                        <div class="means-min datum ">
+                            <div class="title">
+                                <p>基本信息</p>
+                            </div>
+							<form id="form2" onsubmit="return false" method="post" enctype="multipart/form-data">
+                            <label>
+                                <span>机构名称</span>
+                                <input type="text" name="name" placeholder="请填写机构名称">
+                            </label><br>
+                            <label class="dh">
+                                <span>机构简介</span>
+                                <textarea placeholder="请填写机构简介" name="description"></textarea>
+                            </label><br>
+                            <label>
+                                <span>主页域名</span>
+                                <input type="text" placeholder="请填写正确的机构域名" name="homePage">
+                            </label><br>
+                            <p>例如：http://www.xiaofu.cc</p>
+                            <div class="title">
+                                <p>机构资质</p>
+                            </div>
+                            <label>
+                                <span>公司名称</span>
+                                <input type="text" placeholder="请填写公司名称" name="companyName">
+                            </label>
+                            <label class="sj">
+                                <p>营业执照</p>
+                                <input type="text" placeholder="请填写营业执照上的注册号或统一社会信用代码" name="licenseCode">
+                                <p>注：如您的营业执照经营范围没有教育、培训或咨询。请上传教育资质证书，如办学许可证</p>
+                            </label>
+                            <label class="sj">
+                                <p>营业执照</p>
+                                <div class="sj-left">
+                                    <input type="file" name="licenseFile">
+                                    <a href="javaScript:void(0)">
+                                         上传照片
+                                    </a>
+                                </div>
+                                <div class="sj-right">
+                                    <p>请上传有年检章的企业营业执照副本扫描件<br>文件小于1M<br>支持JPG/PNG/BMP等格式图片</p>
+                                </div>
+                            </label>
+                            <div class="title">
+                                <p>申请人信息</p>
+                            </div>
+                            <label>
+                                <span>申请人</span>
+                                <input type="text" name="applyPerson" placeholder="请填写申请人名字">
+                            </label>
+                            <label class="sfz">
+                                <div class="sf">
+                                    <span>身份证</span>
+                                    <div class="sf-left">
+                                         <input type="file">
+                                         <a href="javascript:void(0)" name="idcardFile1">身份证正面</a>
+                                    </div>
+                                    <div class="sf-left">
+                                        <input type="file">
+                                         <a href="javascript:void(0)" name="idcardFile2">身份证反面</a>
+                                    </div>
+                                </div>
+                            </label>
+                            <label>
+                                <span>手机</span>
+                                <input type="text" placeholder="请填写手机号" name="mobile">
+                            </label>
+                            <label>
+                                <span>邮箱</span>
+                                <input type="text" placeholder="请填写邮箱" name="email">
+                            </label>
+                            <div class="dx">
+                                <span>代理/供应商</span>
+                                <input type="radio" name="category" value="AGENT">代理商
+                                <input type="radio" name="category" value="SUPPLY">供应商
+                            </div>
+                            <button onclick="return dlsreg(this.form)">提交</button>
+							</form>
+                        </div>
+
+
+
+                        <div class="means-min">
+                            <div class="apply-result">
+                                <p class="tc">您好，我们已经收到贵机构的入驻申请，将在3~6个工作日内完成审核。</p>
+                                <p class="tl" style="margin-top:40px">西奥夫教育科技集团 <a href="javascript:;">www.xaf.com.cn</a></p>
+                                <p style="margin-top:5px;">感谢您的加入，期待与您共同在留学，游学，夏令营传递思想、创造价值。</p>
+                                <p class="tc">
+                                    <img src="/pc/images/lxr.jpg" alt="" width="300" style="margin-top:100px">
+                                    <p class="tc">请扫描二维码，与负责人取得联系，进行详细洽谈！</p>
+                                </p>
+
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+
+
+</body>
+<script src="./js/jquery.min.js"></script>
+<script src="./js/dailishang.js"></script>
+<script src="../../js/jquery.SuperSlide.2.1.1.js"></script>
+<script>
+    $(function(){
+        $(".liHeader").load("../../liHeader.html")
+        $(".liFooter").load("../../liFooter.html")
+    })
+    //侧边框
+    $("#left-panel-link").mouseover(function () {
+        alert('1111');
+        $("#left-panel").addClass("animated fadeInLeftBig");
+        $("#left-panel").css("display","block");
+
+    });
+    $("#left-panel-link").mouseout(function () {
+        $("#left-panel").removeClass("fadeInLeftBig");
+        $("#left-panel").mouseover(function () {
+            $(this).css("display","block")
+        });
+        $("#left-panel").mouseout(function () {
+            $(this).css("display","none")
+        })
+    });
+    $(".box ul li a").mouseover(function () {
+        $(this).find("img").attr("src","/pc/images/iconRightBlue.png");
+    });
+    $(".box ul li a").mouseout(function () {
+        $(this).find("img").attr("src","/pc/images/iconRight.png");
+    });
+    //search
+    $(".icon-top-search").click(function () {
+        $(this).hide();
+        $(this).siblings(".search").show(1000);
+    });
+    $(".search img").click(function () {
+        $(this).parent().hide(1000);
+        $(this).parent().siblings(".icon-top-search").show();
+    });
+</script>
+<script type="text/javascript">
+    //add  新添加的下一步
+    $(".next-btn").click(function () {
+        // alert("111");
+        $(".xieyi-new").hide();
+        $(".guoji").show();
+    })
+	$(".net-dailishang").click(function () {
+        // alert("111");
+        $(".protocol").hide();
+        $(".datum").show();
+    })
+
+        /* 外层outBox左滚动切换 */
+        jQuery(".tab").slide({ effect:"left" });
+        /* 内层inBox渐显切换，注意titCell、mainCell等不能与外层相同 */
+        jQuery(".means").slide({ titCell:".inHd li",mainCell:".inBd" });
+
+
+function getcode() {
+	var baseurl = 'http://47.107.191.81:8080';
+	//获取验证码
+	let phone=$('#phone').val();
+	if (phone=='') {
+		alert('手机号不可为空');
+		return false;
+	}
+	$.ajax({
+		url: baseurl+"/me/services/getRegistryCode?phone="+phone,
+		dataType: "json",
+		type: "GET",
+		success: function(res){
+			if(res.resultCode == 200){
+				$("#ugetcode").val('已发送');
+			}else{
+				$("#ugetcode").val('发送失败');
+			}
+		},
+		error : function(res) {
+			alert('获取失败')
+			console.log(res,'error方法执行')
+		}
+	});
+}
+function check(form) {
+	var phone=$('#phone').val();
+	var code=$('#code').val();
+	if(phone =='') {
+		alert("请输入用户帐号!");
+		form.userId.focus();
+		return false;
+	}
+	if(code ==''){
+		alert("请输入验证码!");
+		form.password.focus();
+		return false;
+	}
+	var baseurl = 'http://47.107.191.81:8080';
+	$.ajax({
+		url: baseurl+"/me/services/verifyRegistryCode",
+		dataType: "json",
+		type: "GET",
+		data: {'phone':phone,'code':code},
+		success: function (result) {
+			console.log(result,'服务器返回的数据');//打印服务端返回的数据(调试用)
+			if (result.resultCode == 200&&result.resultData) {
+				//alert("注册成功");
+				console.log(result,'手机注册返回')
+				//注册成功
+				$.ajax({
+					url: "http://47.107.191.81:8080/me/services/profile",
+					dataType: "json",
+					type: "GET",
+					success: function (result) {
+						console.log(result);//打印服务端返回的数据(调试用)
+						if (result.resultCode == 200&&result.resultData) {
+							$.cookie('user', result.resultData, { path: '/'});
+							//注册成功
+							window.location.href="../个人中心/gerenzhongxin.html";
+						}else{
+							alert('账号信息不对')
+						}
+					},
+					error : function(result) {
+						console.log(result,'登录失败返回')
+						alert('注册失败')
+					}
+				});
+				//localStorage.setItem('phone',phone);
+				//window.location.href="../个人中心/gerenzhongxin.html";
+			}else{
+				alert('账号信息不对')
+			}
+		},
+		error : function(result) {
+			console.log(result,'手机注册error失败返回')
+			alert('注册失败')
+		}
+	});
+}
+function dlsreg() {
+	var baseurl = 'http://47.107.191.81:8080';
+	$.ajax({
+		url: baseurl+"/me/services/registry",
+		xhrFields: {
+			withCredentials: true
+		},
+		cache: false,
+		processData: false,
+		contentType: false,
+		data: $('#form2').serialize(),
+		success: function (result) {
+			console.log(result,'服务器返回的数据');//打印服务端返回的数据(调试用)
+			if (result.resultCode == 200&&result.resultData) {
+				//alert("注册成功");
+				console.log(result,'手机注册返回')
+				//注册成功
+				localStorage.setItem('phone',phone);
+				window.location.href="../个人中心/gerenzhongxin.html";
+			}else{
+				alert('账号信息不对')
+			}
+		},
+		error : function(result) {
+			console.log(result,'手机注册error失败返回')
+			alert('注册失败')
+		}
+	});
+}
+</script>
+</html>

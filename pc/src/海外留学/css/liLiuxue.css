@@ -1,0 +1,247 @@
+.tc{text-align: center}
+.disBlock{display: block}
+.overflow{overflow: hidden;}
+.fl{float: left;}
+.fr{float: right;}
+.lx-wrap{width: 1200px;margin:0 auto;}
+.bg-white{background: #fff;}
+.bg-grey{background: #f9f9f9;}
+.pr{position: relative;}
+.pa{position: absolute;}
+.mt10{margin-top:10px;}
+.pt30{padding-top: 30px;}
+.mb100{margin-bottom:200px;}
+/*初小留学*/
+.chuxiao-own{margin-bottom: 80px;}
+.chuxiao-daoyu .img{margin:47px 0 27px}
+.chuxiao-daoyu p{color:#6e6e6e;font-size: 14px;width:898px;margin:0 auto;line-height: 27px;margin-bottom:90px;}
+.cioff .chuxiao-daoyu p{margin:25px auto 31px;}
+.chuxiao-daoyu .getStudyWay{width:203px;height:37px;line-height: 37px;color:#fff;background-color: #00a5d8;font-size: 16px;margin:0 auto;border-radius: 2px;text-align: center}
+/* 国际交换生 */
+.whyGoAbroad{width: 1141px;margin:94px auto 0;background: #fff;box-sizing: border-box;padding:65px 0;}
+.whyGoAbroad .item{width:285px;text-align: center;border-right:1px solid #eeeff2;border-bottom:1px solid #eeeff2;
+box-sizing: border-box;padding:0 45px 78px 48px;height:359px;overflow: hidden;}
+.whyGoAbroad .item:nth-of-type(4n+4){margin-right: 0;border-right:0px;}
+.whyGoAbroad .item:nth-child(4n+1){clear: left}
+.whyGoAbroad .item:nth-child(8),.whyGoAbroad .item:nth-child(5),.whyGoAbroad .item:nth-child(6),.whyGoAbroad .item:nth-child(7){border-bottom:0;}
+.whyGoAbroad .item h3{font-size: 18px;color:#009dd9;margin:30px 0 24px;width:191px; overflow:hidden;text-overflow:ellipsis;white-space:nowrap}
+.whyGoAbroad .item p{font-size: 14px;color:#9d9d9d;line-height: 24px;overflow: hidden;text-overflow:ellipsis;
+display: -webkit-box;-webkit-line-clamp: 2;-webkit-box-orient: vertical;width: 100%}
+.whyGoAbroadWrap{margin-bottom: 231px;}
+.whyGoAbroad .item .know-more{width:92px;height:28px;text-align: center;line-height: 28px;color:#fff;background-color: #00a5d8;margin:20px auto 0;border-radius: 2px;}
+.chuxiao-need{box-sizing: border-box;padding:10px 0 30px;margin-top:30px;}
+.chuxiao-advatage{width:1200px;margin:100px auto 6px}
+.chuxiao-advatage .item{width:589px;margin:0 20px 20px 0;background:#fff;box-sizing:border-box;padding:20px 8px;height:133px;overflow: hidden;}
+.chuxiao-advatage .item h3{font-size: 18px;color:#3b3b3b;margin-bottom:15px;}
+.chuxiao-advatage .item p{color:#9d9d9d;font-size: 14px;width:443px;text-align: left;line-height: 27px;}
+.chuxiao-advatage .item:nth-of-type(2n){margin-right:0}
+.chuxiao-analies{width:1200px;margin:0 auto;background: #fff;box-sizing: border-box;padding:30px;border-radius: 50px 0 50px 0;}
+.chuxiao-analies h3{color:#009dd9;font-size: 22px;margin-bottom: 25px}
+.chuxiao-analies p{color:#9d9d9d;font-size: 14px;line-height: 27px;width: 974px;text-align: left;}
+.analies-btn{width:416px;margin:40px auto 100px;}
+.analies-btn a{width:200px;height:39px;line-height: 39px;text-align: center;border-radius: 3px;}
+.analies-btn .fl{background-color: #00a5d8;color:#fff;}
+.analies-btn .fr{border:1px solid #00a5d8;color:#00a5d8;}
+.person-need .need01{width:744px;margin:94px auto;}
+.person-need .need01 li{width:252px;text-align: center}
+.person-need .need01 li p{font-size: 18px;color:#6e6e6e}
+.person-need .need01 li img{margin:0 auto;}
+.person-need .need01 .fl p{color:#00a5d8}
+.person-need .need02{width:1044px;margin:94px auto;}
+.person-need .need02 li{width:180px;text-align: center;margin-right:250px;}
+.person-need .need02 li p{font-size: 18px;color:#6e6e6e}
+.person-need .need02 li img{margin:0 auto;}
+.person-need .need02 li:last-child{margin-right: 0}
+.lx-advantage{background: #2f3e66;padding-bottom:100px;}
+.lx-advantage h3{color:#fff;font-size: 28px;text-align: center;padding:93px 0 55px;}
+.lx-advantage .advantage-header{background: #1f3f8b;color:#fff;text-align: left;width:100%;font-size: 18px;}
+.lx-advantage ul li{box-sizing: border-box;padding:23px 30px;line-height: 21px;}
+.lx-advantage ul li:nth-child(4n+1){width:200px;}
+.lx-advantage ul li:nth-child(4n+2){width:330px;}
+.lx-advantage ul li:nth-child(4n+3){width:340px;}
+.lx-advantage ul li:nth-of-type(4n){width:330px;}
+.lx-advantage .advantage-body li{background: #f9f9f9;height: 80px;border-right:1px solid #cddafc;border-bottom:1px solid #cddafc;color:#6e6e6e;}
+.lx-advantage .advantage-body li:nth-child(5),.lx-advantage ul li:nth-child(6),.lx-advantage ul li:nth-child(7),.lx-advantage ul li:nth-child(8),
+.lx-advantage .advantage-body li:nth-child(13),.lx-advantage ul li:nth-child(14),.lx-advantage ul li:nth-child(15),.lx-advantage ul li:nth-child(16){background-color: #eef3fe;}
+.lx-advantage .advantage-body li:nth-child(4n+1){font-size: 14px;}
+.lx-advantage .advantage-body li:nth-child(4n+2){font-size: 12px}
+.lx-advantage .advantage-body li:nth-child(4n+3){font-size: 12px}
+.lx-advantage .advantage-body li:nth-of-type(4n){font-size: 12px}
+.lx-advantage .exchange-btn{width: 331px;height:45px;line-height: 45px;background: #3f9cd4;color:#fff;
+text-align:center;margin:37px auto 0;color:#fff;display: block;border-radius:20px;}
+.advantage-zige{background: #fff;padding-bottom:80px;}
+.advantage-zige h3{color:#3c4145;font-size: 28px;padding:85px 0 54px;text-align: center;}
+.advantage-zige .item-bg{width:287px;height:402px;background: url(../images/zigeBg.png) no-repeat center/cover;}
+.advantage-zige .item{margin-right:16px;}
+.advantage-zige .item:nth-child(4n){margin-right:0;}
+.advantage-zige .item-header{line-height: 84px;text-align: center;color:#3f9cd4;font-size: 22px}
+.advantage-zige .item-ct{color:#9d9d9d;line-height: 28px;font-size: 13px;box-sizing: border-box;padding:53px 28px 0 28px;text-align: center;height:402px;overflow: hidden;}
+.advantage-zige .zige-btn{display: block;width:100px;height:33px;line-height: 33px;background-color: #42a4d3;
+color:#fff;font-size: 12px;text-align: center;margin:30px auto 0;border-radius: 3px;}
+.advantage-zige .zige-box{margin-bottom:115px;}
+.gjh-jisu h2{margin:75px 0 50px;font-size: 28px;color:#3c4145;text-align: center;}
+.gjh-jisu .jisu01{height:325px;overflow: hidden;background: #fff;margin-bottom:13px;}
+.gjh-jisu .jisu01 .fl{box-sizing:border-box;padding:0px 0 0 60px;border-left:2px solid #3f9cd4;height:365px;}
+.gjh-jisu .jisu01 h3{font-size: 20px;color:#3f9cd4;margin:60px 0 30px;}
+.gjh-jisu .jisu01 p{color:#9d9d9d;font-size: 14px;text-align: left;line-height: 26px;}
+.gjh-jisu .jisu02{box-sizing: border-box;background: #fff;padding:63px 0;margin-bottom:70px;}
+.gjh-jisu .jisu02 .item{width:400px;box-sizing: border-box;padding:0 65px;border-right:1px dashed #dfdfdf}
+.gjh-jisu .jisu02 .item h3{font-size: 20px;color:#3f9cd4;text-align: center;margin-bottom: 30px;}
+.gjh-jisu .jisu02 .item .item-desc{font-size: 14px;color:#9d9d9d;line-height: 26px;text-align: center;}
+/* 艺术留学 */
+.yanjiusheng .data-show .item{width:25%;text-align: center;}
+.data-show .item h3{font-size: 58px;position: relative;color:#3f9cd4;}
+.data-show h3 i{position: absolute;top:0;right:60px;font-style: normal;font-weight: bold;font-size: 28px;color:#3f9cd4;}
+.data-show p{font-size: 16px;color:#6e6e6e;}
+.data-show .item{border-right:1px solid #d2d2d2}
+.data-show .item span{font-size: 28px;color:#3F9CD4}
+.yanjiusheng{padding:43px 0;}
+.why-stay h3{font-size: 28px;color:#3c4145;margin-bottom:65px;padding-top:80px;}
+.why-stay .why-stay-desc .item{width: 25%;border-right:1px solid #f9f9f9;box-sizing: border-box;padding:23px 22px 60px 22px;}
+.why-stay-desc .item img{width:129px;margin:0 auto;}
+.why-stay-desc .item h4{margin:20px 0 25px;color:#4f4f4f;}
+.why-stay-desc .item p{font-size: 12px;color:#6e6e6e;}
+.why-stay-desc .item:hover{background: #f9f9f9;}
+.why-stay .why-stay-desc{padding-bottom:60px;}
+.why-stay .btns a{width: 199px;height:37px;line-height: 37px;background: #42a4d3;color:#fff;text-align: center;border-radius: 2px;}
+.why-stay .btns{width:420px;margin:0 auto;padding-bottom: 60px;}
+.why-stay .hot-box .item{width:22.5%;margin:0 3% 30px 0;overflow: hidden;}
+.why-stay .hot-box .item:nth-child(4n){margin-right:0;}
+.hot-box .item h2{font-size: 16px;color:#4f4f4f;text-align: left;}
+.hot-box .item p{font-size: 14px;colo:#6e6e6e;text-align: left;}
+.hot-box .item .desc{box-sizing: border-box;padding:19px 20px 20px 21px;width:100%;position: relative;top:-10px;}
+.why-stay h5{font-size: 14px;color:#6e6e6e;margin-bottom:50px;}
+.why-hot-box h3{margin-bottom:20px;}
+.hot-box .item:hover .desc{background-color: #3f9cd4;}
+.hot-box .item:hover .desc h2,.hot-box .item:hover .desc p{color:#fff}
+.why-hot-box{padding-bottom:80px;}
+.success-case .item{width:224px;margin:0 18px 10px 0;}
+.success-case h1{font-size: 28px;color:#3c4145;padding-top:77px;margin-bottom:40px;}
+.success-case .item h2{font-size: 20px;color: #3c4145;}
+.success-case .item h3{font-size: 16px;color:#6e6e6e;width:117px;margin:15px auto 20px;}
+.success-case .item .title{top:200px;left:36%}
+.success-case .desc{box-shadow: 2px 2px 1px #ccc;position: relative;top:-10px;padding:50px 0 3px}
+.success-case .item:nth-child(5n){margin-right:0;}
+/* 研究生留学 */
+.yanjius-youshi{margin-bottom:106px;}
+.yanjius-youshi h3{font-size: 28px;color:#3c4145;margin:60px 0 45px;}
+.yanjius-youshi .title-box{background: #70c3d0;color:#fff;width:93px;height:212px;}
+.yanjius-youshi .title-box img{display: block;width:36px;padding-top:40px;margin:0 auto;}
+.yanjius-youshi .title-box p{line-height: 105px;}
+.yanjius-youshi .title-box .tc{background: #3f9cd4;height:105px;}
+.yanjius-youshi .serve-desc span{font-size: 20px;color:#3f9cd4;display: block;margin:33px 0 25px;}
+.yanjius-youshi .serve-desc p{font-size: 14px;color:#9d9d9d;width:182px;margin:0 auto;}
+.yanjius-youshi .serve-desc .item{width:362px;margin:0 auto;border-right:1px dashed #dfdfdf}
+.yanjius-youshi .serve-desc{margin-top:30px;}
+.yanjius-youshi .serve-desc:last-child .item{border-right:0;}
+.serve-box2{height:212px;overflow: hidden;}
+.serve-box2 .serve-desc2{width:479px;box-sizing: border-box;padding:45px 0 0 76px;}
+.serve-box2 .serve-desc2 span{font-size: 20px;color:#3f9cd4;margin-bottom:25px;display: block;}
+.serve-box2 .serve-desc2 p{font-size: 14px;color:#9d9d9d;line-height: 30px;text-align: left;}
+.serve-box3{height:212px;overflow: hidden;}
+.serve-box3 .serve-desc2{width:498px;box-sizing: border-box;padding:20px 38px 0 0}
+.serve-box3 .serve-desc2 span{font-size: 20px;color:#3f9cd4;margin:25px 0;display: block;}
+.serve-box3 .serve-desc2 p{font-size: 14px;color:#9d9d9d;line-height: 30px;text-align: left;}
+.yanjius-youshi .plane{padding-top:69px;margin-bottom:70px;}
+.yjs-scheme{height:450px;}
+.yjs-scheme .scheme-desc {width:860px;box-sizing: border-box;padding:57px 140px 0 0}
+.yjs-scheme .scheme-desc h3{width:130px;height:42px;background: #3f9cd4;color:#fff;text-align: center;line-height: 42px;border-radius:2px;margin-bottom:20px;}
+.yjs-scheme .scheme-desc p{font-size: 14px;line-height: 27px;color:#6e6e6e;text-align: left;}
+.yjs-scheme .scheme-desc .box02{width:386px}
+.yjs-scheme .scheme-desc .box03{width:252px}
+.yjs-scheme .scheme-desc .box01{margin-bottom:50px}
+.yjs-scheme>h3{font-size: 28px;color:#3c4145;margin:102px 0 45px;}
+.yjs-scheme2>h3{margin-top:176px}
+.yjs-scheme2 .scheme-desc{padding:57px 43px 0 100px}
+/*大学留学*/
+.daxue-speciality>h3{font-size: 28px;color:#3c4145;padding-top: 77px;margin-bottom: 40px;}
+.daxue-speciality>h4{font-size: 14px;color:#6e6e6e;width:782px;margin:0 auto 40px;line-height: 27px;}
+.speciality-list{box-shadow:0 5px 10px rgba(0, 0, 0, 0.7);}
+.speciality-list .item{width:33.3%;box-sizing: border-box;padding:50px 80px;border-right:1px dashed #dfdfdf}
+.speciality-list .item:last-child{border-right:0}
+.speciality-list .item h3,.speciality-list .item h4{width:100%;}
+.speciality-list .item h3{font-size: 18px;color:#009dd9;line-height: 50px;}
+.speciality-list .item h4{font-size: 14px;color:#919191;margin-bottom:20px;}
+.speciality-list .item div{font-size:12px;color:#919191;line-height:24px;}
+.daxue-speciality .lx-wrap{padding-bottom:20px;}
+.daxue-speciality .lx-wrap .img01{left:-8px;top:-5px;}
+.daxue-speciality .lx-wrap .img02{right:-6px;bottom:15px;}
+.daxue-speciality .analies-btn{margin:60px auto 0px; padding-bottom:50px}
+.under-grade-abroad .item .title{font-size: 18px;color:#009dd9;margin-bottom:20px;}
+.under-grade-abroad .item .desc{font-size: 13px;color:#6e6e6e;line-height: 27px;width:195px;margin:0 auto 40px;}
+.under-grade-abroad .item{width:289px;overflow: hidden;height:411px;}
+.under-grade-abroad .item img{margin:45px auto 28px;}
+.under-grade-abroad .item .know-more-btn{width:90px;height:30px;line-height: 30px;text-align: center;font-size: 12px;color:#fff;
+    background-color: #00a5d8;border-radius: 2px;margin:0 auto;}
+.under-grade-abroad .item{box-sizing: border-box;padding:0 15px;margin-right:14px;}
+.under-grade-abroad .item:last-child{margin-right:0}
+.under-grade-abroad{margin-bottom:100px;}
+.student-plan .img{width:1200px;margin:0 auto 80px;}
+.caf-serve .item h3{color:#3b4145;font-size: 18px;margin-bottom:20px;}
+.caf-serve .item h4{color:#6e6e6e;font-size: 14px;line-height: 24px;width:210px;margin:0 auto;}
+.caf-serve .item{box-sizing: border-box;padding:55px 33px 0 33px;height:180px;width:390px;margin:0 15px 15px 0;}
+.caf-serve .item:nth-child(3n){margin-right:0}
+.liuxue-desc .lx-wrap{width:978px;}
+.liuxue-desc .item{width:20%;text-align: center}
+.liuxue-desc .item img{margin-bottom:15px;}
+.liuxue-desc .item p{font-size: 14px;color:#6e6e6e}
+.liuxue-desc .answer-apply{width:200px;line-height: 38px;color:#fff;background-color: #00a5d8;font-size: 16px;margin:0 auto;text-align: center;margin:50px auto 100px;}
+.liuxue-desc{margin-top:20px;}
+.comment-list .fl{width:275px;margin-right:30px;}
+.comment-list .fl:last-child{margin-right:0}
+.comment-list{padding-bottom:60px;}
+/*高中留学*/
+.step-desc  h3{font-size: 22px;color:#313131;margin:40px auto 60px;}
+.step-desc{width:900px;padding:0 45px 0 37px;box-sizing: border-box}
+.step-desc .step-way .fl,.step-desc .step-way .fr{width:389px;}
+.step-desc .step-way h4{font-size: 22px;color:#03c8d5;margin-bottom:26px;}
+.step-desc .step-way .desc{font-size: 18px;color:#6e6e6e;line-height: 30px;}
+.step-desc .step-way .btn{width:170px;height:47px;line-height: 47px;text-align: center;background-color: #03c8d5;color:#fff;border-radius: 2px;margin-top:20px;}
+.step-desc .step-way .fr h4{color:#009dd9;}
+.step-desc .step-way .fr .btn{background-color:#009dd9;}
+.plan-step{padding-bottom:60px;border-bottom:1px solid #dfdfdf}
+.step-desc2{width:605px;margin-left: 37px;}
+.step-desc2 h2{color:#313131;font-size: 22px;margin-bottom:40px;}
+.step-desc2 .step-pie h3{color:#009dd9;font-size: 18px;margin-bottom:5px;}
+.step-desc2 .step-pie p{font-size: 18px;color:#6e6e6e;text-align: left}
+.step-desc2 .step-pie .fl:last-child{margin-left: 37px}
+.step-desc2 .step-pie{margin-bottom:50px;}
+.step-desc2 .list h2{background-color: #009dd9;font-size: 14px;color:#fff;box-sizing: border-box;padding-left:10px;width:160px;height:30px;line-height: 30px;
+    text-align: center;margin-bottom:16px;}
+.step-desc2 .list .item{margin-right: 40px;width:161px;}
+.step-desc2 .list .item:nth-of-type(3n){margin-right:0}
+.step-desc2 .list p{line-height: 24px;color:#6e6e6e;font-size: 14px;}
+.step-desc2 .list .item:nth-child(4),.step-desc2 .list .item:nth-child(5){position: relative;top:-57px;width:158px;}
+.important-choice h4{color:#484848;font-size: 18px;}
+.important-choice h5{color:#a7afc1;font-size: 14px;}
+.important-choice img{margin-bottom:5px;}
+.important-choice .free-choice{width:246px;height:44px;text-align: center;line-height: 44px;margin:40px auto 0;border-radius: 2px;background-color: #03c8d5;color:#fff;}
+.important-choice{width:380px;}
+.step-desc h1{font-size: 14px;line-height: 25px;color:#a7afc1;margin:10px 0 20px;}
+.step-desc .title{font-size: 18px;color:#484848;margin:15px 0 20px;text-align: left}
+.plan-step .free-apply{width:246px;height:44px;text-align: center;line-height: 44px;margin:40px auto 0;border-radius: 2px;background-color: #03c8d5;color:#fff;}
+.plan-step .step-desc .yuyue{color:#a7afc1;font-size: 14px;margin:50px 0;}
+.plan-step .plat-problem .item{font-size: 14px;color:#9d9d9d;line-height: 38px;margin-left: 150px;}
+
+.plan-step .plat-problem .item i{width:5px;height:5px;border-radius: 50%;display: inline-block;background-color: #9d9d9d;margin-right:5px;
+    position: relative;top:-2px;}
+/* 海外留学 */
+.haiwai-tab{width:324px;margin:36px auto;}
+.haiwai-tab .item{border-bottom:2px solid #eaeaea;padding-bottom:27px;width:92px;text-align:center}
+.haiwai-tab .item.active{border-bottom:3px solid #3366cc}
+.liuxue-mudidi{padding-bottom:80px;}
+.liuxue-mudidi li p{width:100%;text-align:center;top:0;left:0;right:0;bottom:0;margin:0;color:#fff;font-size:24px;top:50%}
+.liuxue-mudidi li .hover-desc{display:none;width:100%;height:100%;top:0;left:0}
+.liuxue-mudidi .hover-desc .hover-bg{background:#1c2157;top:0;left:0;width:100%;height:100%;opacity:0.96}
+.liuxue-mudidi .hover-desc .desc{color:#fff;width:442px;left:20%;top:36%}
+.hover-desc .desc h3{color:#fff;font-size:24px;margin-bottom:20px;text-align:center}
+.hover-desc .desc h4{color:#fff;font-size:14px;}
+.hover-desc .know-more{width:100px;height:32px;line-height:32px;color:#fff;font-size:12px;background:#42a4d3;text-align:center;border-radius:2px;margin:50px auto;}
+.liuxue-mudidi li:hover .hover-desc{display:block}
+.liuxue-mudidi li:hover p{display:none;}
+.liuxue-mudidi .hover-desc .desc2{width: 330px;left: 48px;top: 42px;}
+
+
+
+
+

@@ -1,0 +1,343 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>高中筛选</title>
+    <link rel="stylesheet" href="./css/gaozhongshaixuan.css">
+    <link rel="stylesheet" href="css/jquery.range.css">
+    <script src="js/jquery.min.js"></script>
+    <script src="./js/jquery.range.js"></script>
+    <script src="./js/gaozhongshaixuan.js"></script>
+</head>
+<body>
+    <div class="top">
+        <div class="top-logo">
+            <div class="top-logo-l">
+                <img src="images/snaxian.png" alt="">
+            </div>
+            <div class="top-logo-r">
+                <img src="images/logo.png" alt="">
+            </div>
+        </div>
+        <div class="top-left">
+            <input type="text" placeholder="热门搜索">
+            <img src="images/sousuo1.png" alt="">
+            <ul>
+                <li><a href="#">代理商</a></li>
+                <li><a href="#">个人中心</a></li>
+                <li><a href="#">我的收藏</a></li>
+                <li><a href="#">登录</a></li>
+                <li><a href="#">免费注册</a></li>
+            </ul>
+        </div>
+    </div>
+    <div class="top2">
+        <ul>
+            <li><a href="#">首页</a></li>
+            <li><a href="#">学习目的地</a></li>
+            <li><a href="#">海外游学</a></li>
+            <li><a href="#">海外留学</a></li>
+            <li><a href="#">艺术交流</a></li>
+            <li><a href="#">研学旅行</a></li>
+            <li><a href="#">生涯教育</a></li>
+            <li><a href="#">新闻</a></li>
+            <li><a href="#">帮助</a></li>
+            <li><a href="#">关于</a></li>
+        </ul>
+    </div>
+
+    <div class="container guojia">
+        <div class="gx_type">
+              <p class="p1"> <span>所在国家:</span>
+                <a href="?cid=310&s=5" class="a_on">全部</a>   
+                                 <a href="?cid=310&style=701&s=5" >美国</a>
+                                               <a href="?cid=310&style=704&s=5" >英国</a>
+                                               <a href="?cid=310&style=705&s=5" >澳大利亚</a>
+                                          </p>
+              
+            <p class="p1"> <span>所在地区:</span>
+                <a href="?cid=310&s=5" class="a_on">全部</a>   
+                                 <a href="?cid=310&age=702&s=5" >加利福尼亚CA</a>
+                                               <a href="?cid=310&age=703&s=5" >宾夕法尼亚州PA</a>
+                                               <a href="?cid=310&age=719&s=5" >华盛顿州WA</a>
+                                               <a href="?cid=310&age=703&s=5" >宾夕法尼亚州PA</a>
+                                               <a href="?cid=310&age=719&s=5" >华盛顿州WA</a>
+                                          </p>
+            
+              <p class="p1"> <span>学校类型:</span>
+                <a href="?cid=310&s=5" class="a_on">全部</a>   
+                                 <a href="?cid=310&styles=706&s=5" >公立高中</a>
+                                               <a href="?cid=310&styles=707&s=5" >寄宿高中</a>
+                                               <a href="?cid=310&styles=708&s=5" >走读高中</a>
+                                               <a href="?cid=310&styles=709&s=5" >初中</a>
+                                               <a href="?cid=310&styles=709&s=5" >小学</a>
+                                          </p>
+              <p><span>学校属性:</span>
+                <a href="?cid=310&s=5" class="a_on">全部</a>  
+                                               <a href="?cid=310&scxz=716&s=5" >混校<input type="checkbox" name="" id="" style="vertical-align:middle"></a>
+                                               <a href="?cid=310&scxz=716&s=5" >男校<input type="checkbox" name="" id="" style="vertical-align:middle"></a>
+                                               <a href="?cid=310&scxz=716&s=5" >女校<input type="checkbox" name="" id="" style="vertical-align:middle"></a>
+                                               <a href="?cid=310&scxz=716&s=5" >高中<input type="checkbox" name="" id="" style="vertical-align:middle"></a>
+                                               <a href="?cid=310&scxz=716&s=5" >初中<input type="checkbox" name="" id="" style="vertical-align:middle"></a>
+                                               <a href="?cid=310&scxz=716&s=5" >小学<input type="checkbox" name="" id="" style="vertical-align:middle"></a>
+                                          </p>
+              <p class="p1"><span class="lastSpan">基本学费:</span>
+                <a href="?cid=310&s=5" class="a_on">全部</a>   
+                                 <a href="?cid=310&zyfx=710&s=5" >$0-$5,000</a>
+                                               <a href="?cid=310&zyfx=711&s=5" >$5,001-$10,000</a>
+                                               <a href="?cid=310&zyfx=712&s=5" >$10,001-$15,000</a>
+                                               <a href="?cid=310&zyfx=713&s=5" >$15,001-$20,000</a>
+                                               <a href="?cid=310&zyfx=714&s=5" >$20,001-$30,000</a>
+                                               <a href="?cid=310&zyfx=713&s=5" >$30,001-$40,000</a>
+                                               <a href="?cid=310&zyfx=714&s=5" >$40,000以上</a>
+                                          </p>
+           </div>    
+    </div>
+
+    <div class="xinxi container">
+        <div class="zongjiao">
+               <ul>
+                   <li>
+                       <p>宗教氛围</p>
+                       <select name="" id="set1">
+                           <option value="">--请选择宗教--</option>
+                       </select>
+                    </li>
+                   <li>
+                       <p>基本学费: $11,000 - $100,000+</p>
+                       <div class="demo">
+                            <input class="range-slider" type="hidden" value="25,75"/>
+                            <!-- <button id="g2">获取值</button> -->
+                        </div>
+                    </li>
+                   <li>
+                       <p>在校人数: 0 - 1,000+</p>
+                       <div class="demo">
+                        <input class="range-slider" type="hidden" value="25,75"/>
+                        <!-- <button id="g2">获取值</button> -->
+                        </div>
+                    </li>
+                   <li>
+                       <p>国际生比例: 0 - 100%</p>
+                       <div class="demo">
+                        <input class="range-slider" type="hidden" value="25,75"/>
+                        <!-- <button id="g2">获取值</button> -->
+                        </div>
+                    </li>
+                   <li>
+                       <p>新SAT成绩: 0 - 1,600</p>
+                       <div class="demo">
+                        <input class="range-slider" type="hidden" value="25,75"/>
+                        <!-- <button id="g2">获取值</button> -->
+                        </div>
+                    </li>
+                   <li>
+                       <p>AP数量: 0 - 40+</p>
+                       <div class="demo">
+                        <input class="range-slider" type="hidden" value="25,75"/>
+                        <!-- <button id="g2">获取值</button> -->
+                        </div>
+                    </li>
+               </ul>     
+        </div> 
+        <div class="xuexiao">
+            <ul>
+                <li>
+                    <div class="dv01">
+                        <span>#1  2018年FS寄宿学校评级: A+</span>
+                        <span><img src="images/pf.png" alt="">  5.0</span>
+                    </div>
+                    <div class="dv02">
+                        <span>菲利普斯学校安多佛 </span>　
+                        <span>Phillips Academy Andover </span>
+                    </div>
+                    <div class="dv03">
+                        <ul>
+                            <li>马萨诸塞州</li>
+                            <li><img src="images/js.png" alt=""> 寄宿：9-12,PG</li>
+                            <li><img src="images/hx.png" alt=""> 类型：混校</li>
+                            <li><img src="images/rs.png" alt=""> 人数：1143</li>
+                            <li>加入对比</li>
+                        </ul>
+                    </div>
+                </li>
+                <li>
+                    <div class="dv01">
+                        <span>#1  2018年FS寄宿学校评级: A+</span>
+                        <span><img src="images/pf.png" alt="">  5.0</span>
+                    </div>
+                    <div class="dv02">
+                        <span>菲利普斯学校安多佛 </span>　
+                        <span>Phillips Academy Andover </span>
+                    </div>
+                    <div class="dv03">
+                        <ul>
+                            <li>马萨诸塞州</li>
+                            <li><img src="images/js.png" alt=""> 寄宿：9-12,PG</li>
+                            <li><img src="images/hx.png" alt=""> 类型：混校</li>
+                            <li><img src="images/rs.png" alt=""> 人数：1143</li>
+                            <li>加入对比</li>
+                        </ul>
+                    </div>
+                </li>
+                <li>
+                    <div class="dv01">
+                        <span>#1  2018年FS寄宿学校评级: A+</span>
+                        <span><img src="images/pf.png" alt="">  5.0</span>
+                    </div>
+                    <div class="dv02">
+                        <span>菲利普斯学校安多佛 </span>　
+                        <span>Phillips Academy Andover </span>
+                    </div>
+                    <div class="dv03">
+                        <ul>
+                            <li>马萨诸塞州</li>
+                            <li><img src="images/js.png" alt=""> 寄宿：9-12,PG</li>
+                            <li><img src="images/hx.png" alt=""> 类型：混校</li>
+                            <li><img src="images/rs.png" alt=""> 人数：1143</li>
+                            <li>加入对比</li>
+                        </ul>
+                    </div>
+                </li>
+                <li>
+                    <div class="dv01">
+                        <span>#1  2018年FS寄宿学校评级: A+</span>
+                        <span><img src="images/pf.png" alt="">  5.0</span>
+                    </div>
+                    <div class="dv02">
+                        <span>菲利普斯学校安多佛 </span>　
+                        <span>Phillips Academy Andover </span>
+                    </div>
+                    <div class="dv03">
+                        <ul>
+                            <li>马萨诸塞州</li>
+                            <li><img src="images/js.png" alt=""> 寄宿：9-12,PG</li>
+                            <li><img src="images/hx.png" alt=""> 类型：混校</li>
+                            <li><img src="images/rs.png" alt=""> 人数：1143</li>
+                            <li>加入对比</li>
+                        </ul>
+                    </div>
+                </li>
+                <li>
+                    <div class="dv01">
+                        <span>#1  2018年FS寄宿学校评级: A+</span>
+                        <span><img src="images/pf.png" alt="">  5.0</span>
+                    </div>
+                    <div class="dv02">
+                        <span>菲利普斯学校安多佛 </span>　
+                        <span>Phillips Academy Andover </span>
+                    </div>
+                    <div class="dv03">
+                        <ul>
+                            <li>马萨诸塞州</li>
+                            <li><img src="images/js.png" alt=""> 寄宿：9-12,PG</li>
+                            <li><img src="images/hx.png" alt=""> 类型：混校</li>
+                            <li><img src="images/rs.png" alt=""> 人数：1143</li>
+                            <li>加入对比</li>
+                        </ul>
+                    </div>
+                </li>
+                <li>
+                    <div class="dv01">
+                        <span>#1  2018年FS寄宿学校评级: A+</span>
+                        <span><img src="images/pf.png" alt="">  5.0</span>
+                    </div>
+                    <div class="dv02">
+                        <span>菲利普斯学校安多佛 </span>　
+                        <span>Phillips Academy Andover </span>
+                    </div>
+                    <div class="dv03">
+                        <ul>
+                            <li>马萨诸塞州</li>
+                            <li><img src="images/js.png" alt=""> 寄宿：9-12,PG</li>
+                            <li><img src="images/hx.png" alt=""> 类型：混校</li>
+                            <li><img src="images/rs.png" alt=""> 人数：1143</li>
+                            <li>加入对比</li>
+                        </ul>
+                    </div>
+                </li>
+            </ul>
+        </div>   
+    </div>  
+
+    <div class="footer">
+        <div class="container">
+           <div class="footer-t">
+                <dl>
+                        <dt>新闻</dt>
+                        <dd>公司动态</dd>
+                        <dd>行业资讯</dd>
+                        <dd>最新活动</dd>
+                        <dd>游学资讯</dd>
+                        <dd>海外教育</dd>
+                        <dd>成功案例</dd>
+                        <dd>精彩专题</dd>
+                    </dl>
+                    <dl>
+                        <dt>帮助</dt>
+                        <dd>游学须知</dd>
+                        <dd>签证办理</dd>
+                        <dd>留学须知</dd>
+                        <dd>住宿问题</dd>
+                        <dd>安全问题</dd>
+                    </dl>
+                    <dl>
+                        <dt>代理商</dt>
+                        <dd>加入我们</dd>
+                        <dd>全球营地</dd>
+                    </dl>
+                    <dl>
+                        <dt>关于</dt>
+                        <dd>公司简介</dd>
+                        <dd>公告通知</dd>
+                        <dd>管理团队</dd>
+                        <dd>加入我们</dd>
+                        <dd>未来展望</dd>
+                    </dl>
+                    <dl>
+                        <dt>关注</dt>
+                        <dd>官方微博</dd>
+                        <dd>西奥夫留学</dd>
+                        <dd><img src="images/xafxcx.png" alt=""></dd>
+                        <dd>西奥夫小程序</dd>
+                        <dd>艺术留学</dd>
+                    </dl>
+                    <dl>
+                        <dt>联系方式</dt>
+                        <dd>西奥夫海外学院</dd>
+                        <dd>资讯热线：400-596615151</dd>
+                        <dd>邮箱：wang.zhen@cioffchina.com</dd>
+                        <dd>地址：广东省深圳市福田区华强广场酒店A座18E</dd>
+                    </dl>
+           </div>
+           <div class="footer-c">
+               <ul>
+                   <li>友情链接：</li>
+                   <li><a href="#">广州旅行社</a></li>
+                   <li><a href="#">携程旅行</a></li>
+                   <li><a href="#">走遍欧洲</a></li>
+                   <li><a href="#">出境游</a></li>
+                   <li><a href="#">途牛网</a></li>
+                   <li><a href="#">大自驾网</a></li>
+                   <li><a href="#">民航在线</a></li>
+                   <li><a href="#">途家民宿短租</a></li>
+                   <li><a href="#">加盟网</a></li>
+                   <li><a href="#">墙根网</a></li>
+                   <li><a href="#">众信旅游境外游</a></li>
+               </ul>
+           </div>
+        </div>
+        <div class="footer-1">
+            <div class="container">
+                <div class="logo">
+                    <img src="images/logo.png" alt="">
+                    <p>西奥夫海外教育 ToursForFun.com不对文字错误引起的不便负任何责任，文字错误都会及时更正。网站内在线旅游产品报价和行程有可能会有更改变动，不做另行通知。 
+                            CST# 2096846-40 ©2006-2018 ToursForFun.com, 拥有最终解释权。 蜀ICP备10200285号  川B2-20150113 版权信息  隐私条例  网站地图 </p>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

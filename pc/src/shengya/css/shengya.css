@@ -1,0 +1,19 @@
+.shengya01 .item{width:382px;height: 282px;margin-right:19px;}
+.shengya01 .item:nth-of-type(3n){margin-right:0}
+/*关于我们*/
+.about-header{margin:100px 0}
+.about-header .item{line-height: 50px;margin-right:52px;color:#6E6E6E;font-size: 16px;}
+.about-desc p{line-height: 30px;font-size: 14px;color:#6E6E6E;text-align: left}
+.about-header .header{margin-bottom:80px;}
+.about-header .header .item.active,.about-header .header .item:hover{border-bottom:2px solid #0F205C;color:#0F205C}
+
+
+
+
+
+
+
+
+
+
+

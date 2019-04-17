@@ -1,0 +1,41 @@
+.box{padding:0px; width:2000px;}
+.box ul{margin:0px; padding:0px; list-style:none;border: 0;}
+.box ul li{ margin: 0px 2px 0px 0px; padding: 0px; width: 141px; height: 45px; display: block; border-radius: 0px; border: 0;
+    /*background-color: #F3F3F3;*/
+}
+.box ul li:hover ul{display:block;}
+.box ul li a{ width:200px; height:45px; line-height:45px; display:block;
+    text-decoration:none;background-color: rgba(9,12,48,0.1);color:#fff;
+    box-sizing: border-box;overflow: hidden;padding:0px 10px;}
+.box ul li a:hover{color:#007db3;}
+.box ul li ul{display:none;position:relative; top:-45px; left:200px;}
+.box ul li ul li{margin:0px 0px 0px 0px; padding:0px;
+    /*background-color:#FFFFFF;*/
+}
+/*.sech{background-color:pink;}*/
+/*.box ul li ul li:hover{background:pink;}*/
+.box ul li ul li:hover>ul{visibility:visible;}
+.box ul li ul li ul{visibility:hidden; position:relative; top:-45px; left:200px;}
+.box ul li ul li ul li{background:#FFFFFF;}
+/*.box ul li ul li ul li:hover{background:#AFEEEE;}*/
+/*add*/
+.box ul li ul li ul li ul{visibility:hidden; position:relative; top:-45px; left:200px;}
+/*.thirdh{background-color: #1E90FF;}*/
+.box .icon-right{width:16px;height:16px;margin-top:13px}
+
+.box .ul-bg{background-color: rgba(16,19,49,0.972549); width:230px;height:100%;left:200px;top:0;display: none;}
+.box .ul-bg ul{
+    top:0px;
+    position: absolute;
+    left:0;
+    display: none;
+}
+.box ul li:hover>.ul-bg{
+    display: block;
+}
+.box ul li ul li a{
+    background-color: rgba(9,12,48,0.1) ;
+}
+.box ul li ul{
+    margin-left: 10px;
+}

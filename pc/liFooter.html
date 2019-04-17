@@ -1,0 +1,137 @@
+<div class="footer">
+    <div class="container">
+        <div class="footer-t">
+            <dl>
+                <dt>新闻</dt>
+                <dd><a href="/pc/news/news.html">公司动态</a></dd>
+                <dd><a href="/pc/news/news.html">行业资讯</a></dd>
+                <dd><a href="/pc/news/news.html">最新活动</a></dd>
+                <dd><a href="/pc/news/news.html">游学资讯</a></dd>
+                <dd><a href="/pc/news/news.html">海外教育</a></dd>
+                <dd><a href="/pc/news/news.html">成功案例</a></dd>
+                <dd><a href="/pc/news/news.html">精彩专题</a></dd>
+            </dl>
+            <dl>
+                <dt>帮助</dt>
+                <dd><a href="/pc/news/help.html">游学须知</a></dd>
+                <dd><a href="/pc/news/help.html">签证办理</a></dd>
+                <dd><a href="/pc/news/help.html">留学须知</a></dd>
+                <dd><a href="/pc/news/help.html">住宿问题</a></dd>
+                <dd><a href="/pc/news/help.html">安全问题</a></dd>
+            </dl>
+            <dl>
+                <dt>代理商</dt>
+                <dd><a href="/pc/src/代理商/dailishang.html">加入我们</a></dd>
+                <dd><a href="/pc/src/代理商/dailishang.html">全球营地</a></dd>
+            </dl>
+            <dl>
+                <dt>关于</dt>
+                <dd><a href="/pc/src/shengya/about.html">公司简介</a></dd>
+                <dd><a href="/pc/src/shengya/about.html">公告通知</a></dd>
+                <dd><a href="/pc/src/shengya/about.html">管理团队</a></dd>
+                <dd><a href="/pc/src/shengya/about.html">加入我们</a></dd>
+                <dd><a href="/pc/src/shengya/about.html">未来展望</a></dd>
+            </dl>
+            <dl class="notice">
+                <dt>关注</dt>
+				<div>
+					<dd>官方微博</dd>
+					<dd class="img"><img src="images/xafxcx.png" alt=""></dd>
+				</div>
+				<div>
+					<dd>西奥夫留学</dd>
+					<dd class="undis img"><img src="images/xafxcx.png" alt=""></dd>
+				</div>
+                <div>
+					<dd>西奥夫小程序</dd>
+					<dd class="undis img"><img src="images/xafxcx.png" alt=""></dd>
+				</div>
+                <div>
+					<dd>艺术留学</dd>
+					<dd class="undis img"><img src="images/xafxcx.png" alt=""></dd>
+				</div>
+            </dl>
+            <dl>
+                <dt>联系方式</dt>
+                <dd>西奥夫海外学院</dd>
+                <dd>资讯热线：400-596615151</dd>
+                <dd>邮箱：wang.zhen@cioffchina.com</dd>
+                <dd>地址：广东省深圳市福田区华强广场酒店A座18E</dd>
+            </dl>
+        </div>
+        <div class="footer-c">
+            <ul>
+                <li>友情链接：</li>
+                <li><a href="#">广州旅行社</a></li>
+                <li><a href="#">携程旅行</a></li>
+                <li><a href="#">走遍欧洲</a></li>
+                <li><a href="#">出境游</a></li>
+                <li><a href="#">途牛网</a></li>
+                <li><a href="#">大自驾网</a></li>
+                <li><a href="#">民航在线</a></li>
+                <li><a href="#">途家民宿短租</a></li>
+                <li><a href="#">加盟网</a></li>
+                <li><a href="#">墙根网</a></li>
+                <li><a href="#">众信旅游境外游</a></li>
+            </ul>
+        </div>
+    </div>
+    <div class="footer-1">
+        <div class="container">
+            <div class="logo">
+                <img src="images/logo.png" alt="">
+                <p>西奥夫海外教育 ToursForFun.com不对文字错误引起的不便负任何责任，文字错误都会及时更正。网站内在线旅游产品报价和行程有可能会有更改变动，不做另行通知。 CST# 2096846-40 ©2006-2018 ToursForFun.com, 拥有最终解释权。 蜀ICP备10200285号 川B2-20150113 版权信息 隐私条例 网站地图 </p>
+            </div>
+        </div>
+    </div>
+</div>
+<script>
+    //侧边框
+    $("#left-panel-link").mouseover(function () {
+        $("#left-panel").addClass("animated fadeInLeftBig");
+        $("#left-panel").css("display","block");
+
+    });
+    $("#left-panel-link").mouseout(function () {
+        $("#left-panel").removeClass("fadeInLeftBig");
+        $("#left-panel").mouseover(function () {
+            $(this).css("display","block")
+        });
+        $("#left-panel").mouseout(function () {
+            $(this).css("display","none")
+        })
+    });
+    $(".box ul li a").mouseover(function () {
+        $(this).find("img").attr("src","/pc/images/iconRightBlue.png");
+    });
+    $(".box ul li a").mouseout(function () {
+        $(this).find("img").attr("src","/pc/images/iconRight.png");
+    });
+    //search
+    $(".icon-top-search").click(function () {
+        $(this).hide();
+        $(this).siblings(".search").show(1000);
+    });
+    $(".search img").click(function () {
+        $(this).parent().hide(1000);
+        $(this).parent().siblings(".icon-top-search").show();
+    });
+    //登录
+    $(".login-desc .login-header span").click(function () {
+        $(this).addClass("on").siblings().removeClass("on");
+        var len=$(this).length;
+        var index=$(this).index()+1;
+        // alert(index);
+        $(".login-box .desc").addClass("undis");
+        $(".login-box .desc0"+index).removeClass("undis");
+    });
+	//底部仿阿里云效果
+	$(".notice div").mouseover(function(){
+		$(this).find(".img").show();
+		$(this).siblings("div").find(".img").hide();
+	})
+	
+	
+	
+	
+</script>

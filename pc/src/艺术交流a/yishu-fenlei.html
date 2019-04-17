@@ -1,0 +1,392 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>艺术-分类筛选</title>
+    <link rel="stylesheet" href="./css/yishu-fenlei.css">
+    <link rel="stylesheet" href="../../leftHover/animate.css">
+    <link rel="stylesheet" href="../../imgHover/translateelement.css">
+
+    <link rel="stylesheet" href="../../css/mainLi.css">
+    <link rel="stylesheet" href="../../leftHover/leftTree.css">
+    <style>
+        .operateInfo span{
+            font-size: 20px !important;
+            line-height: 30px;
+        }
+		.layui-layer-page .layui-layer-content{
+			box-sizing: border-box;
+			padding: 20px;
+		}
+		.operateInfo .danwei{
+			display:inline-block;
+			font-style:normal;
+			font-size:13px;
+			color:#9d9d9d;
+			position:relative;
+			top:5px;
+			margin-left:5px
+		}
+    </style>
+</head>
+
+<body>
+    <div class="liHeader"></div>
+    <div class="swiper-container">
+        <div class="swiper-wrapper">
+        </div>
+    </div>
+
+    <div class="container guojia" style="margin-top:40px;">
+        <div class="gx_type">
+            <p class="p1" id="p1"></p>
+            <p class="p1" id="p2"></p>
+            <p class="p1" id="p3"></p>
+            <p class="p1" id="p4"></p>
+        </div>
+    </div>
+
+    <div class="container xiangqing">
+        <div class="xiangqing-l">
+            <ul id="xiangqing-ul">
+            </ul>
+
+            <div class="navButtom"></div>
+        </div>
+		<div class="xiangqing-r">
+            <div class="div01">
+                <p><span></span><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">关注官方微信了解更多</font></font></p>
+                <img src="./images/xafxcx.png" alt="">
+                <div class="div01-1"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">官方二维码</font></font></div>
+            </div>
+            <div class="div02">
+                <h2><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">热门游学</font></font></h2>
+                <ul class="youxue">
+					<a class="disBlock" href="./youxue-xiangqing.html?id=977"><li>
+						<img src="http://47.107.191.81:8080/download/file/STUDY_TOUR_DETAIL/ed5d108d-0975-49fa-9651-4e68bf907ca2.jpg" alt="">
+						<p><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">世界顶尖名校系列之英国帝国理工学院语言提升营</font></font></p>
+					</li></a>
+				
+					<a class="disBlock" href="./youxue-xiangqing.html?id=960"><li>
+						<img src="http://47.107.191.81:8080/download/file/STUDY_TOUR_DETAIL/ab6adf2a-0f3b-4b92-9d85-8d8c1ddc80cc.jpg" alt="">
+						<p><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">英国布莱顿中学夏令营</font></font></p>
+					</li></a>
+				
+					<a class="disBlock" href="./youxue-xiangqing.html?id=943"><li>
+						<img src="http://47.107.191.81:8080/download/file/STUDY_TOUR_DETAIL/96990379-2330-40cb-821d-9904147e029b.jpg" alt="">
+						<p><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">英国奥克汉姆中学夏令营</font></font></p>
+					</li></a>
+				
+					<a class="disBlock" href="./youxue-xiangqing.html?id=916"><li>
+						<img src="http://47.107.191.81:8080/download/file/STUDY_TOUR_DETAIL/66d477ce-41e4-4377-8801-8f445d88d310.jpg" alt="">
+						<p><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">新加坡+马来西亚“小科学家” STEM趣味双语营</font></font></p>
+					</li></a>
+				
+					<a class="disBlock" href="./youxue-xiangqing.html?id=929"><li>
+						<img src="http://47.107.191.81:8080/download/file/STUDY_TOUR_DETAIL/9f9e1509-c63a-4087-a60e-c5963c76f74d.jpg" alt="">
+						<p><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">新马泰国际游学夏令营</font></font></p>
+					</li></a>
+				</ul>
+            </div>
+
+        </div>
+    </div>
+	<!--底部  start-->
+    <div class="liFooter"></div>
+    <!--底部  end-->
+	
+	<!-- 预约报名 弹出框 -->
+	<div class="yuyue-tan undis">
+		<div class="tan-ct">
+			<div class="tan-header overflow">
+				<div class="fl">
+					<img src="./images/logoSmall.png" class="img-logo pr"/>  |  <span>预约报名</span>
+				</div>
+				<img src="./images/iconClose.png" class="img-close fr pr"/>
+			</div>
+			<div class="tan-body bg-white">
+				<div class="small-box overflow">
+					<div class="title fl"><span>*</span>姓名</div>
+					<input type="text" placeholder="您的称呼" class="input fl"/>
+				</div>
+				<div class="small-box overflow">
+					<div class="title fl"><span>*</span>联系电话</div>
+					<input type="text" placeholder="请写下您的联系方式" class="input fl"/>
+				</div>
+				<div class="small-box overflow">
+					<div class="title fl"><span>*</span>咨询问题</div>
+					<textarea rows="3" cols="20" placeholder="需要咨询的内容" class="input fl" style="height:auto;"></textarea>
+				</div>
+				<a class="button disBlock" href="javascript:;">发送</a>
+			</div>
+		</div>
+	</div>
+
+    <script src="../../js/jquery.min.js"></script>
+<script>
+    $(function(){
+        $(".liHeader").load("../../liHeader.html");
+        $(".liFooter").load("../../liFooter.html");
+    })
+    //侧边框
+    $("#left-panel-link").mouseover(function () {
+        $("#left-panel").addClass("animated fadeInLeftBig");
+        $("#left-panel").css("display","block");
+
+    });
+    $("#left-panel-link").mouseout(function () {
+        $("#left-panel").removeClass("fadeInLeftBig");
+        $("#left-panel").mouseover(function () {
+            $(this).css("display","block")
+        });
+        $("#left-panel").mouseout(function () {
+            $(this).css("display","none")
+        })
+    });
+    $(".box ul li a").mouseover(function () {
+        $(this).find("img").attr("src","/studyAbordPc/images/iconRightBlue.png");
+    });
+    $(".box ul li a").mouseout(function () {
+        $(this).find("img").attr("src","/studyAbordPc/images/iconRight.png");
+    });
+    //search
+    $(".icon-top-search").click(function () {
+        $(this).hide();
+        $(this).siblings(".search").show(1000);
+    });
+    $(".search img").click(function () {
+        $(this).parent().hide(1000);
+        $(this).parent().siblings(".icon-top-search").show();
+    });
+</script>
+    <!--<script src="../../imgHover/jquery1.42.min.js"></script>-->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Swiper/4.0.2/css/swiper.min.css">
+	<link rel="stylesheet" href="../../layer/theme/default/layer.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Swiper/4.0.2/js/swiper.min.js"></script>
+    <script src="../../js/SimplePagination.js"></script>
+    <script src="../../js/template-web.js"></script>
+    <script src="./js/yishu-fenlei.js"></script>
+	<script src="../../layer/layer.js"></script>
+    <script type="text/html" id="banner">
+        {{set a = 'http://47.107.191.81:8080'}} {{each date}}
+        <div class="swiper-slide">
+            <img src="{{a}}{{$value.filePath}}" alt="">
+            <div class="banner-r">
+                <p>艺术的发现,不仅仅止步眼前</p>
+                <p>一次美好的艺术留学，应该是有温度的。<br> 艺术，来自不一样的风景，来自陪伴或遇见的人，来自游学中发生的故事。
+                    <br> 当然，也来自我们西奥夫为你悉心安排的每一个细节中。
+                </p>
+            </div>
+        </div>
+        {{/each}}
+    </script>
+
+
+    <script type="text/html" id="artType">
+        <span>艺术类型:</span>
+		<div class="li-data">
+			<em code="">全部</em> {{each date}}
+			<em code="{{$value.code}}">{{$value.name}}</em> {{/each}}
+		</div>
+    </script>
+    <script type="text/html" id="countryType">
+        <span style="top:-50px;position:relative;">出行国家:</span>
+		<div class="li-data">
+			<em code="">全部</em> {{each date}}
+			<em code="{{$value.code}}">{{$value.name}}</em> {{/each}}
+		</div>
+        
+    </script>
+    <script type="text/html" id="suitableAge">
+        <span>适龄年龄:</span>
+		<div class="li-data">
+			<em code="">全部</em> {{each date}}
+			<em code="{{$value.code}}">{{$value.name}}</em> {{/each}}
+		</div>
+    </script>
+    <script type="text/html" id="joinType">
+        <span>参加类型:</span>
+		<div class="li-data">
+			<em code="">全部</em> {{each date}}
+			<em code="{{$value.code}}">{{$value.name}}</em> {{/each}}
+		</div>
+    </script>
+    <script type="text/html" id="filterList">
+        {{set a="http://47.107.191.81:8080"}}
+        {{if data[0]}}
+        <li class="item artItem" onclick="window.location.href='./yishu-xiangqing.html?id={{data[0]&&data[0].id}}'">
+            <a >
+                    {{if data[0]&&data[0].tags}}
+                <span>{{data[0].tags}}</span>
+                {{/if}}
+                <% if (data[0].banners.length) { %>
+                <img src="{{a}}<%= data[0].banners[0].filePath %>" alt="">
+                <% }else{ %>
+                <img src="./艺术交流a/筛选页面/1.jpg" alt="">
+                <% } %>
+                {{if data[0]&&data[0].title}}
+                <h3>{{data[0].title}}</h3>
+                {{else}}
+                <h3>无</h3>
+                {{/if}}
+            </a>
+            <div class="artItemRight">
+                {{if data[0]&&data[0].title}}
+                <h1>{{data[0].title}}</h1>
+                {{/if}}
+                <div class="icon">
+                    <img src="./images/country.png" alt="" srcset="" /> {{if data[0]&&data[0].country=="UK"}}
+                    <span>国家：英国</span> {{else if data[0]&&data[0].country=="CA"}}
+                    <span>国家：加拿大</span> {{else if data[0]&&data[0].country=="US"}}
+                    <span>国家：美国</span> {{else if data[0]&&data[0].country=="EU"}}
+                    <span>国家：欧洲</span> {{else if data[0]&&data[0].country=="JP"}}
+                    <span>国家：日本</span> {{else if data[0]&&data[0].country=="RU"}}
+                    <span>国家：俄罗斯</span> {{else if data[0]&&data[0].country=="FR"}}
+                    <span>国家：法国</span> {{else if data[0]&&data[0].country=="AU"}}
+                    <span>国家：澳大利亚</span> {{else if data[0]&&data[0].country=="DE"}}
+                    <span>国家：德国</span>{{else if data[0]&&data[0].country=="FE"}}
+                    <span>国家：芬兰</span>{{else if data[0]&&data[0].country=="SG"}}
+                    <span>国家：新加坡</span>{{else if data[0]&&data[0].country=="TH"}}
+                    <span>国家：泰国</span>{{else}}
+                    <span>国家：全球</span>{{/if}}
+                </div>
+                <div class="icon">
+                    <img src="./images/dayTime.png" alt="" srcset=""> {{if data[0]&&data[0].days}}
+                    <span>天数：{{data[0].days}}天</span> {{else}}
+                    <span>天数：0天</span> {{/if}}
+
+                </div>
+                <div class="icon">
+                    <img src="./images/perNum.png" alt="" srcset=""> {{if data[0]&&data[0].persons}}
+                    <span>人数：{{data[0].persons||0}}</span> {{else}}
+                    <span>人数：0</span> {{/if}}
+
+                </div>
+                <div class="icon">
+                    <img src="./images/grade.png" alt="" srcset=""> {{if data[0]&&data[0].age=="1"}}
+                    <span>年级：幼儿</span> {{else if data[0]&&data[0].age=="2"}}
+                    <span>年级：小学生</span> {{else if data[0]&&data[0].age=="3"}}
+                    <span>年级：初中生</span>{{else if data[0]&&data[0].age=="4"}}
+                    <span>年级：高中生</span>{{else if data[0]&&data[0].age=="5"}}
+                    <span>年级：大学生</span>{{else if data[0]&&data[0].age=="6"}}
+                    <span>年级：成人</span>{{else}}
+                    <span>年级：社会</span>{{/if}}
+                </div>
+                <div class="icon">
+                    <img src="./images/playType.png" alt="" srcset="" />{{if data[0]&&data[0].joinType=="1"}}
+                    <span>表演类型：演唱、合唱</span>{{else if data[0]&&data[0].age=="2"}}
+                    <span>表演类型：舞蹈</span>{{else if data[0]&&data[0].age=="3"}}
+                    <span>表演类型：乐器演奏</span>{{else if data[0]&&data[0].age=="4"}}
+                    <span>表演类型：才艺展示</span>{{else if data[0]&&data[0].age=="5"}}
+                    <span>表演类型：传统游戏</span>{{else if data[0]&&data[0].age=="6"}}
+                    <span>表演类型：展览会</span>{{else}}
+                    <span>表演类型：无</span> {{/if}}
+                </div>
+                <div class="operateInfo">
+                    <span>¥3688</span><i class="danwei">元/人</i>
+                    <a href="./yishu-xiangqing.html?id={{data[0]&&data[0].id}}">查看详情</a>
+                    <a href="javascript:;" class="yuyue-btn" onclick="yuyue(this)">预约报名</a>
+                </div>
+                <!--<img src="./images/hot.png" alt="" srcset="">-->
+            </div>
+        </li>
+        {{/if}}
+
+        <% for(var i =1; i < data.length; i++){ %>
+            <% if (data[i]) { %>
+        <li class="item artItem" onclick="window.location.href='./yishu-xiangqing.html?id={{data[0]&&data[0].id}}'">
+                    <a >
+                        <span><%= data[i].tags%></span>
+						<% if (data[i].banners) { %>
+							<img src="{{a}}<%= data[i].banners[0].filePath %>" alt="">
+						<% }else{ %>
+							<img src="./艺术交流a/筛选页面/1.jpg" alt="">
+						<% } %>
+                        
+                        <h3>
+                            <%= data[i].title%>
+                        </h3>
+                        <% if (data[i].isHot==1) { %>
+                            <!--<img src="./images/hot.png" alt="" srcset="">-->
+                            <% } %>
+                    </a>
+                    <div class="artItemRight">
+                        {{if data[i]&&data[i].title}}
+                        <h1>{{data[i].title}}</h1>
+                        {{/if}}
+                        <div class="icon">
+                            <img src="./images/country.png" alt="" srcset="" /> {{if data[i]&&data[i].country=="UK"}}
+                            <span>国家：英国</span> {{else if data[i]&&data[i].country=="CA"}}
+                            <span>国家：加拿大</span> {{else if data[i]&&data[i].country=="US"}}
+                            <span>国家：美国</span> {{else if data[i]&&data[i].country=="EU"}}
+                            <span>国家：欧洲</span> {{else if data[i]&&data[i].country=="JP"}}
+                            <span>国家：日本</span> {{else if data[i]&&data[i].country=="RU"}}
+                            <span>国家：俄罗斯</span> {{else if data[i]&&data[i].country=="FR"}}
+                            <span>国家：法国</span> {{else if data[i]&&data[i].country=="AU"}}
+                            <span>国家：澳大利亚</span> {{else if data[i]&&data[i].country=="DE"}}
+                            <span>国家：德国</span>{{else if data[i]&&data[i].country=="FE"}}
+                            <span>国家：芬兰</span>{{else if data[i]&&data[i].country=="SG"}}
+                            <span>国家：新加坡</span>{{else if data[i]&&data[i].country=="TH"}}
+                            <span>国家：泰国</span>{{else}}
+                            <span>国家：全球</span>{{/if}}
+                        </div>
+                        <div class="icon">
+                            <img src="./images/dayTime.png" alt="" srcset=""> {{if data[i]&&data[i].days}}
+                            <span>天数：{{data[i].days}}天</span> {{else}}
+                            <span>天数：0天</span> {{/if}}
+
+                        </div>
+                        <div class="icon">
+                            <img src="./images/perNum.png" alt="" srcset=""> {{if data[i]&&data[i].persons}}
+                            <span>人数：{{data[i].persons||0}}</span> {{else}}
+                            <span>人数：0</span> {{/if}}
+
+                        </div>
+                        <div class="icon">
+                            <img src="./images/grade.png" alt="" srcset=""> {{if data[i]&&data[i].age=="1"}}
+                            <span>年级：幼儿</span> {{else if data[i]&&data[i].age=="2"}}
+                            <span>年级：小学生</span> {{else if data[i]&&data[i].age=="3"}}
+                            <span>年级：初中生</span>{{else if data[i]&&data[i].age=="4"}}
+                            <span>年级：高中生</span>{{else if data[i]&&data[i].age=="5"}}
+                            <span>年级：大学生</span>{{else if data[i]&&data[i].age=="6"}}
+                            <span>年级：成人</span>{{else}}
+                            <span>年级：社会</span>{{/if}}
+                        </div>
+                        <div class="icon">
+                            <img src="./images/playType.png" alt="" srcset="" />{{if data[i]&&data[i].joinType=="1"}}
+                            <span>表演类型：演唱、合唱</span>{{else if data[i]&&data[i].age=="2"}}
+                            <span>表演类型：舞蹈</span>{{else if data[i]&&data[i].age=="3"}}
+                            <span>表演类型：乐器演奏</span>{{else if data[i]&&data[i].age=="4"}}
+                            <span>表演类型：才艺展示</span>{{else if data[i]&&data[i].age=="5"}}
+                            <span>表演类型：传统游戏</span>{{else if data[i]&&data[i].age=="6"}}
+                            <span>表演类型：展览会</span>{{else}}
+                            <span>表演类型：无</span> {{/if}}
+                        </div>
+                        <div class="operateInfo">
+                            <span> {{data[i].price}}</span><i class="danwei">元/人</i>
+                            <a href="./yishu-xiangqing.html?id={{data[i]&&data[i].id}}">查看详情</a>
+                            <a href="javascript:;" class="yuyue-btn" onclick="yuyue(this)">预约报名</a>
+                        </div>
+                        <!--<img src="./images/hot.png" alt="" srcset="">-->
+                    </div>
+                </li>
+                <% } %>
+                    <% } %>
+    </script>
+
+    <script id="hotStudy" type="text/html">
+        {{set a="http://47.107.191.81:8080"}}
+    {{each data}}
+    <a href="../海外游学首页/youxue-xiangqing.html?id={{$value.id}}"><li>
+        <img src="{{a}}{{$value.banners[0].filePath}}" alt="">
+        <p>{{$value.title?$value.title:""}}</p></li>
+    </a>
+    {{/each}}
+</script>
+    
+</body>
+
+</html>

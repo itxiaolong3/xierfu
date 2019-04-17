@@ -1,0 +1,284 @@
+body,
+ul,
+li,
+div,
+a,
+p,
+h1,
+h2,
+h3,
+h4,
+dl,
+dt,
+dd {
+    margin: 0;
+    padding: 0;
+    text-decoration: none;
+    list-style: none;
+}
+
+body {
+    width: 100%;
+    background-color: rgba(242, 242, 242, 1);
+}
+
+.container {
+    width: 1200px;
+    margin: 0 auto;
+}
+
+
+/* 导航开始 */
+
+.top {
+    width: 100%;
+    height: 48px;
+    background-color: #0F205C;
+    position: relative;
+}
+
+.top .top-logo {
+    float: left;
+}
+
+.top .top-logo .top-logo-l {
+    position: absolute;
+    left: 14px;
+    top: 10px;
+    width: 26px;
+    height: 26px;
+    /* background-color: rgba(255, 255, 255, 1); */
+}
+
+.top .top-logo .top-logo-r {
+    position: absolute;
+    left: 67px;
+    top: 5px;
+    width: 223px;
+    height: 33px;
+}
+
+.top .top-left {
+    float: right;
+    position: relative;
+}
+
+.search {
+    float: left;
+    margin-top: 2px;
+    position: relative;
+}
+
+.search img {
+    width: 19px;
+    height: 19px;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    right: 5px;
+}
+
+.top .top-left input {
+    width: 230px;
+    height: 44px;
+    line-height: 20px;
+    color: #fff;
+    float: left;
+    background-color: rgba(255, 255, 255, 0.22);
+    text-align: left;
+    border: 0px;
+    padding: 0px 38px 0px 18px;
+}
+
+.top .top-left input::placeholder {
+    color: #fff;
+}
+
+.top .top-left ul {
+    float: left;
+    height: 48px;
+    line-height: 48px;
+    margin: 0px 25px;
+}
+
+.top .top-left ul li {
+    float: left;
+    opacity: 0.75;
+    color: white;
+    font-size: 12px;
+    text-align: center;
+    font-family: SourceHanSansSC-regular;
+}
+
+.top .top-left ul li::after {
+    content: "";
+    display: inline-block;
+    width: 1px;
+    height: 17px;
+    background-color: #fff;
+    vertical-align: middle;
+    margin: 0px 18px;
+}
+
+.top .top-left ul li:nth-last-of-type(1)::after {
+    display: none;
+}
+
+.top .top-left ul li a {
+    display: inline-block;
+    vertical-align: middle;
+    color: white;
+}
+
+
+/* logo导航结束 */
+
+
+/* 文字导航开始 */
+
+.top2 {
+    width: 100%;
+    height: 50px;
+    line-height: 20px;
+    background-color: rgba(255, 255, 255, 1);
+    box-shadow: 0px 1px 5px 1px rgba(170, 170, 170, 1);
+    border: 1px solid rgba(255, 255, 255, 0);
+    box-sizing: border-box;
+}
+
+.top2 ul li {
+    float: left;
+    line-height: 50px;
+    color: rgba(17, 30, 92, 1);
+    font-size: 16px;
+    text-align: left;
+    font-family: SourceHanSansSC-regular;
+    margin-right: 28px;
+}
+
+.top-logo-r img {
+    width: 223px;
+    margin-top: 5px;
+}
+
+.top2 ul li a {
+    color: rgba(17, 30, 92, 1);
+}
+
+.top2 ul li:nth-child(1) {
+    width: 32px;
+    height: 24px;
+    margin-left: 24px;
+}
+
+.top2 ul li:nth-child(2) {
+    width: 80px;
+    height: 24px;
+}
+
+.top2 ul li:nth-child(3) {
+    width: 64px;
+    height: 24px;
+}
+
+.top2 ul li:nth-child(4) {
+    width: 64px;
+    height: 24px;
+}
+
+.top2 ul li:nth-child(5) {
+    width: 64px;
+    height: 24px;
+}
+
+.top2 ul li:nth-child(6) {
+    width: 64px;
+    height: 24px;
+}
+
+.top2 ul li:nth-child(7) {
+    width: 64px;
+    height: 24px;
+}
+
+.top2 ul li:nth-child(8) {
+    width: 32px;
+    height: 24px;
+}
+
+.top2 ul li:nth-child(9) {
+    width: 32px;
+    height: 24px;
+}
+
+.top2 ul li:nth-child(10) {
+    width: 32px;
+    height: 24px;
+}
+
+
+/* 中间banner图部分开始 */
+
+.banner {
+    width: 100%;
+    height: 520px;
+    background-color: red;
+    background-image: url(../images/banner.jpg);
+    background-repeat: no-repeat;
+    position: relative;
+}
+
+.banner .banner-b {
+    width: 100%;
+    height: 50px;
+    background-color: rgba(17, 30, 92, 0.5);
+    position: absolute;
+    bottom: 0;
+}
+
+.banner .banner-b ul li {
+    float: left;
+    width: 131px;
+    height: 50px;
+    line-height: 50px;
+    text-align: center;
+    color: #fff;
+}
+
+.current {
+    background-color: rgba(0, 52, 99, 1);
+}
+
+.content .content01 {
+    width: 1200px;
+    height: 1081px;
+    background-color: rgba(255, 255, 255, 1);
+    border: 1px solid rgba(255, 255, 255, 1);
+    box-sizing: border-box;
+    padding: 23px 35px;
+}
+
+.content .content01 ul li:nth-child(2n+1) {
+    float: left;
+}
+
+.content .content01 ul li:nth-child(2n) {
+    float: right;
+}
+
+.content .content01 ul li h2 {
+    width: 260px;
+    height: 24px;
+    color: rgba(110, 110, 110, 1);
+    font-size: 16px;
+    margin-bottom: 9px;
+    font-family: SourceHanSansSC-bold;
+}
+
+.content .content01 .content01-1 {
+    width: 536px;
+    height: 364px;
+    padding-top: 12px;
+    box-sizing: border-box;
+    border-top: 1px solid rgba(217, 217, 217, 1)
+}

@@ -1,0 +1,337 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>首页</title>
+    <meta name = "viewport" content = "width = device-width, initial-scale = 1.0, maximum-scale = 1.0, user-scalable = 0" />
+    <meta name="format-detection" content="telephone=no" />
+    <meta name="format-detection" content="email=no" />
+    <link rel="stylesheet" href="../css/base.css">
+    <link rel="stylesheet" href="../index/css/mainIndex.css">
+    <link rel="stylesheet" href="css/mainArtExchange.css">
+    <link rel="stylesheet" href="../css/swiper.min.css">
+    <link rel="stylesheet" href="../css/main.css">
+</head>
+<body>
+<!--轮播 start-->
+<!-- Swiper -->
+<div class="swiper-container banner">
+    <div class="swiper-wrapper swiper-banner">
+        <div class="swiper-slide">
+            <img src="../images/index/banner.jpg" alt="">
+        </div>
+        <div class="swiper-slide">
+            <img src="../images/index/banner.jpg" alt="">
+        </div>
+        <div class="swiper-slide">
+            <img src="../images/index/banner.jpg" alt="">
+        </div>
+        <div class="swiper-slide">
+            <img src="../images/index/banner.jpg" alt="">
+        </div>
+    </div>
+    <!-- Add Pagination -->
+    <div class="swiper-pagination"></div>
+</div>
+<script src="../js/swiper.min.js"></script>
+
+<!--轮播 end-->
+<!--iconlist start-->
+<div class="icon-list flex art-icon-list icon-border">
+    <a class="item disBlock" href="artExchangeFilter.html?category=government">
+        <div class="img-wrap pr">
+            <img src="../images/artExchange/iconArtInternational.png" alt="" class="pa">
+        </div>
+        <p>公派艺术节</p>
+    </a>
+    <a class="item disBlock" href="artExchangeFilter.html?category=international">
+        <div class="img-wrap pr">
+            <img src="../images/artExchange/iconArtPublic.png" alt="" class="pa">
+        </div>
+        <p>国际艺术节</p>
+    </a>
+    <a class="item disBlock" href="artExchangeFilter.html?category=master">
+        <div class="img-wrap pr">
+            <img src="../images/artExchange/iconGameInternational.png" alt="" class="pa">
+        </div>
+        <p>国际赛事</p>
+    </a>
+    <a class="item disBlock" href="artExchangeFilter.html?category=international">
+        <div class="img-wrap pr">
+            <img src="../images/artExchange/iconCultualActivity.png" alt="" class="pa">
+        </div>
+        <p>文化活动</p>
+    </a>
+</div>
+<!--iconlist end-->
+<!--hot recommend-->
+<div class="hot-product hot-recommend">
+    <b class="title">热门推荐</b>
+    <p>以下20所学校深受学生欢迎</p>
+    <div class="swiper-container hotProduct">
+        <div class="swiper-wrapper">
+            <div class="swiper-slide on" data-category ="government">公派艺术节</div>
+            <div class="swiper-slide" data-category ="international">国际艺术节</div>
+            <div class="swiper-slide" data-category ="master">大师课堂</div>
+            <!--<div class="swiper-slide">国际艺术节</div>-->
+            <!--<div class="swiper-slide">大师课堂</div>-->
+            <!--<div class="swiper-slide">国际艺术节</div>-->
+            <!--<div class="swiper-slide">大师课堂</div>-->
+        </div>
+    </div>
+</div>
+<div class="hot-recommend">
+	<div class="hot-list art-hot-list">
+		<a class="item pr disBlock" href="artDetail.html">
+			<img src="../images/artExchange/recommendPic.jpg" alt="" width="100%" height="500">
+			<div class="pa item-title runout2">梦想绽放-第六届维也纳金色大厅夏季音乐会第六届维也纳金色大厅夏季音乐会第六届维也纳金色大厅夏季音乐会</div>
+			<div class="pa item-flag">
+				<div class="times"><span>12</span>天</div>
+				<div class="desc">亲子游学</div>
+			</div>
+			<img src="../images/artExchange/iconCollect.png" alt="" class="icon-collect pa">
+		</a>
+		<a class="item pr disBlock" href="artDetail.html">
+			<img src="../images/artExchange/recommendPic.jpg" alt="" width="100%" height="453">
+			<div class="pa item-title runout2">梦想绽放-第六届维也纳金色大厅夏季音乐会</div>
+			<div class="pa item-flag">
+				<div class="times"><span>12</span>天</div>
+				<div class="desc">亲子游学</div>
+			</div>
+			<img src="../images/artExchange/iconCollected.png" alt="" class="icon-collect pa">
+		</a>
+		
+	</div>
+	<div class="icon-border">
+		<a class="get-more disBlock" href="artExchangeFilter.html?category=government">
+			加载更多
+		</a>
+	</div>
+</div>
+
+<script src="../js/jquery-1.9.1.min.js"></script>
+<script src="../js/swiper.min.js"></script>
+<script>
+    var swiper = new Swiper('.hotProduct', {
+        slidesPerView: 3.5,
+        centeredSlides: false,
+        spaceBetween: 5
+    });
+    $(".hotProduct .swiper-slide").click(function () {
+        $(".hotProduct .swiper-slide").removeClass('on');
+        $(this).addClass('on');
+		//热门推荐
+		var suggest = '';
+		var classicmemory = '';
+		var category = $(this).attr('data-category');
+		var i = '0';
+		$.ajax({
+			url: "http://47.107.191.81:8080/art/services/suggest/"+category+"/1/5",
+			dataType: "json",
+			type: "GET",
+			success: function(res){
+				if(res.resultCode == 200){
+					for(var o in res.resultData.content){
+						if(res.resultData.content[o].banners.length > 0){
+							var img = 'http://47.107.191.81:8080'+res.resultData.content[o].banners[i].filePath;
+						}else{
+							var img = '../images/artExchange/recommendPic.jpg';
+						}
+						suggest += '<a class="item pr disBlock" href="artDetail.html?id='+res.resultData.content[o].id+'"><img src="'+img+'" alt="" width="100%" height="500"><div class="pa item-title runout2">'+res.resultData.content[o].title+'</div><div class="pa item-flag"><div class="times"><span>'+res.resultData.content[o].days+'</span>天</div><div class="desc">'+res.resultData.content[o].tags+'</div></div><img src="../images/artExchange/iconCollect.png" alt="" class="icon-collect pa"></a>';
+					}
+				}
+				$('.art-hot-list').html(suggest);
+			}
+		});
+		$.ajax({
+			url: "http://47.107.191.81:8080/art/services/classicmemory/"+category+"/1/5",
+			dataType: "json",
+			type: "GET",
+			success: function(res){
+				if(res.resultCode == 200){
+					for(var o in res.resultData.content){
+						if(res.resultData.content[o].banners.length > 0){
+							var img = 'http://47.107.191.81:8080'+res.resultData.content[o].banners[i].filePath;
+						}else{
+							var img = '../images/index/news1.png';
+						}
+						classicmemory += '<div class="item flex pr"><div class="img-wrap pr"><img src="'+img+'" alt="" class="pa"></div><div class="item-desc"><div class="title">'+res.resultData.content[o].title+'</div><div class="ct">'+res.resultData.content[o].description+'</div><div class="flex"><div class="check-box flex"><img src="../images/index/check.png" alt="" class="icon-check"><span>'+res.resultData.content[o].clickCnt+'</span></div><div class="check-box flex"><img src="../images/index/time.png" alt="" class="icon-check"><span>'+res.resultData.content[o].publishDate+'</span></div></div></div><div class="border pa"></div></div>';
+					}
+				}
+				$('.news-list').html(classicmemory);
+			}
+		});
+    })
+</script>
+<!--hot recommend end-->
+<!--news-->
+<div class="hot-product">
+    <b class="title">经典回顾</b>
+    <p>初来乍到 ，这些内容也许是你想要的</p>
+</div>
+<div class="index-news">
+    <div class="news-list">
+        <div class="item flex pr">
+            <div class="img-wrap pr">
+                <img src="../images/index/news1.png" alt="" class="pa">
+            </div>
+            <div class="item-desc">
+                <div class="title">西班牙留学费用是多少？</div>
+                <div class="ct">让孩子在自然环境中关心他人，在克服困境中...</div>
+                <div class="flex">
+                    <div class="check-box flex">
+                        <img src="../images/index/check.png" alt="" class="icon-check">
+                        <span>2342</span>
+                    </div>
+                    <div class="check-box flex">
+                        <img src="../images/index/time.png" alt="" class="icon-check">
+                        <span>2018-11-23</span>
+                    </div>
+                </div>
+            </div>
+            <div class="border pa"></div>
+        </div>
+        <div class="item flex pr">
+            <div class="img-wrap pr">
+                <img src="../images/index/news1.png" alt="" class="pa">
+            </div>
+            <div class="item-desc">
+                <div class="title">西班牙留学费用是多少？</div>
+                <div class="ct">让孩子在自然环境中关心他人，在克服困境中...</div>
+                <div class="flex">
+                    <div class="check-box flex">
+                        <img src="../images/index/check.png" alt="" class="icon-check">
+                        <span>2342</span>
+                    </div>
+                    <div class="check-box flex">
+                        <img src="../images/index/time.png" alt="" class="icon-check">
+                        <span>2018-11-23</span>
+                    </div>
+                </div>
+            </div>
+            <div class="border pa"></div>
+        </div>
+        <div class="item flex">
+            <div class="img-wrap pr">
+                <img src="../images/index/news1.png" alt="" class="pa">
+            </div>
+            <div class="item-desc">
+                <div class="title">西班牙留学费用是多少？</div>
+                <div class="ct">让孩子在自然环境中关心他人，在克服困境中...</div>
+                <div class="flex">
+                    <div class="check-box flex">
+                        <img src="../images/index/check.png" alt="" class="icon-check">
+                        <span>2342</span>
+                    </div>
+                    <div class="check-box flex">
+                        <img src="../images/index/time.png" alt="" class="icon-check">
+                        <span>2018-11-23</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<!--news end-->
+<script>
+$(document).ready(function(){
+	var baseurl = 'http://47.107.191.81:8080';
+	//轮播
+	var lunbo = '';
+	$.ajax({
+		url: baseurl+"/art/services/banner",
+		dataType: "json",
+		type: "GET",
+		success: function(res){
+			if(res.resultCode == 200){
+				for(var o in res.resultData){ 
+					//alert(res.resultData.WELCOME_MARQUEE[o].filePath);
+					lunbo += '<div class="swiper-slide"><img src="'+baseurl+res.resultData[o].filePath+'" alt=""></div>';
+				}
+			}
+			$('.swiper-banner').html(lunbo);
+			var swiper = new Swiper('.banner', {
+				pagination: '.swiper-pagination',
+				paginationClickable: true
+			});
+		}
+	});
+	//默认热门
+	var suggest = '';
+	var classicmemory = '';
+	var category = 'government';
+	var i = '0';
+	$.ajax({
+		url: "http://47.107.191.81:8080/art/services/suggest/"+category+"/1/5",
+		dataType: "json",
+		type: "GET",
+		success: function(res){
+			if(res.resultCode == 200){
+				for(var o in res.resultData.content){
+					if(res.resultData.content[o].banners.length > 0){
+						var img = 'http://47.107.191.81:8080'+res.resultData.content[o].banners[i].filePath;
+					}else{
+						var img = '../images/artExchange/recommendPic.jpg';
+					}
+					suggest += '<a class="item pr disBlock" href="artDetail.html?id='+res.resultData.content[o].id+'"><img src="'+img+'" alt="" width="100%" height="500"><div class="pa item-title runout2">'+res.resultData.content[o].title+'</div><div class="pa item-flag"><div class="times"><span>'+res.resultData.content[o].days+'</span>天</div><div class="desc">'+res.resultData.content[o].tags+'</div></div><img src="../images/artExchange/iconCollect.png" alt="" class="icon-collect pa"></a>';
+				}
+			}
+			$('.art-hot-list').html(suggest);
+		}
+	});
+	$.ajax({
+		url: "http://47.107.191.81:8080/art/services/classicmemory/"+category+"/1/5",
+		dataType: "json",
+		type: "GET",
+		success: function(res){
+			if(res.resultCode == 200){
+				for(var o in res.resultData.content){
+					if(res.resultData.content[o].banners.length > 0){
+						var img = 'http://47.107.191.81:8080'+res.resultData.content[o].banners[i].filePath;
+					}else{
+						var img = '../images/index/news1.png';
+					}
+					classicmemory += '<div class="item flex pr"><div class="img-wrap pr"><img src="'+img+'" alt="" class="pa"></div><div class="item-desc"><div class="title">'+res.resultData.content[o].title+'</div><div class="ct">'+res.resultData.content[o].description+'</div><div class="flex"><div class="check-box flex"><img src="../images/index/check.png" alt="" class="icon-check"><span>'+res.resultData.content[o].clickCnt+'</span></div><div class="check-box flex"><img src="../images/index/time.png" alt="" class="icon-check"><span>'+res.resultData.content[o].publishDate+'</span></div></div></div><div class="border pa"></div></div>';
+				}
+			}
+			$('.news-list').html(classicmemory);
+		}
+	});
+});
+</script>
+<!--footer-->
+<div class="flex footer">
+    <a class="item disBlock" href="../index/index.html">
+        <div class="img-wrap pr">
+            <img src="../images/footer/home.png" alt="" class="pa">
+        </div>
+        <p>首页</p>
+    </a>
+    <a class="item disBlock" href="javascript:;">
+        <div class="img-wrap pr">
+            <img src="../images/footer/destination.png" alt="">
+        </div>
+        <p>目的地</p>
+    </a>
+    <a class="item disBlock on" href="../artExchange/index.html">
+        <div class="img-wrap pr">
+            <img src="../images/footer/artOn.png" alt="" >
+        </div>
+        <p>艺术</p>
+    </a>
+    <a class="item disBlock" href="../overseasStudy/index.html">
+        <div class="img-wrap pr">
+            <img src="../images/footer/studyAboard.png" alt="" >
+        </div>
+        <p>游学</p>
+    </a>
+    <a class="item disBlock" href="../mine/index.html">
+        <div class="img-wrap pr">
+            <img src="../images/footer/mine.png" alt="" >
+        </div>
+        <p>我的</p>
+    </a>
+</div>
+<!--footer end-->
+</body>
+</html>

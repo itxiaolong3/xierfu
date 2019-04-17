@@ -1,0 +1,385 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>游学-经典详情页</title>
+    <link rel="stylesheet" href="./css/xiangqing.css">
+    <link rel="stylesheet" href="../../css/mainLi.css">
+    <link rel="stylesheet" href="../../leftHover/animate.css">
+    <link rel="stylesheet" href="../../leftHover/leftTree.css">
+    <link rel="stylesheet" href="../../scrollList/product.css">
+	<link rel="stylesheet" href="../../layer/theme/default/layer.css">
+	<script src="../../js/jquery.min.js"></script>
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Swiper/4.0.2/css/swiper.min.css">
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/Swiper/4.0.2/js/swiper.min.js"></script>
+	<script src="../../js/template-web.js"></script>
+	<script src="../../js/jquery.SuperSlide.2.1.1.js"></script>
+	<script src="../../layer/layer.js"></script>
+	<script src="../../scrollList/jquery.navScroll.js"></script>
+	<script src="../../scrollList/jquery.nicescroll.js"></script>
+	<script src="../../scrollList/details.js"></script>
+	<script src="./js/xiangqing.js"></script>
+	<style>
+		.layui-layer-page .layui-layer-content{
+			box-sizing: border-box;
+			padding: 20px;
+		}
+		/* 本例子css */
+		.picMarquee-left{ width:1088px;  overflow:hidden; position:relative;  }
+		.picMarquee-left .hd{ overflow:hidden;  height:30px; background:#f4f4f4; padding:0 10px;  }
+		.picMarquee-left .hd .prev,.picMarquee-left .hd .next{ display:block;  width:5px; height:9px; float:right; margin-right:5px; margin-top:10px;  overflow:hidden;
+			 cursor:pointer; background:url("images/arrow.png") no-repeat;}
+		.picMarquee-left .hd .next{ background-position:0 -50px;  }
+		.picMarquee-left .hd .prevStop{ background-position:-60px 0; }
+		.picMarquee-left .hd .nextStop{ background-position:-60px -50px; }
+		.picMarquee-left .bd{ padding:10px 0;   }
+		.picMarquee-left .bd ul{ overflow:hidden; zoom:1; }
+		.picMarquee-left .bd ul li{ margin:0 12px; float:left; _display:inline; overflow:hidden; text-align:center;  }
+		.picMarquee-left .bd ul li .pic{ text-align:center; }
+		.picMarquee-left .bd ul li .pic img,.picMarquee-left .bd ul li .pic video{ width:260px; height:150px; display:block; }
+		.picMarquee-left .bd ul li .pic a:hover img{ border-color:#999;  }
+		.picMarquee-left .bd ul li .title{ line-height:24px;   }
+		.wid2{width:25px;display:inline-block}
+		.wid1{width:6px;display:inline-block}
+		.p3 .danwei{font-style:normal;font-size:13px;color:#9d9d9d}
+		.picMarquee-left .tempWrap{width:1086px !important;}
+		.descripton-name{display:block;color:#313131;font-size:16px;}
+	</style>
+
+</head>
+
+<body>
+<div class="liHeader"></div>
+<div class="boxContainer" style="width:100%;height:auto;overflow:hidden"></div>
+<script type="text/html" id="contentss">
+{{set a = 'http://47.107.191.81:8080'}} {{if data}}
+<div class="content container">
+    <div class="content01-l" id="banner">
+        <div class="swiper-container">
+            <div class="swiper-wrapper">
+			{{each data.banners?data.banners:''}}
+                <div class="swiper-slide">
+                    <img src="{{a}}{{$value.filePath}}" alt="">
+                </div>
+			{{/each}}
+            </div>
+            <div class="swiper-pagination"></div>
+			<div class="swiper-button-next"></div>
+			<div class="swiper-button-prev"></div>
+        </div>
+    </div>
+    <div class="content01-r" id="content">
+        <h1>{{data.title?data.title:'暂无'}}</h1>
+        <p class="p1"> 推荐指数： 8.5 / 10</p>
+        <ul>
+            <li> 所属机构：<span class="wid1"></span>{{data.organization?data.organization:''}}</li>
+			{{if data.subject == 'QZKC' }}
+			<li> 主<span class="wid2"></span>题：<span class="wid1"></span>全真课程</li>
+			{{else if data.subject == 'QZYX' }}
+			<li> 主<span class="wid2"></span>题：<span class="wid1"></span>亲子游学</li>
+			{{else if data.subject == 'MXTF' }}
+			<li> 主<span class="wid2"></span>题：<span class="wid1"></span>名校探访</li>
+			{{else if data.subject == 'TSZT' }}
+			<li> 主<span class="wid2"></span>题：<span class="wid1"></span>特色主题</li>
+			{{else if data.subject == 'SSYC' }}
+			<li> 主<span class="wid2"></span>题：<span class="wid1"></span>赛事演出</li>
+			{{else}}
+			<li> 主<span class="wid2"></span>题：<span class="wid1"></span>艺术游学</li>
+			{{/if}}
+            <li> 出<span class="wid1"></span>发<span class="wid1"></span>地：<span class="wid1"></span>{{data.fromPlace?data.fromPlace:''}}</li>
+            <li> 目<span class="wid1"></span>的<span class="wid1"></span>地：<span class="wid1"></span>{{data.destination?data.destination:''}}</li>
+			
+            <li> 适合年纪：<span class="wid1"></span>
+			{{each data.gradelist }}
+				{{if $value.keyword == data.grade}}
+				{{$value.name}}
+				{{/if}}
+			{{/each}}
+			</li>
+            <li> 出行天数：<span class="wid1"></span>{{data.days?data.days:'0'}} 天</li>
+            <li> 团<span class="wid2"></span>期：<span class="wid1"></span>
+                <select name="" id="" class="theTerm">
+                    <option value="">  {{data.endDate?data.endDate:''}}</option>
+                </select>
+            </li>
+        </ul>
+        <div class="p2">
+            <ul>
+                <li> 美国西海岸风情</li>
+                <li> 探访世界科技中心</li>
+                <li> 名校参访</li>
+                <li> 文化浸泡</li>
+            </ul>
+        </div>
+        <div class="p3">
+            <span>{{data.fee?data.fee:''}}</span><i class="danwei">元/人</i>
+        </div>
+        <div class="p4">
+            <ul>
+                <li>
+                    <a href="#"> 在线咨询</a>
+                </li>
+            </ul>
+        </div>
+    </div>
+</div>
+<div class="liucheng container">
+    <ul class="ul01">
+        <li class="li0">
+            <h1>定制流程</h1>
+            <p>简单3步,完成定制</p>
+            <div class="book-now-btn"><img src="./images/book.png" style="margin-right:8px;"/>现在预订</div>
+        </li>
+        <li class="li01 li1">
+            <div><img src="./images/游学详情/step1.png" alt=""></div>
+            <h2>免费咨询</h2>
+            <p>为您设计专属旅行方案，满意后支付费用</p>
+        </li>
+        <li class="li02 li1">
+            <div><img src="./images/游学详情/step2.png" alt=""></div>
+            <h2>沟通行程</h2>
+            <p>为您设计专属旅行方案，满意后支付费用</p>
+        </li>
+        <li class="li03 li1">
+            <div><img src="./images/游学详情/step3.png" alt=""></div>
+            <h2>预订落实</h2>
+            <p>为您设计专属旅行方案，满意后支付费用</p>
+        </li>
+    </ul>
+    <div class="tupian">
+        <h1>图片及视频</h1>
+        <!-- <ul id='picture'>
+		{{each data.pictures?data.pictures:''}}
+            <li >{{if $value.fileCategory==0}}<img src="{{a}}{{$value.fileCategory==0?$value.filePath:''}}" alt="{{$index+1}}">{{else}}
+            <video src="{{a}}{{$value.fileCategory==1?$value.filePath:''}}" controls></video>{{/if}}</li>
+		{{/each}}
+        </ul> -->
+    </div>
+	<div class="picMarquee-left">
+			<div class="bd">
+				<ul class="picList">
+				{{each data.pictures?data.pictures:''}}
+					<li>
+						<div class="pic">
+						{{if $value.fileCategory==0}}<a href="{{a}}{{$value.fileCategory==0?$value.filePath:''}}"><img src="{{a}}{{$value.fileCategory==0?$value.filePath:''}}" alt="{{$index+1}}"></a>{{else}}
+            <a href="{{a}}{{$value.fileCategory==1?$value.filePath:''}}"><video src="{{a}}{{$value.fileCategory==1?$value.filePath:''}}" controls></video></a>{{/if}}
+						</div>
+					</li>
+				{{/each}}
+					
+				</ul>
+			</div>
+		</div>
+
+		
+    <div class="youhui" style="height:224px;">
+        <div class="youhui-logo">
+            <img src="./images/游学详情/1.png" alt="">
+            <a href="javascript:;">免费获取课程介绍</a>
+        </div>
+        <div class="youhui-01">
+            <h2>【限时优惠】</h2>
+            <div id="xianshiyouhui"></div>
+            <ul>
+                <li>{{@data.discount?data.discount:''}}</li>
+            </ul>
+        </div>
+    </div>
+</div>
+<div class="silu container">
+    <ul>
+        <li><a href="#shejisilu">设计线路</a></li>
+        <li><a href="#gaikuangOne">概况</a></li>
+        <li><a href="#xingcheng">行程方案</a></li>
+        <li><a href="#feiyong">费用说明</a></li>
+        <li><a href="#feiyong">付款方式</a></li>
+        <li><a href="#feiyong">签证须知</a></li>
+        <li><a href="#feiyong">行程准备</a></li>
+        <li><a href="#anquan">安全保障</a></li>
+        <li id="xiazai">
+			<a class="disBlock" href="{{a}}/{{data.recruitFilePath}}">
+				<img src="./images/游学详情/down.png" alt="" srcset="">
+				<span>下载游学手册</span>
+			</a>
+        </li>
+    </ul>
+
+    <div class="shouce-xq">
+        <div class="xiangqing-l">
+            <div class="shejisilu" id="shejisilu">
+                <h2>设计思路</h2>
+                <!--<p style="font-size: 12px;color:#666;">{{@data.discount?data.discount:''}}</p>-->
+            </div>
+            <div class="gaikuang" id="gaikuangOne">
+                <h2>概况</h2>
+                <p id="gaikuang">{{@data.description?data.description:''}}</p>
+            </div>
+            <div class="shejisilu" id="xingcheng">
+                <h2 id="xcfa-btn">行程方案</h2>
+            </div>
+            <!--add-->
+            <div class="main">
+                <div class="product-details-top information-wl clearfix" id="navHeight"></div>
+                <div class="details-cention" id="section2" style="width:930px;">
+                    <div class="details-cention-cen">
+                        <div class="details-daymain">
+                            <div class="details-dayleft fl">
+								{{each data.tripList?data.tripList:''}}
+									<a data-bind="{{$index+1}}"{{if index == 0}} class="active"{{/if}}><div><span><i></i></span>D{{$index+1}}</div><p></p></a>
+								{{/each}}
+                            </div>
+                            <div class="details-dayright position-relative fr" id="content">
+								{{each data.tripList?data.tripList:''}}
+									<div class="tabChangeItem" data-scroll="{{$index+1}}">
+										<div class="tabChangeTitle">
+											<span>D{{$index+1}}</span>
+											<span>{{$value.description}}</span>
+										</div>
+										<div class="tabChangeContent clearfix">
+											<div class="step" style=" margin-top: -15px;margin-bottom: 30px;">
+												<h3>
+													<span><em></em></span>
+													<i class="descripton-name">{{$value.description}}</i>
+													<span>{{@$value.instruction}}</span>
+												</h3>
+												<!-- <div class="step-item">
+													<p>
+														<img src="./images/游学详情/行程方案-飞机起飞.png" alt="">
+														<span>{{@$value.instruction}}</span>
+													</p>
+
+												</div> -->
+											</div>
+
+										</div>
+									</div>
+								{{/each}}
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            <!--add-->
+            <div class="feiyong" id="feiyong">
+                <div class="tab">
+                    <div class="tab-t">
+                        <span class="tab-span show1">费用说明</span>
+                        <span class="tab-span">付款方式</span>
+                        <span class="tab-span">签证须知</span>
+                        <span class="tab-span">行程准备</span>
+                    </div>
+                    <div class="show guoji">
+                        <div id="feiyongshuoming ">{{@data.feeDetail?data.feeDetail:''}}</div>
+                    </div>
+                    <div class="show hidden">
+                        <div id="fukuanfangshi">{{@data.payment}}</div>
+                    </div>
+                    <div class="show hidden">
+                        <div id="qianzheng">{{@data.visa}}</div>
+                    </div>
+                    <div class="show hidden">
+                        <div id="xingchengzhunbei">{{@data.preparement}}</div>
+                    </div>
+                </div>
+            </div>
+            <div class="anquan" id="anquan">
+                <h2>安全保障</h2>
+                <div id="anquan">
+				{{@data.security}}
+				</div>
+                <ul>
+                    <li>
+                        <img src="./images/游学详情/留学详情1.png" alt="">
+                        <h2>专业团队实地考察营地</h2>
+                        <p>从业十年以上专业团队实地考察，挑选符合美国国际游学协会（ACA）认证的优质营地</p>
+                    </li>
+                    <li>
+                        <img src="./images/游学详情/留学详情2.png" alt="">
+                        <h2>全程专人领队保障安全</h2>
+                        <p>从业十年以上专业团队实地考察，挑选符合美国国际游学协会（ACA）认证的优质营地</p>
+                    </li>
+                    <li>
+                        <img src="./images/游学详情/留学详情3.png" alt="">
+                        <h2>星级住宿保障舒适度</h2>
+                        <p>从业十年以上专业团队实地考察，挑选符合美国国际游学协会（ACA）认证的优质营地</p>
+                    </li>
+                    <li>
+                        <img src="./images/游学详情/留学详情4.png" alt="">
+                        <h2>30万游学保险独家护航</h2>
+                        <p>从业十年以上专业团队实地考察，挑选符合美国国际游学协会（ACA）认证的优质营地</p>
+                    </li>
+                </ul>
+            </div>
+        </div>
+
+    </div>
+
+        <div class="xiangqing-r">
+            <div class="div01">
+                <p><span></span>关注官方微信了解更多</p>
+                <img src="./images/xafxcx.png" alt="">
+                <div class="div01-1">官方二维码</div>
+            </div>
+            <div class="div02">
+                <h2>热门游学</h2>
+                <ul class="youxue">
+                </ul>
+            </div>
+
+        </div>
+    </div>
+
+
+{{/if}}
+</script>
+<script type="text/html" id="youxue">
+{{set a = 'http://47.107.191.81:8080'}} {{if data}}
+	{{each data.content?data.content:''}}
+		<a class="disBlock" href="./youxue-xiangqing.html?id={{$value.id}}"><li>
+			<img src="{{a}}{{$value.banners[0].filePath}}" alt="">
+			<p>{{$value.title}}</p>
+		</li></a>
+	{{/each}}
+{{/if}}
+</script>
+<div class="liFooter"></div>
+</body>
+<script>
+    $(function(){
+        $(".liHeader").load("../../liHeader.html");
+        $(".liFooter").load("../../liFooter.html");
+    })
+    //侧边框
+    $("#left-panel-link").mouseover(function () {
+        $("#left-panel").addClass("animated fadeInLeftBig");
+        $("#left-panel").css("display","block");
+
+    });
+    $("#left-panel-link").mouseout(function () {
+        $("#left-panel").removeClass("fadeInLeftBig");
+        $("#left-panel").mouseover(function () {
+            $(this).css("display","block")
+        });
+        $("#left-panel").mouseout(function () {
+            $(this).css("display","none")
+        })
+    });
+    $(".box ul li a").mouseover(function () {
+        $(this).find("img").attr("src","/pc/images/iconRightBlue.png");
+    });
+    $(".box ul li a").mouseout(function () {
+        $(this).find("img").attr("src","/pc/images/iconRight.png");
+    });
+    //search
+    $(".icon-top-search").click(function () {
+        $(this).hide();
+        $(this).siblings(".search").show(1000);
+    });
+    $(".search img").click(function () {
+        $(this).parent().hide(1000);
+        $(this).parent().siblings(".icon-top-search").show();
+    });
+</script>
+</html>

@@ -1,0 +1,669 @@
+﻿<!DOCTYPE html>
+
+<html lang="en">
+
+
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>个人中心-基础信息</title>
+    <link rel="stylesheet" href="./css/gerenzhongxin.css">
+    <link rel="stylesheet" href="../../css/mainLi.css">
+    <link rel="stylesheet" href="../../leftHover/animate.css">
+    <link rel="stylesheet" href="../../leftHover/leftTree.css">
+</head>
+<body>
+<div class="liHeader"></div>
+<div class="banner">
+    <div class="banner-l">
+        <img src="./images/代理商-合作banner.jpg" alt="">
+    </div>
+    <div class="content">
+        <div class="touxiang">
+            <!-- <img src="./images/snaxian.png" alt=""> -->
+        </div>
+        <div class="xinxi">
+            <h2>某某代理商<span>黄金</span></h2>
+            <p>用户类别：启用中</p>
+        </div>
+    </div>
+</div>
+<div class="neirong">
+    <div class="tab">
+        <div class="tab-t neirong-l" id="tab-t1">
+            <ul>
+                <li class="tab-span1">基础信息</li>
+                <li class="tab-span1">我的收藏</li>
+                <li class="tab-span1">合作产品</li>
+                <!--<li class="tab-span1">合作资料</li>-->
+            </ul>
+        </div>
+        <div class="show guoji neirong-r">
+            <div class="tableBorder">
+                <h4 class="title">个人信息</h4>
+                <div class="personalInfo">
+                    <div class="personalInfo-left">
+                        <p>
+                            <span class="headerColor">联系电话：</span>
+                            <span>1300128374</span>
+                        </p>
+                        <p>
+                            <span class="headerColor">邮箱：</span>
+                            <span class="myEmail">128237236@qq.com</span>
+                        </p>
+                        <p>
+                            <span class="headerColor">用户类别：</span>
+                            <span>普通用户</span>
+                        </p>
+                    </div>
+                    <div class="personalInfo-right">
+                        <p class="change">
+                            <span class="setPass">设置密码</span>
+                            <span class="changePass">修改密码</span>
+                        </p>
+                        <p class="change">
+                            <span class="setEmail">设置邮箱</span>
+                            <span class="changeEmail">修改邮箱</span>
+                        </p>
+                    </div>
+                </div>
+            </div>
+            <div class="tableBorder">
+                <h4 class="title">实名验证：</h4>
+                <div class="personalInfo">
+                    <div class="personalInfo-left">
+                        <p><span class="headerColor">实名验证：</span>
+                            <span class="verified">
+                                    <i>√</i>
+                                    <em>已验证</em>
+                                </span>
+                            <span class="unverified">
+                                    <i>×</i>
+                                    <em>未验证</em>
+                                </span>
+                        </p>
+                        <p><span class="headerColor">姓名：</span> 裘千尺</p>
+                        <p><span class="headerColor">身份证号：</span> 412801*******110</p>
+                    </div>
+                    <div class="personalInfo-right">
+                        <p class="change">
+                            <span class="setName">去验证</span>
+                        </p>
+                    </div>
+                </div>
+            </div>
+            <div class="tableBorder">
+                <h4 class="title">银行卡</h4>
+                <div class="personalInfo">
+                    <div class="personalInfo-left">
+                        <p>
+                            <span class="headerColor">开户行：</span>
+                            <span class="personalBankName">中国农业银行深圳红荔支行</span>
+                        </p>
+                        <p>
+                            <span class="headerColor">卡号：</span>
+                            <span class="personalCode">412801*******110</span>
+                        </p>
+                    </div>
+                    <div class="personalInfo-right">
+                        <p class="change">
+                            <span class="setCode">设置</span>
+                            <span class="changeCode">银行卡变更</span>
+                        </p>
+                    </div>
+                </div>
+            </div>
+            <div class="tableBorder">
+                <h4 class="title">代理商信息</h4>
+                <div class="personalInfo">
+                    <div class="personalInfo-left">
+                        <p><span class="headerColor">机构名称：</span>CIOOF </p>
+                        <p><span class="headerColor">代理商类别：</span> 供应商</p>
+                        <p>
+                            <span class="headerColor">代理商级别：</span>
+                            <span class="grade">黄金</span>
+                            <span class="grade">钻石</span>
+                            <span class="grade">铂金</span>
+                        </p>
+
+
+
+                        <p><span class="headerColor">登陆账号：</span> 1300******83</p>
+
+                        <p><span class="headerColor">申请人：</span> 大壮</p>
+
+                        <p><span class="headerColor">手机：</span> 1300*******83</p>
+
+                        <p><span class="headerColor">邮箱：</span> 971394387@qq.com</p>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+            <!-- 弹框 -->
+
+            <div class="popup"></div>
+
+            <!-- 修改密码 -->
+
+            <div class="changed changeOne">
+
+                <input type="text" placeholder="请输入新邮箱">
+
+                <input type="text" placeholder="请再次输入邮箱">
+
+                <input type="button" value="提交">
+
+                <span>×</span>
+
+            </div>
+
+            <!-- 修改邮箱 -->
+
+            <div class="changed changeTwo">
+
+                <p>旧邮箱：2506**8@qq.com</p>
+
+                <input type="text" placeholder="请输入新邮箱">
+
+                <input type="text" placeholder="请再次输入邮箱">
+
+                <input type="button" value="提交">
+
+                <span>×</span>
+
+            </div>
+
+            <div class="changed changeThree">
+
+                <input type="text" placeholder="请输入新密码">
+
+                <input type="text" placeholder="再次确认密码">
+
+                <input type="button" value="提交">
+
+                <span>×</span>
+
+            </div>
+
+            <div class="changed changeFour">
+
+                <input type="text" placeholder="请输入旧密码">
+
+                <input type="text" placeholder="请输入新密码">
+
+                <input type="text" placeholder="确认新密码">
+
+                <input type="button" value="提交">
+
+                <span>×</span>
+
+            </div>
+
+            <div class="changed changeFive">
+
+                <input type="text" placeholder="请输入姓名">
+
+                <input type="text" placeholder="身份证号码">
+
+                <input type="button" value="提交">
+
+                <span>×</span>
+
+            </div>
+
+            <div class="changed changeSix">
+
+                <input type="text" placeholder="开户行">
+
+                <input type="text" placeholder="卡号">
+
+                <input type="button" value="提交">
+
+                <span>×</span>
+
+            </div>
+
+            <div class="changed changeSeven">
+
+                <p>
+
+                    <span>开户行：</span>
+
+                    <span class="bankNameSet">中国农业银行深圳红荔支行</span>
+
+                </p>
+
+                <p>
+
+                    <span>卡号：</span>
+
+                    <span class="codeSet">412801111111110</span>
+
+                </p>
+
+                <input type="text" placeholder="请输入姓名">
+
+                <input type="text" placeholder="身份证号码">
+
+                <input type="text" placeholder="手机号">
+
+                <div class="code">
+
+                    <input type="text" placeholder="验证码">
+
+                    <span>发送验证码</span>
+
+                </div>
+
+                <input type="button" value="提交">
+
+                <span>×</span>
+
+            </div>
+
+            <div class="success">
+
+                <span>√</span>
+
+                <span>修改成功</span>
+
+            </div>
+
+            <div class="error">
+
+                <span>×</span>
+
+                <span>修改失败请稍后再试</span>
+
+            </div>
+
+        </div>
+
+        <div class="show guoji hidden neirong-r paddingTop">
+
+            <h3>收藏</h3>
+
+            <a href="javascript:;" class="personalList">
+
+                <span>第二届中日国际青少年艺术交流周</span>
+
+                <img src="./images/delet.png" alt="" srcset="">
+
+            </a>
+
+            <a href="javascript:;" class="personalList">
+
+                <span>第二届中日国际青少年艺术交流周</span>
+
+                <img src="./images/delet.png" alt="" srcset="">
+
+            </a>
+
+            <a href="javascript:;" class="personalList">
+
+                <span>第二届中日国际青少年艺术交流周</span>
+
+                <img src="./images/delet.png" alt="" srcset="">
+
+            </a>
+
+            <a href="javascript:;" class="personalList">
+
+                <span>第二届中日国际青少年艺术交流周</span>
+
+                <img src="./images/delet.png" alt="" srcset="">
+
+            </a>
+
+        </div>
+
+        <div class="show guoji hidden neirong-r marginLeft">
+
+            <div class="selectHeader">
+
+                <span> 产品类型：</span>
+
+                <select name="province" id="province"></select>
+
+                <span>子类：</span>
+
+                <select name="city" id="city"></select>
+
+            </div>
+
+            <div class="selectContent">
+
+                <dl class="contentHeader">
+
+                    <dd>子类</dd>
+
+                </dl>
+
+                <dl class="contentHeader otherName">
+
+                    <dd class="otherName">名称</dd>
+
+                </dl>
+
+                <dl class="contentHeader">
+
+                    <dd>基础价</dd>
+
+                </dl>
+
+                <dl class="contentHeader">
+
+                    <dd>建议价格</dd>
+
+                </dl>
+
+                <dl class="contentHeader">
+
+                    <dd>佣金比例</dd>
+
+                </dl>
+
+                <dl class="contentHeader">
+
+                    <dd>状态</dd>
+
+                </dl>
+
+                <dl class="contentHeader">
+
+                    <dd>下载</dd>
+
+                </dl>
+
+                <!-- 分界线 -->
+
+                <div class="contentCenter">
+
+                    <div class="contentDl">
+
+                        <dl class="contentHeader">
+
+                            <dt>精品游学</dt>
+
+                        </dl>
+
+                        <dl class="contentHeader otherName">
+
+                            <dt>美式口语突破+东海岸文化新追述研学之旅</dt>
+
+                        </dl>
+
+                        <dl class="contentHeader">
+
+                            <dt class="otherColor">$36888</dt>
+
+                        </dl>
+
+                        <dl class="contentHeader">
+
+                            <dt class="otherColor">$40000</dt>
+
+                        </dl>
+
+                        <dl class="contentHeader">
+
+                            <dt>10%</dt>
+
+                        </dl>
+
+                        <dl class="contentHeader">
+
+                            <dt class="enable">启用中</dt>
+
+                            <dt class="unenable">未启用</dt>
+
+                        </dl>
+
+                        <dl class="contentHeader">
+
+                            <dt class="indication">&gt;</dt>
+
+                        </dl>
+
+                    </div>
+
+                    <div class="file-list">
+
+                        <div class="file-item">
+
+                            <span>2019第八届维也纳夏季音乐会行程A线（上海1-15）_201901152329471(1)_7262.pdf</span>
+
+                            <button>下载</button>
+
+                        </div>
+
+                        <div class="file-item">
+
+                            <span>2019第八届维也纳夏季音乐会行程A线（上海1-15）_201901152329471(1)_7262.pdf</span>
+
+                            <button>下载</button>
+
+                        </div>
+
+                        <div class="file-item">
+
+                            <span>2019第八届维也纳夏季音乐会行程A线（上海1-15）_201901152329471(1)_7262.pdf</span>
+
+                            <button>下载</button>
+
+                        </div>
+
+                    </div>
+
+                </div>
+
+                <div class="contentCenter">
+
+                    <div class="contentDl">
+
+                        <dl class="contentHeader">
+
+                            <dt>精品游学</dt>
+
+                        </dl>
+
+                        <dl class="contentHeader otherName">
+
+                            <dt>美式口语突破+东海岸文化新追述研学之旅</dt>
+
+                        </dl>
+
+                        <dl class="contentHeader">
+
+                            <dt class="otherColor">$36888</dt>
+
+                        </dl>
+
+                        <dl class="contentHeader">
+
+                            <dt class="otherColor">$40000</dt>
+
+                        </dl>
+
+                        <dl class="contentHeader">
+
+                            <dt>10%</dt>
+
+                        </dl>
+
+                        <dl class="contentHeader">
+
+                            <dt class="enable">启用中</dt>
+
+                            <dt class="unenable">未启用</dt>
+
+                        </dl>
+
+                        <dl class="contentHeader">
+
+                            <dt class="indication">&gt;</dt>
+
+                        </dl>
+
+                    </div>
+
+                    <div class="file-list">
+
+                        <div class="file-item">
+
+                            <span>2019第八届维也纳夏季音乐会行程A线（上海1-15）_201901152329471(1)_7262.pdf</span>
+
+                            <button>下载</button>
+
+                        </div>
+
+                        <div class="file-item">
+
+                            <span>2019第八届维也纳夏季音乐会行程A线（上海1-15）_201901152329471(1)_7262.pdf</span>
+
+                            <button>下载</button>
+
+                        </div>
+
+                        <div class="file-item">
+
+                            <span>2019第八届维也纳夏季音乐会行程A线（上海1-15）_201901152329471(1)_7262.pdf</span>
+
+                            <button>下载</button>
+
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="show guoji hidden neirong-r paddingTop">
+            <div class="plate">
+                <h3 class="rightTitle">
+                    <span>日期及价格</span
+                    <span class="arrow">&gt;</span>
+                </h3>
+                <ul class="data-list">
+                    <li class="data-item">
+                        <p>2019年CIOFF合作院校汇总</p>
+                        <button>下载</button>
+                    </li>
+                    <li class="data-item">
+                        <p>2019年CIOFF合作院校汇总</p>
+                        <button>下载</button>
+                    </li>
+                    <li class="data-item">
+                        <p>2019年CIOFF合作院校汇总</p>
+                        <button>下载</button>
+                    </li>
+                </ul>
+            </div>
+            <!--<div class="plate">-->
+
+            <!--<h3 class="rightTitle">-->
+
+            <!--<span>日期及价格</span>-->
+
+            <!--<span class="arrow">&gt;</span>-->
+
+            <!--</h3>-->
+
+            <!--<ul class="data-list">-->
+
+            <!--<li class="data-item">-->
+
+            <!--<p>2019年CIOFF合作院校汇总</p>-->
+
+            <!--<button>下载</button>-->
+
+            <!--</li>-->
+
+            <!--<li class="data-item">-->
+
+            <!--<p>2019年CIOFF合作院校汇总</p>-->
+
+            <!--<button>下载</button>-->
+
+            <!--</li>-->
+
+            <!--<li class="data-item">-->
+
+            <!--<p>2019年CIOFF合作院校汇总</p>-->
+
+            <!--<button>下载</button>-->
+
+            <!--</li>-->
+
+            <!--</ul>-->
+
+            <!--</div>-->
+        </div>
+    </div>
+</div>
+<!--底部 start-->
+<div class="liFooter"></div>
+<!--底部  end-->
+<script src="../../js/jquery.min.js"></script>
+<script src="js/gerenzhongxin.js"></script>
+<script>
+    $(function(){
+        $(".liHeader").load("../../liHeader.html")
+        $(".liFooter").load("../../liFooter.html")
+    })
+    //侧边框
+    $("#left-panel-link").mouseover(function () {
+        $("#left-panel").addClass("animated fadeInLeftBig");
+        $("#left-panel").css("display","block");
+
+    });
+    $("#left-panel-link").mouseout(function () {
+        $("#left-panel").removeClass("fadeInLeftBig");
+        $("#left-panel").mouseover(function () {
+            $(this).css("display","block")
+        });
+        $("#left-panel").mouseout(function () {
+            $(this).css("display","none")
+        })
+    });
+    $(".box ul li a").mouseover(function () {
+        $(this).find("img").attr("src","/studyAbordPc/images/iconRightBlue.png");
+    });
+    $(".box ul li a").mouseout(function () {
+        $(this).find("img").attr("src","/studyAbordPc/images/iconRight.png");
+    });
+    //search
+    $(".icon-top-search").click(function () {
+        $(this).hide();
+        $(this).siblings(".search").show(1000);
+    });
+    $(".search img").click(function () {
+        $(this).parent().hide(1000);
+        $(this).parent().siblings(".icon-top-search").show();
+    });
+</script>
+<script>
+    $(function () {
+        var baseurl = 'http://47.107.191.81:8080';
+        $.ajax({
+            url: baseurl+"/me/services/profile",
+            dataType: "json",
+            type: "GET",
+            success: function (result) {
+                console.log(result,'个人信息返回')
+            },
+            error : function(result) {
+                console.log(result,'个人信息返回错误')
+            }
+        });
+    })
+</script>
+</body>
+</html>

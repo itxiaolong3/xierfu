@@ -1,0 +1,102 @@
+@charset "utf-8";
+/* CSS Reset */
+html, body, div, span, applet, object, iframe,h1, h2, h3, h4, h5, h6, p, blockquote, pre,a, abbr, acronym, address, big, cite, code,del, dfn, em, img, ins, kbd, q, s,samp,small, strike,strong, sub, sup, tt, var,b, u, i, center,dl, dt, dd, ol, ul, li,fieldset, form, label, legend,table, caption, tbody, tfoot, thead, tr, th, td,article, aside, canvas, details,embed,figure, figcaption, footer, header, hgroup,menu, nav, output, ruby, section, summary,time, mark, audio, video {margin:0 auto;padding: 0;border: 0;font-size: 100%;font:inherit;vertical-align: baseline;}
+body {background: #f8f8f8;font:12px/1.5 "Helvetica Neue",Helvetica,Arial,'Microsoft Yahei','Hiragino Sans GB',sans-serif,\5FAE\8F6F\96C5\9ED1,\5b8b\4f53;}
+ol, ul {list-style: none;}
+table {border-collapse: collapse;border-spacing: 0;}
+img{border:none;vertical-align:middle}
+em{ font-style:normal}
+a{text-decoration:none; color:#808080;transition: all .3s ease;}
+a:hover{text-decoration:none; outline:none}
+input,select,checkbox,textarea{display:inline-block; vertical-align: middle;}
+input:focus{ outline-style:none; }textarea:focus,select:focus,button:focus{ outline-style:none; }
+html{-webkit-text-size-adjust:none;}/*解决chrome网页字体小于12的问题*/
+.clearfix:after{content:".";display:block;height:0;clear:both;visibility:hidden}
+*html .clearfix{height:1%}
+.clearfix{display:block}
+*+html .clearfix{min-height:1%}
+.fl{float:left;}
+.fr{float:right;}
+.wl{width:1184px; position: relative;}
+/*andd*/
+.bottom50{padding-bottom:50px;}
+.mtop30{margin-top:30px!important;}
+.mtop50{margin-top:50px;}
+.mtop0{margin-top:0px!important;}
+.ptop10{padding-top:0px!important;}
+.commonbg{background: #fff; overflow:hidden;}
+.position-relative{position: relative;}
+/*页面css*/
+.main{background-color: #fff;}
+/*.details-cention h2{padding:40px 0 25px 0px; color: #333; font-size: 28px; font-weight: 200;}*/
+.details-cention-cen{padding:0px 0px 40px 30px; background: #fff;}
+/*.details-cention-cen h3.title{display:block;font-size: 18px; color: #333;}*/
+.details-cention-cen h3.title span{color: #05a89a;}
+.details-daymain{overflow:hidden;margin-top:32px;}
+/*.details-dayleft{width:80px; padding-right:30px;}*/
+/*.details-dayleft a{display: block;font-size: 14px; text-align: center; height: 32px; line-height: 32px; color: #999; background: #f2f2f2; border-bottom: 1px solid #e6e6e6;}*/
+.details-dayleft a:last-child{border-bottom: 1px solid #fff; }
+/*.details-dayleft a.active,.details-dayleft a:hover{background:#05A89A; border-bottom: 1px solid #05A89A; color: #fff;}*/
+.details-dayright{width:743px;height: 800px;float:left!important;}
+.details-daybox{padding-bottom:60px;list-style:none;}
+/* 未展开 */
+.details-daybox .closeShow div.day{position: relative;height:34px;border-bottom:1px solid #05A89A;border-bottom-left-radius:6px;background:url('../images/dayBg.png') no-repeat}
+.details-daybox .closeShow div.day span{display:block;width:150px;height:34px;text-align:center;line-height:34px;color:#fff;font-size:18px;position:absolute;top:0;left:0;}
+.details-daybox .closeShow div.day i{height:34px;line-height:34px;display:block;color:#05A89A;font-size:16px;margin-left:158px;}
+.details-daybox .closeShow .dayContent{padding-top:20px;}
+.details-daybox .dayContent div.clear{clear:both;}
+.details-daybox .closeShow .dayContent ul.textBox{width:662px;float:left;}
+.details-daybox .closeShow .dayContent ul.textBox li,.details-daybox .openShow .dayContent ul.textBox li{width:100%;}
+.details-daybox .closeShow .textBox li.trafficBegin em,
+.details-daybox .closeShow .textBox li.trafficGo em,
+.details-daybox .closeShow .textBox li.destination em{margin:0 20px;width:20px; height: 20px; float: left;}
+.details-daybox .closeShow .textBox li.trafficBegin em,
+.details-daybox .closeShow .textBox li.trafficGo em,
+.details-daybox .openShow .textBox li.trafficGo em,
+.details-daybox .closeShow .textBox li.traffic-bus em{width:20px; height: 20px; float: left;}
+.details-daybox .closeShow .textBox li.trafficBegin span{display: block;line-height: 20px; float: left;}
+.details-daybox .closeShow .textBox li.trafficBegin{height:20px;}
+.details-daybox .closeShow .textBox li.trafficBegin,.details-daybox .textBox li.destination{font-size: 16px; color:#000;margin-bottom:16px;}
+.details-daybox .closeShow .textBox li.trafficGo{font-size: 16px; color:#666;margin-bottom:16px;height:20px;}
+.details-daybox .closeShow .textBox li.detailsBox{height: auto; display: block;font-size:15px;line-height:30px;color:#666;text-overflow:ellipsis;-webkit-line-clamp:4;-webkit-box-orient: vertical;}
+
+.details-daybox .closeShow .textBox li.showBtn{height:20px;text-align:right;line-height:20px;margin-top:22px;font-size:15px;}
+.details-daybox .closeShow .textBox .showBtn.open span{font-size:12px;color:#05a297;padding-right:18px;background:url('../images/showBtnIcon.png') no-repeat right;cursor:pointer;}
+.details-daybox .closeShow .textBox .showBtn.close span{font-size:12px;color:#05a297;padding-right:18px;background:url('../images/closeBtnIcon.png') no-repeat right;cursor:pointer;}
+.details-headnav{height: 60px;transition: all .3s ease; display:none;box-shadow: 0px 0px 10px rgba(0, 0, 0, .3); background: #fff; width: 100%; position: fixed;left:0px;top:0px; z-index: 9999;}
+.details-headnav a{display:inline-block;font-size:18px; color: #999;margin-right:50px;border-bottom:2px solid #fff;padding-bottom:3px; font-weight: 300;margin-top:20px;}
+.details-headnav a:hover,.details-headnav a.active{border-bottom:2px solid #05A89A; color: #05A89A;}
+.navFix{ display: block;}
+
+/*下为修改*/
+.details-dayleft{width:50px; padding-right:30px;}
+.details-dayleft a{display: block;font-size: 14px;  height: 45px; color: #999;
+    position: relative;  }
+.details-dayleft a.active i,.details-dayleft a:hover i{background:rgba(66, 164, 211, 1); color: #fff;width:8px;height:8px;display: inline-block;border-radius: 50%;
+    position: relative;top:-1px;}
+.details-dayleft a i{
+    background:#ccc;width:8px;height:8px;display: inline-block;border-radius: 50%;position: relative;top:-1px;margin:0 auto}
+.details-dayleft a p{
+    width: 2px;
+    height: 32px;
+    background-color: #ccc;
+    position: absolute;
+    left: 6px;
+    top: 16px;
+}
+.details-dayleft a:last-child p{
+    display: none;
+}
+.details-dayleft a span{
+    border:1px solid #ccc;
+    display: inline-block;
+    width: 12px;
+    height: 12px;
+    text-align: center;
+    line-height: 12px;
+    border-radius:50%;
+    margin-right:6px;
+}
+.details-dayleft a.active span,.details-dayleft a:hover span{
+    border-color:rgba(66, 164, 211, 1);
+}

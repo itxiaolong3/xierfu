@@ -1,0 +1,137 @@
+/*海外游学*/
+.icon-overseas-list{
+    justify-content: space-between;
+    padding:26px 11px;
+}
+.icon-overseas-list p{
+    color:#6e6e6e;
+    font-size: 9px;
+}
+/*经典线路*/
+.route-choice{
+    justify-content: left;
+    flex-wrap: wrap;
+    padding:0 11px;
+}
+.route-choice .item{
+    font-size: 11px;
+    background-color:#eee;
+    color:#6e6e6e;
+    box-sizing: border-box;
+    padding:7px 13px;
+    border-radius: 20px;
+    margin:5px 6px 5px 0;
+}
+.route-choice .item .item-close{
+    width:11px;
+    height:11px;
+    margin-left: 5px;
+}
+.route-list .item{
+    background-color: #fff;
+    box-sizing: border-box;
+    padding:6px 23px 6px 11px;
+    margin-bottom:6px;
+}
+.route-list .item:last-child{
+    margin-bottom: 50px;
+}
+.route-list .item p{
+    color:#3c4145;
+    font-size: 12px;
+    line-height: 20px;
+    padding:7px 0 21px;
+}
+.route-list .item .pic{
+    margin-right:10px;
+}
+.route-list .recommend,.route-list .money{
+    font-size: 9px;
+    color: #9d9d9d;
+}
+.route-list .money b{
+    color:#db5c4c;
+    font-size: 16px;
+    margin-right:4px;
+}
+.route-list .more-desc{
+    justify-content: space-between;
+}
+.myart .header .header-left{
+    line-height: 46px;
+}
+/*夏校*/
+.summer-hot-swiper .swiper-slide{
+    display: block;
+    border:none;
+}
+.summer-hot-swiper h3{
+    font-size: 12px;
+    color:#555;
+    text-align: left;
+}
+.summer-hot-swiper p{
+    font-size: 9px;
+    color: #d0d0d0;
+    text-align: left;
+    width: 100%;
+}
+.summer-hot-product{
+    border-bottom:10px solid #f4f4f4;
+    padding-bottom:40px;
+}
+.summer-school .hot-product{
+    border-bottom:10px solid #f4f4f4;
+}
+.school-list .item{
+    padding:25px 0 12px;
+    border-top:1px solid #f4f4f4
+}
+.school-list .item:last-child{
+    border-bottom:1px solid #f4f4f4;
+    margin-bottom:28px;
+
+}
+.school-list .item h3{
+    font-size: 14px;
+    color:#555;
+}
+.school-list .item p{
+    font-size: 9px;
+    color:#d0d0d0;
+    margin-bottom:30px;
+}
+.school-list .item .age,.school-list .item .country{
+    font-size: 8px;
+    color:#9d9d9d;
+}
+.school-list .item .age{
+    margin-right:27px;
+}
+.school-list .item .check-detail-btn{
+    width:58px;
+    height:23px;
+    line-height: 23px;
+    font-size: 9px;
+    background-color: #3f9cd4;
+    text-align: center;
+    border-radius: 3px;
+}
+.school-list .item .desc{
+    flex:1
+}
+/*精品游学*/
+.excellent-travel .art-filter-title{
+    justify-content: left;
+    padding-left:11px;
+}
+
+
+
+
+
+
+
+
+
+

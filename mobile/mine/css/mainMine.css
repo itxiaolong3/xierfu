@@ -1,0 +1,417 @@
+.mine-bg{
+    position: absolute;
+    top:0;
+    left:0;
+    width:100%;
+}
+.mine-header{
+    max-height:214px;
+}
+.avator-shadow{
+    box-shadow: 0 1px 2px rgba(0,0,0,0.15);
+}
+.avator{
+    padding:0 11px;
+    background-color: #fff;
+    border-radius: 10px;
+    bottom:0;
+    left:3%;
+    height:113px;
+    width:94%;
+    box-sizing: border-box;
+    align-items: center;
+}
+.avator .user-portrait img{
+    width:64px;
+    height:64px;
+}
+.avator .user-portrait{
+    margin-right:14px;
+}
+.avator .user-name{
+    font-size: 15px;
+    color:#555;
+    font-weight: bold;
+}
+.avator .user-desc{
+    font-size: 9px;
+    color:#9d9d9d;
+}
+.mine-desc{
+    padding:0 3%;
+    box-sizing: border-box;
+    margin:15px 12px 0 12px;
+    border-radius: 10px;
+}
+.mb92{
+    margin-bottom:92px;
+}
+.mine-desc .item{
+    padding:12px 0;
+    border-bottom:1px  solid #f4f4f4;
+    align-items: center;
+
+}
+/*.mine-desc .item:last-child{*/
+    /*border:0;*/
+/*}*/
+.mine-desc .item .item-desc{
+    flex:1;
+    align-items: center;
+}
+.mine-desc .item-desc span{
+    font-size: 13px;
+    color:#6e6e6e;
+    margin-left: 5px;
+}
+.mine-desc .item .rightGo{
+    width: 12px;
+    height:12px
+}
+/* 登录/代理商登录 */
+.login-header{
+    background: url("../../images/mine/loginBg.jpg") no-repeat center/cover;
+    width:100%;
+    height:132px;
+    box-sizing: border-box;
+    padding:0 11px;
+}
+.login-header .desc{
+    align-items: center;
+    line-height: 40px;
+}
+.login-header .desc img{
+    width:15px;
+    height:15px;
+}
+.login-header .desc span{
+    font-size: 12px;
+    color:#fff;
+    text-align: right;
+    flex: 1;
+}
+.login-ct .login-title{
+    line-height: 40px;
+    background-color:#5eb5f4;
+    justify-content: space-between;
+    padding:0 11px;
+    top:-1px;
+}
+.login-ct .login-title .item{
+    color:#fff;
+    font-size: 12px;
+    text-align: center;
+    width: 50%;
+}
+.login-ct .item.on i{
+    width:0;
+    height:0;
+    border-left:8px solid transparent;
+    border-right:8px solid transparent;
+    border-bottom:8px solid white;
+    left:45%;
+    bottom:-1px;
+}
+.login-ct .desc{
+    padding:0 11px;
+    margin-top:45px;
+    box-sizing: border-box;
+}
+.login-ct .desc .input[type="text"]{
+    line-height: 54px;
+    box-sizing: border-box;
+    padding:0 8px;
+    width:80%
+}
+.login-ct .desc .input::placeholder{
+    color:#ccc;
+    font-size: 12px;
+}
+.login-ct .desc .item{
+    border-bottom:1px solid #f4f4f4;
+    align-items: center;
+}
+.login-ct .desc .get-code{
+    color:#3f9cd4;
+    font-size: 12px;
+    flex:1;
+    text-align: right;
+    line-height: 40px;
+}
+.login-ct .desc .submit-btn{
+    width: 80%;
+    margin:54px auto 30px;
+    text-align: center;
+    line-height: 43px;
+    font-size: 12px;
+    background-color: #3f9cd4;
+    font-weight: bold;
+    border-radius: 20px;
+}
+/*代理商注册*/
+.login-ct{
+    overflow-x: hidden;
+}
+.login-ct .desc .item i{
+    color:#d82222
+}
+.login-ct .item .upload-pic{
+    width:231px;
+    height:154px;
+    margin:0 auto;
+}
+.login-ct .item .upload-pic2{
+    width:153px;
+    height:100px
+}
+.login-ct .item .upload{
+    justify-content: space-around;
+    padding:0 20px;
+    box-sizing: border-box;
+}
+.login-ct .item .upload-title{
+    align-items: center;
+}
+.login-ct .border-none{
+    border-bottom:none !important;
+}
+.login-ct .mb30{
+    margin-bottom:30px;
+}
+.login-ct .item span{
+    color:#6e6e6e;
+    font-size: 12px;
+    margin-right:23px;
+}
+.login-ct .item label{
+    color:#808080;
+    font-size: 12px;
+    margin-right:23px;
+}
+.login-ct .item input[type="radio"]{
+    margin-right:5px;
+}
+.login-ct .radios b{
+    display: block;
+    top:3px;
+    left:0;
+    background:url("../../images/mine/iconRadioOff.png") no-repeat center/cover ;
+    width:13px;
+    height:13px;
+}
+.login-ct .radios .checked b{
+    background:url("../../images/mine/iconRadioOn.png") no-repeat center/cover ;
+    width:13px;
+    height:13px;
+}
+.login-ct .radios label input{
+    opacity: 0;
+}
+.login-ct .item-radio{
+    line-height: 55px;
+}
+.login-ct .item .upload-file{
+    font-size: 100px;
+    width:231px;
+    height:154px;
+    left:0;
+    top:7px;
+    opacity: 0;
+}
+.agreement{
+    color:#d0d0d0;
+    font-size: 10px;
+    justify-content: center;
+}
+.agreement a{
+    color:#3f9cd4;
+    font-size: 10px;
+}
+.agreement img{
+    width:14px;
+    height:14px;
+    margin:2px 5px 0 0;
+}
+.mt-agree{
+    margin-top:150px;
+}
+/*register 弹出框*/
+.register-tan{
+    position: fixed;
+    left:0;
+    bottom:0;
+    top:0;
+    right:0;
+    z-index: 1;
+}
+.register-tan .tan-bg{
+    position: absolute;
+    left:0;
+    top:0;
+    right:0;
+    bottom:0;
+    background: rgba(0,0,0,0.5);
+    z-index: 99;
+}
+.register-tan .tan-desc{
+    width:94%;
+    height:450px;
+    border-radius: 20px;
+    background-color: #fff;
+    z-index: 999;
+    position: absolute;
+    left:3%;
+    bottom:15%
+}
+.register-tan .tan-desc{
+    box-sizing: border-box;
+    padding:62px 17px 0;
+}
+.register-tan .tan-desc .title{
+    color:#3c4145;
+    font-size: 18px;
+    width: 100%;
+    text-align: center;
+}
+.register-tan .tan-desc p{
+    color:#c1c1c1;
+    font-size: 12px;
+    text-indent: 2em;
+    line-height: 24px;
+    margin-top:32px;
+}
+.register-tan .btn-reback{
+    width:215px;
+    height:35px;
+    line-height: 35px;
+    text-align: center;
+    background-color:#3f9cd4;
+    font-size: 12px;
+    color:#fff;
+    margin:40px auto 0;
+    border-radius:20px;
+}
+.register-tan .tan-close{
+    background: url("../../images/mine/iconClose.png") no-repeat center/cover;
+    height:16px;
+    width:16px;
+    right:10px;
+    top:10px;
+}
+.register-tan .suc-pic{
+    width:130px;
+    height:130px;
+    margin:0 auto;
+}
+.register-tan .suc-title{
+    font-weight: bold;
+    font-size: 18px;
+    margin:24px 0 18px;
+}
+.register-tan .suc-p{
+    width:268px;
+    margin:0 auto;
+    color:#9d9d9d;
+}
+/*基础信息*/
+.base-msg .intro-desc{
+    font-size: 12px;
+    color: #6e6e6e;
+    margin-right:5px;
+}
+.base-msg .intro{
+    align-items: center;
+}
+/*密码页面*/
+/*弹窗*/
+.tan-pass{
+    position: fixed;
+    left: 0;
+    right:0;
+    top:0;
+    bottom:0;
+}
+.tan-pass .tan-bg{
+    background-color: rgba(0,0,0,0.5);
+    left: 0;
+    right:0;
+    top:0;
+    bottom:0;
+}
+.tan-pass .tan-desc{
+    width:84%;
+    background-color: #fff;
+    left:8%;
+    top:132px;
+    border-radius: 10px;
+    height:350px;
+    box-sizing: border-box;
+    padding:30px 18px;
+}
+.tan-pass .tan-desc .tan-close{
+    background: url("../../images/mine/iconClose.png") no-repeat center/cover;
+    width:20px;
+    height:20px;
+    right: 15px;
+    top:15px;
+}
+.tan-pass .tan-desc h3{
+    font-size: 20px;
+    color:#555;
+    text-align: center;
+    margin-top:15px;
+}
+.tan-pass .tan-list .input{
+    width:76%;
+}
+.tan-pass .tan-list .input::placeholder{
+    font-size: 14px;
+    color:#ccc;
+}
+.tan-pass .tan-list .item{
+    border-bottom:1px solid #f4f4f4;
+    padding:20px 0;
+}
+.tan-pass .tan-list{
+    margin:15px 0 55px;
+}
+.tan-pass .pass-save{
+    width: 80%;
+    margin:0 auto;
+    background-color: #3f9cd4;
+    color:#fff;
+    text-align: center;
+    line-height: 43px;
+    border-radius:20px;
+}
+.tan-pass .tan-list .get-code{
+    color:#3f9cd4;
+    font-size: 14px;
+}
+/*我的收藏*/
+.my-collected .rightGo{
+    width:25px !important;
+    height:25px !important;
+}
+.my-collected .intro{
+    margin-left: 10px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

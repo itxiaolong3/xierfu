@@ -1,0 +1,250 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>登录</title>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="../../css/mainLi.css">
+    <script src="../../js/jquery.min.js"></script>
+	<script src="../../js/jquery.cookie.js"></script>
+</head>
+<body style="background-color: #f9f9f9">
+<div class="liHeader"></div>
+<!--登录 start-->
+<div class="login-desc">
+    <div class="login-box">
+        <div class="login-header overflow">
+            <span class="on">密码登陆</span><span>快捷登陆</span>
+        </div>
+        <div class="desc desc01">
+            <form id="form0" onsubmit="return false" method="post">
+            <div class="item">
+                <input type="text" placeholder="请输入手机号" class="input" name="loginName" id="phone0">
+            </div>
+            <div class="item">
+                <input type="text" placeholder="请输入密码" class="input" id="psw" name="password">
+            </div>
+            <div class="item submit-btn">
+                <a href="javascript:pswlogin();" class="disBlock" style="color:#fff;">登录</a>
+            </div>
+            <div class="overflow forget-nohave">
+                <a class="fl disBlock">忘记密码？</a>
+                <div class="fr">还没账号？<a href="javascript:gotoreg();">立即注册！</a></div>
+            </div>
+            </form>
+        </div>
+        <div class="desc desc02 undis">
+            <form id="form1" onsubmit="return false" method="post">
+            <div class="item">
+                <input type="text" placeholder="请输入手机号" name="phone" class="input" id="phone">
+            </div>
+            <div class="item pr">
+                <input type="text" placeholder="请输入验证码" name="code" class="input" id="code">
+                <a href="javascript:getcode();;" class="get-code pa" id="ugetcode">获取验证码</a>
+            </div>
+            <div class="item submit-btn">
+                <a href="javascript:codelogin(this.form);" class="disBlock" style="color:#fff;">登录</a>
+
+            </div>
+            <div class="overflow forget-nohave">
+                <a class="fl disBlock">忘记密码？</a>
+                <div class="fr">还没账号？<a href="javascript:gotoreg();">立即注册！</a></div>
+            </div>
+            </form>
+        </div>
+    </div>
+</div>
+<!--登录 end-->
+<div class="liFooter"></div>
+<!--底部  end-->
+</body>
+<script>
+    $(function(){
+        $(".liHeader").load("../../liHeader.html")
+        $(".liFooter").load("../../liFooter.html")
+    })
+    //侧边框
+    $("#left-panel-link").mouseover(function () {
+        $("#left-panel").addClass("animated fadeInLeftBig");
+        $("#left-panel").css("display","block");
+
+    });
+    $("#left-panel-link").mouseout(function () {
+        $("#left-panel").removeClass("fadeInLeftBig");
+        $("#left-panel").mouseover(function () {
+            $(this).css("display","block")
+        });
+        $("#left-panel").mouseout(function () {
+            $(this).css("display","none")
+        })
+    });
+    $(".box ul li a").mouseover(function () {
+        $(this).find("img").attr("src","/pc/images/iconRightBlue.png");
+    });
+    $(".box ul li a").mouseout(function () {
+        $(this).find("img").attr("src","/pc/images/iconRight.png");
+    });
+    //search
+    $(".icon-top-search").click(function () {
+        $(this).hide();
+        $(this).siblings(".search").show(1000);
+    });
+    $(".search img").click(function () {
+        $(this).parent().hide(1000);
+        $(this).parent().siblings(".icon-top-search").show();
+    });
+//登录
+$(".login-desc .login-header span").click(function () {
+    $(this).addClass("on").siblings().removeClass("on");
+    var len=$(this).length;
+    var index=$(this).index()+1;
+    // alert(index);
+    $(".login-box .desc").addClass("undis");
+    $(".login-box .desc0"+index).removeClass("undis");
+})
+</script>
+<script>
+    function getcode() {
+        var baseurl = 'http://47.107.191.81:8080';
+        //获取验证码
+        let phone=$('#phone').val();
+        if (phone=='') {
+            alert('手机号不可为空');
+            return false;
+        }
+        $.ajax({
+            url: baseurl+"/me/services/getLoginCode?phone="+phone,
+            dataType: "json",
+            type: "GET",
+			xhrFiled:{
+				'withCredentials':true
+			},
+			crossDomain: true,
+            success: function(res){
+                if(res.resultCode == 200){
+                    $("#ugetcode").html('已发送');
+                }else{
+
+                }
+            },
+            error : function(res) {
+                alert('获取失败')
+                console.log(res,'error方法执行')
+            }
+        });
+    }
+    function codelogin(form) {
+        let phone=$('#phone').val();
+        let getcode=$('#code').val();
+        if(phone=='') {
+            alert("请输入用户帐号!");
+            $('#phone').focus();
+            return false;
+        }
+        if(getcode==''){
+            alert("请输入验证码!");
+            $('#ugetcode').focus();
+            return false;
+        }
+        var baseurl = 'http://47.107.191.81:8080';
+        $.ajax({
+            url: baseurl+"/me/services/verifyLoginCode",
+            dataType: "json",
+            type: "GET",
+			xhrFiled:{
+				'withCredentials':true
+			},
+			crossDomain: true,
+            data: {'phone':phone,'code':getcode},
+            success: function (result) {
+                console.log(result);//打印服务端返回的数据(调试用)
+                if (result.resultCode == 200&&result.resultData) {
+					$.ajax({
+						url: "http://47.107.191.81:8080/me/services/profile",
+						dataType: "json",
+						type: "GET",
+						xhrFiled:{
+							'withCredentials':true
+						},
+						crossDomain: true,
+						success: function (result) {
+							console.log(result);//打印服务端返回的数据(调试用)
+							if (result.resultCode == 200&&result.resultData) {
+								$.cookie('user', result.resultData, { path: '/'});
+								console.log(result,'登录返回')
+								//注册成功
+								window.location.href="index.html";
+							}else{
+								alert('账号信息不对')
+							}
+						},
+						error : function(result) {
+							console.log(result,'登录失败返回')
+							alert('登录失败')
+						}
+					});
+                    //alert("注册成功");
+					//$.cookie('user', 'value', { path: '/'});
+                    //console.log(result,'登录返回')
+                    //注册成功
+                    //localStorage.setItem('phone',phone);
+                    //window.location.href="index.html";
+                }else{
+                    alert('账号信息不对')
+                }
+            },
+            error : function(result) {
+                console.log(result,'登录失败返回')
+                alert('登录失败')
+            }
+        });
+
+
+    }
+    function pswlogin(form) {
+        let phone=$('#phone0').val();
+        let getpsw=$('#psw').val();
+        if(phone=='') {
+            alert("请输入用户帐号!");
+            $('#phone0').focus();
+            return false;
+        }
+        if(getpsw==''){
+            alert("请输入密码!");
+            $('#psw').focus();
+            return false;
+        }
+        var baseurl = 'http://47.107.191.81:8080';
+        $.ajax({
+            url: baseurl+"/me/services/verify",
+            <!-- xhrFields: { -->
+                <!-- withCredentials: true -->
+            <!-- }, -->
+            dataType: "json",
+            type: "GET",
+            data: $('#form0').serialize(),
+            success: function (res) {
+                console.log(res,'success返回');//打印服务端返回的数据(调试用)
+                if (res.resultCode == 200) {
+                    //alert("注册成功");
+                    console.log(res,'登录返回')
+                    //注册成功
+                    localStorage.setItem('phone',phone);
+                    //window.location.href="index.html";
+                }else{
+                    alert('账号信息不对')
+                }
+            },
+            error : function(result) {
+                console.log(result,'登录失败返回')
+                alert('登录失败')
+            }
+        });
+
+
+    }
+    function gotoreg() {
+        window.location.href="../注册/gerenzhuce.html";
+    }
+</script>
+</html>

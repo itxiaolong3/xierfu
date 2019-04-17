@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>我的</title>
+    <meta name = "viewport" content = "width = device-width, initial-scale = 1.0, maximum-scale = 1.0, user-scalable = 0" />
+    <meta name="format-detection" content="telephone=no" />
+    <meta name="format-detection" content="email=no" />
+    <link rel="stylesheet" href="../css/base.css">
+    <link rel="stylesheet" href="../css/main.css">
+    <link rel="stylesheet" href="css/mainMine.css">
+</head>
+<body style="background-color: #f9f9f9">
+<!--mine header-->
+<div class="pr mine-header ">
+    <div class="mine-bg">
+        <img src="../images/mine/mineBg.png" alt="" class="img" width="100%">
+    </div>
+    <div class="avator pa flex avator-shadow">
+        <div class="user-portrait">
+            <img src="../images/mine/iconPortrait.png" alt="">
+            <div class="flag"></div>
+        </div>
+        <div class="user-msg">
+            <p class="user-name">深圳某某某代理商</p>
+            <p class="user-desc">用户类别:黄金</p>
+        </div>
+    </div>
+</div>
+<!--mine header end-->
+<!--mine msg-->
+<div class="mine-desc avator-shadow">
+    <a class="item flex disBlock" href="javascript:baseinfo();">
+        <div class="item-desc flex">
+            <img src="../images/mine/iconBaseMsg.png" alt="" width="30">
+            <span>基础信息</span>
+        </div>
+        <img src="../images/mine/iconRight.png" alt="" class="rightGo" >
+    </a>
+    <div class="item flex">
+        <div class="item-desc flex">
+            <img src="../images/mine/iconMyCollected.png" alt="" width="30">
+            <span>我的收藏</span>
+        </div>
+        <img src="../images/mine/iconRight.png" alt="" class="rightGo" >
+    </div>
+    <div class="item flex">
+        <div class="item-desc flex">
+            <img src="../images/mine/iconHelpCenter.png" alt="" width="30">
+            <span>帮助中心</span>
+        </div>
+        <img src="../images/mine/iconRight.png" alt="" class="rightGo" >
+    </div>
+    <div class="item flex">
+        <div class="item-desc flex">
+            <img src="../images/mine/iconDownload.png" alt="" width="30">
+            <span>下载中心</span>
+        </div>
+        <img src="../images/mine/iconRight.png" alt="" class="rightGo" >
+    </div>
+    <div class="item flex">
+        <div class="item-desc flex">
+            <img src="../images/mine/iconAboutUs.png" alt="" width="30">
+            <span>关于我们</span>
+        </div>
+        <img src="../images/mine/iconRight.png" alt="" class="rightGo" >
+    </div>
+</div>
+<!--mine msg end-->
+<!--mine msg-->
+<div class="mine-desc avator-shadow">
+    <div class="item flex">
+        <div class="item-desc flex">
+            <img src="../images/mine/iconAgent.png" alt="" width="30">
+            <span>代理商</span>
+        </div>
+        <img src="../images/mine/iconRight.png" alt="" class="rightGo" >
+    </div>
+</div>
+<!--mine msg end-->
+<!--mine msg-->
+<div class="mine-desc avator-shadow mb92">
+    <div class="item flex">
+        <div class="item-desc flex">
+            <img src="../images/mine/coperativeProduct.png" alt="" width="30">
+            <span>合作产品</span>
+        </div>
+        <img src="../images/mine/iconRight.png" alt="" class="rightGo" >
+    </div>
+</div>
+<!--mine msg end-->
+<!--footer-->
+<div class="flex footer">
+    <a class="item disBlock" href="../index/index.html">
+        <div class="img-wrap pr">
+            <img src="../images/footer/home.png" alt="" class="pa">
+        </div>
+        <p>首页</p>
+    </a>
+    <a class="item disBlock" href="javascript:;">
+        <div class="img-wrap pr">
+            <img src="../images/footer/destination.png" alt="">
+        </div>
+        <p>目的地</p>
+    </a>
+    <a class="item disBlock" href="../artExchange/index.html">
+        <div class="img-wrap pr">
+            <img src="../images/footer/art.png" alt="" >
+        </div>
+        <p>艺术</p>
+    </a>
+    <a class="item disBlock" href="javascript:;">
+        <div class="img-wrap pr">
+            <img src="../images/footer/studyAboard.png" alt="" >
+        </div>
+        <p>游学</p>
+    </a>
+    <a class="item disBlock on" href="../mine/index.html">
+        <div class="img-wrap pr">
+            <img src="../images/footer/mineOn.png" alt="" >
+        </div>
+        <p>我的</p>
+    </a>
+</div>
+<!--footer end-->
+</body>
+<script src="../js/jquery-1.9.1.min.js"></script>
+<script>
+    $(function () {
+        var hei=$(".mine-bg").height();
+        $(".mine-header").css("height",hei);
+
+    })
+    function baseinfo() {
+        let islogin=localStorage.getItem('uphone');
+        if (islogin==null||islogin==''){
+            window.location.href="login.html";
+        }else{
+            window.location.href="personalMsg.html";
+        }
+    }
+</script>
+</html>

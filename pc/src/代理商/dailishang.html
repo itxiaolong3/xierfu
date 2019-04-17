@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>代理商</title>
+    <link rel="stylesheet" href="./css/dailishang.css">
+    <link rel="stylesheet" href="../../css/index.css">
+    <link rel="stylesheet" href="../../css/mainLi.css">
+    <link rel="stylesheet" href="../../leftHover/animate.css">
+    <link rel="stylesheet" href="../../leftHover/leftTree.css">
+    <script src="../../js/jquery.min.js"></script>
+    <script src="../../js/jquery.cookie.js"></script>
+</head>
+
+<body>
+    <div class="liHeader"></div>
+    <div class="banner">
+        <div class="banner-l" style="width:100% !important;">
+            <img src="./images/bg1.jpg" alt="">
+        </div>
+    </div>
+
+    <div class="content ">
+        <ul>
+            <li>
+                <p><span>100</span>人</p>
+                <p>2017年游学量</p>
+            </li>
+            <li>
+                <p><span>244</span>万</p>
+                <p>成功案例</p>
+            </li>
+            <li>
+                <p><span>188</span>家</p>
+                <p>全球商家伙伴</p>
+            </li>
+            <li>
+                <ul>
+                    <li><a href="">代理商登录</a></li>
+                    <li><a href="">立即申请</a></li>
+                </ul>
+            </li>
+        </ul>
+    </div>
+
+    <div class="ziyuan">
+        <ul>
+            <li>
+                <img src="./images/wKgBEFppnzOACMexAAAZIZz_2qU024.png" alt="">
+                <h2>丰富的资源</h2>
+                <p>产品目的地覆盖欧洲、美洲、澳洲、亚洲、 非洲，丰富多样的旅游线路任意挑选。当 季热推产品、特价产品定期推送，让您及 时获取高性价比线路产品。
+                </p>
+            </li>
+            <li>
+                <img src="./images/wKgBEFppn02ACGZiAAAOSuP1N3s833.png" alt="">
+                <h2>节省成本</h2>
+                <p>所有产品均来自西奥夫集团，一手旅游资源 直采，全力挖掘同业最低价；同时系统定期 推出特价产品活动，为分销商创造更大成本 优势，保障分销商利润。
+                </p>
+            </li>
+            <li>
+                <img src="./images/wKgBEFppn1mAb0KuAAAL7Txk-w0976.png" alt="">
+                <h2>雄厚的背景</h2>
+                <p>提供一系列完善的服务体系，配备专属客户 经理，为分销商提供专业的售前咨询、快捷 方便的售中服务和快速高效的售后服务。
+                </p>
+            </li>
+        </ul>
+    </div>
+    <div class="hezuoliucheng">
+        <div class="hezuo">
+            <h2>合作流程</h2>
+            <p>只需三步 快速成为代理商</p>
+            <ul>
+                <li>
+                    <p class="p1">申请入驻</p>
+                    <ul>
+                        <li>注册个人账号；</li>
+                        <li>确认入驻协议、查看入驻须知；</li>
+                        <li>填写公司信息、资质，待审核；</li>
+                    </ul>
+                </li>
+                <li>
+                    <p class="p1">等待审核</p>
+                    <ul>
+                        <li>3-6工作日内反馈审核结果；</li>
+                        <li>资质初审及复审；</li>
+                    </ul>
+                </li>
+                <li>
+                    <p class="p1">签订协议</p>
+                    <ul>
+                        <li>审核通过，签订合作协议；</li>
+                        <li>准备合作资料；</li>
+                        <li>确定对接人员；</li>
+                    </ul>
+                </li>
+                <li>
+                    <p>合作成功</p>
+                    <ul>
+                        <li>账号激活使用；</li>
+                        <li>合作开始；</li>
+                    </ul>
+                </li>
+            </ul>
+        </div>
+    </div>
+    <div class="youshi">
+        <div class="youshi-01">
+            <h2>我们的优势</h2>
+            <ul>
+                <li>全球海外艺术节日申请平台</li>
+                <li>全球海外游学课程平台</li>
+                <li>全球艺术留学采购平台</li>
+                <li>全球海外学校交流项目申请平台</li>
+                <li>全球海外在职游学平台</li>
+                <li>全球海外语言学习平台</li>
+            </ul>
+        </div>
+    </div>
+    <div class="shenqing">
+        <h1>西奥夫海外留学专家期待您的加入</h1>
+        <a href="#">立即申请</a>
+    </div>
+   <div class="liFooter"></div>
+
+    <script src="./js/jquery.min.js"></script>
+<script>
+    //加入头部,加入尾部
+    $(".liHeader").load("../../liHeader.html")
+    $(".liFooter").load("../../liFooter.html")
+    //侧边框
+    $("#left-panel-link").mouseover(function () {
+        $("#left-panel").addClass("animated fadeInLeftBig");
+        $("#left-panel").css("display","block");
+
+    });
+    $("#left-panel-link").mouseout(function () {
+        $("#left-panel").removeClass("fadeInLeftBig");
+        $("#left-panel").mouseover(function () {
+            $(this).css("display","block")
+        });
+        $("#left-panel").mouseout(function () {
+            $(this).css("display","none")
+        })
+    });
+    $(".box ul li a").mouseover(function () {
+        $(this).find("img").attr("src","/pc/images/iconRightBlue.png");
+    });
+    $(".box ul li a").mouseout(function () {
+        $(this).find("img").attr("src","/pc/images/iconRight.png");
+    });
+    //search
+    $(".icon-top-search").click(function () {
+        $(this).hide();
+        $(this).siblings(".search").show(1000);
+    });
+    $(".search img").click(function () {
+        $(this).parent().hide(1000);
+        $(this).parent().siblings(".icon-top-search").show();
+    });
+</script>
+</body>
+
+</html>

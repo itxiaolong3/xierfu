@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>艺术交流-视频图片</title>
+    <meta name = "viewport" content = "width = device-width, initial-scale = 1.0, maximum-scale = 1.0, user-scalable = 0" />
+    <meta name="format-detection" content="telephone=no" />
+    <meta name="format-detection" content="email=no" />
+    <link rel="stylesheet" href="../css/base.css">
+    <link rel="stylesheet" href="../index/css/mainIndex.css">
+    <link rel="stylesheet" href="css/mainArtExchange.css">
+    <link rel="stylesheet" href="../css/swiper.min.css">
+    <link rel="stylesheet" href="../css/main.css">
+</head>
+<body>
+<!--头部-->
+<div class="header pr">
+    视频/图片
+    <div class="header-left pa flex">
+        <img src="../images/artExchange/iconLeft.png" alt="" >
+        <span>返回</span>
+    </div>
+</div>
+<!--头部 end-->
+<!--切换  start-->
+<div class="video-pic-exchange flex">
+    <div class="item on">视频</div>
+    <div class="item">图片</div>
+</div>
+<!--切换 end-->
+<!--视频列表-->
+<div class="video-list ">
+    <div class="item">
+        <video width="100%" controls>
+            <source src="../images/artDetail/video.mp4" type="video/mp4">
+            <!--<source src="movie.ogg" type="video/ogg">-->
+            您的浏览器不支持 video 标签。
+        </video>
+    </div>
+    <div class="item">
+        <video width="100%" controls>
+            <source src="../images/artDetail/video.mp4" type="video/mp4">
+            <!--<source src="movie.ogg" type="video/ogg">-->
+            您的浏览器不支持 video 标签。
+        </video>
+    </div>
+</div>
+<!--图片列表-->
+<div class="pic-list flex" style="display: none">
+    <div class="item">
+        <img src="../images/artDetail/pic.png" alt="" width="100%">
+    </div>
+    <div class="item">
+        <img src="../images/artDetail/pic.png" alt="" width="100%">
+    </div>
+    <div class="item">
+        <img src="../images/artDetail/pic.png" alt="" width="100%">
+    </div>
+    <div class="item">
+        <img src="../images/artDetail/pic.png" alt="" width="100%">
+    </div>
+    <div class="item">
+        <img src="../images/artDetail/pic.png" alt="" width="100%">
+    </div>
+    <div class="item">
+        <img src="../images/artDetail/pic.png" alt="" width="100%">
+    </div>
+    <div class="item">
+        <img src="../images/artDetail/pic.png" alt="" width="100%">
+    </div>
+    <div class="item">
+        <img src="../images/artDetail/pic.png" alt="" width="100%">
+    </div>
+    <div class="item">
+        <img src="../images/artDetail/pic.png" alt="" width="100%">
+    </div>
+    <div class="item">
+        <img src="../images/artDetail/pic.png" alt="" width="100%">
+    </div>
+    <div class="item">
+        <img src="../images/artDetail/pic.png" alt="" width="100%">
+    </div>
+    <div class="item">
+        <img src="../images/artDetail/pic.png" alt="" width="100%">
+    </div>
+</div>
+<!--图片弹出框-->
+<div class="pic-tan pr">
+    <div class="bg pa"></div>
+    <div class="pic-desc pa ">
+        <div class="flex desc pa">
+            <img src="../images/artDetail/pic.png" alt="" width="100%">
+        </div>
+        <div class="close pa closeClick">
+            <img src="../images/artDetail/detailClose.png" alt="">
+        </div>
+    </div>
+
+</div>
+</body>
+<script src="../js/jquery-1.9.1.min.js"></script>
+<script>
+    //
+    //图片弹出框
+    $(".closeClick").click(function () {
+        $(this).parent().parent().css('display','none');
+    });
+    $('.pic-list .item').click(function () {
+        $('.pic-tan').css('display','block');
+    });
+    //切换
+    $(".video-pic-exchange .item").click(function () {
+        var index=$(this).index();
+        $(this).addClass('on').siblings().removeClass('on');
+        if(index==0){
+            $('.video-list').show();
+            $('.pic-list').hide();
+        }else{
+            $('.pic-list').show();
+            $('.video-list').hide();
+        }
+    })
+</script>
+</html>

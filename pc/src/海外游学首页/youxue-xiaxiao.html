@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>游学-夏校</title>
+    <link rel="stylesheet" href="./css/xiaxiao.css">
+    <link rel="stylesheet" href="../../css/mainLi.css">
+    <link rel="stylesheet" href="../../leftHover/animate.css">
+    <link rel="stylesheet" href="../../leftHover/leftTree.css">
+</head>
+
+<body>
+    <div class="liHeader"></div>
+    <div class="banner">
+        <img src="./images/banner.jpg" alt="">
+    </div>
+
+    <div class="mudi">
+        <h2>2019年热门夏校</h2>
+        <p>我们的课程包括为学生提供大量机会使用语言，建立他们的英语知识和信心。在活动，文化参观和专业体育课程期间， 这将在课堂外进一步强制执行。
+        </p>
+        <div class="tab">
+            <div class="tab-t">
+                <span class="tab-span1">高中夏校</span>
+                <span class="tab-span">大学夏校</span>
+            </div>
+            <div class="show guoji">
+                <ul>
+                    <li><img src="./images/热门营地/学校1.jpg" alt=""></li>
+                    <li><img src="./images/热门营地/学校2.jpg" alt=""></li>
+                    <li><img src="./images/热门营地/学校3.jpg" alt=""></li>
+                    <li><img src="./images/热门营地/学校4.jpg" alt=""></li>
+                </ul>
+            </div>
+            <div class="show hidden">
+                <ul>
+                    <li><img src="./images/热门营地/学校1.jpg" alt=""></li>
+                    <li><img src="./images/热门营地/学校2.jpg" alt=""></li>
+                    <li><img src="./images/热门营地/学校3.jpg" alt=""></li>
+                    <li><img src="./images/热门营地/学校4.jpg" alt=""></li>
+                </ul>
+            </div>
+        </div>
+    </div>
+
+    <div class="remen">
+        <h2>2019高中夏校大全</h2>
+        <div class="tab">
+            <div class="tab-t">
+                <span class="tab-span1">高中夏校</span>
+                <span class="tab-span">大学夏校</span>
+            </div>
+            <div class="show guoji">
+                <table cellspacing="0" cellpadding="0">
+                    <thead>
+                        <tr>
+                            <td>校名</td>
+                            <td>国家/地区</td>
+                            <td>持续时间(州)</td>
+                            <td>相关费用</td>
+                            <td>针对年级</td>
+                            <td>针对年龄</td>
+                        </tr>
+                    </thead>
+                    <tbody id="tbd">
+                        <tr>
+                            <td>
+                                <div class="td1">
+                                    <span>波特女子高中</span>
+                                    <span>Miss Porter's School </span>
+                                </div>
+                            </td>
+                            <td>美国/康涅狄格州</td>
+                            <td>5</td>
+                            <td>$1250-8700</td>
+                            <td>/</td>
+                            <td>10-15</td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <div class="td1">
+                                    <span>波特女子高中</span>
+                                    <span>Miss Porter's School </span>
+                                </div>
+                            </td>
+                            <td>美国/康涅狄格州</td>
+                            <td>5</td>
+                            <td>$1250-8700</td>
+                            <td>/</td>
+                            <td>10-15</td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <div class="td1">
+                                    <span>波特女子高中</span>
+                                    <span>Miss Porter's School </span>
+                                </div>
+                            </td>
+                            <td>美国/康涅狄格州</td>
+                            <td>5</td>
+                            <td>$1250-8700</td>
+                            <td>/</td>
+                            <td>10-15</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+            <div class="show hidden">
+                <ul>
+                    <li><img src="./images/热门营地/学校1.jpg" alt=""></li>
+                    <li><img src="./images/热门营地/学校2.jpg" alt=""></li>
+                    <li><img src="./images/热门营地/学校3.jpg" alt=""></li>
+                    <li><img src="./images/热门营地/学校4.jpg" alt=""></li>
+                </ul>
+            </div>
+        </div>
+    </div>
+
+    <!-- <div class="city">
+        <h2>热门城市</h2>
+        <ul>
+            <li><img src="./images/热门城市/高端夏校1.jpg" alt=""></li>
+            <li><img src="./images/热门城市/夏校2.jpg" alt=""></li>
+            <li><img src="./images/热门城市/夏校3.jpg" alt=""></li>
+            <li><img src="./images/热门城市/夏校4.jpg" alt=""></li>
+            <li><img src="./images/热门城市/夏校5.jpg" alt=""></li>
+            <li><img src="./images/热门城市/夏校6.jpg" alt=""></li>
+            <li><img src="./images/热门城市/夏校7.jpg" alt=""></li>
+        </ul>
+    </div> -->
+
+    <div class="liFooter"></div>
+
+    <script src="../../js/jquery.min.js"></script>
+    <script src="./js/xiaxiao.js"></script>
+    <script>
+        $(function(){
+            $(".liHeader").load("../../liHeader.html")
+            $(".liFooter").load("../../liFooter.html")
+        })
+        //侧边框
+        $("#left-panel-link").mouseover(function () {
+            $("#left-panel").addClass("animated fadeInLeftBig");
+            $("#left-panel").css("display","block");
+
+        });
+        $("#left-panel-link").mouseout(function () {
+            $("#left-panel").removeClass("fadeInLeftBig");
+            $("#left-panel").mouseover(function () {
+                $(this).css("display","block")
+            });
+            $("#left-panel").mouseout(function () {
+                $(this).css("display","none")
+            })
+        });
+        $(".box ul li a").mouseover(function () {
+            $(this).find("img").attr("src","/pc/images/iconRightBlue.png");
+        });
+        $(".box ul li a").mouseout(function () {
+            $(this).find("img").attr("src","/pc/images/iconRight.png");
+        });
+        //search
+        $(".icon-top-search").click(function () {
+            $(this).hide();
+            $(this).siblings(".search").show(1000);
+        });
+        $(".search img").click(function () {
+            $(this).parent().hide(1000);
+            $(this).parent().siblings(".icon-top-search").show();
+        });
+        var a = 'http://47.107.191.81:8080'
+
+        $(function () {
+            // banner交互
+            $.ajax({
+                url: a + '/studytour/services/banners',
+                dataType: 'json',
+                type: 'get',
+                success: function (result) {
+                    var arr = result.resultData
+                    console.log(arr)
+                }
+            })
+        })
+    </script>
+</body>
+
+</html>

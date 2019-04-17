@@ -1,0 +1,222 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>艺术交流-筛选</title>
+    <meta name = "viewport" content = "width = device-width, initial-scale = 1.0, maximum-scale = 1.0, user-scalable = 0" />
+    <meta name="format-detection" content="telephone=no" />
+    <meta name="format-detection" content="email=no" />
+    <link rel="stylesheet" href="../css/base.css">
+    <link rel="stylesheet" href="../index/css/mainIndex.css">
+    <link rel="stylesheet" href="css/mainArtExchange.css">
+    <link rel="stylesheet" href="../css/swiper.min.css">
+    <link rel="stylesheet" href="../css/main.css">
+</head>
+<body>
+<div class="myart">
+    <div class="artOn"></div>
+    <div class="header pr">
+        艺术交流
+        <a class="header-left pa flex disBlock" href="index.html">
+            <img src="../images/artExchange/iconLeft.png" alt="" >
+            <span>返回</span>
+        </a>
+    </div>
+    <img src="../images/index/banner.jpg" alt="" width="100%" style="position: relative;z-index: 3">
+    <div class="art-filter pr">
+        <div class="art-filter-title flex">
+            <div class="item on">
+                <div class="title flex">
+                    艺术类型
+                    <div class="triangle"></div>
+                </div>
+            </div>
+            <div class="item">
+                <div class="title flex">
+                    出行国家
+                    <div class="triangle"></div>
+                </div>
+            </div>
+            <div class="item">
+                <div class="title flex">
+                    适应年龄
+                    <div class="triangle"></div>
+                </div>
+
+            </div>
+            <div class="item">
+                <div class="title flex">
+                    参加类型
+                    <div class="triangle"></div>
+                </div>
+            </div>
+        </div>
+        <div class="item-desc desc01">
+            <div class="item-ct">
+                <div class="desc-title">艺术类型</div>
+                <div class="desc-list flex">
+                    <div class="item on">全部1</div>
+                    <div class="item">国内游学</div>
+                    <div class="item">国内夏令营</div>
+                    <div class="item">亲子游学</div>
+                    <div class="item">国内游学</div>
+                    <div class="item">国内夏令营</div>
+                    <div class="item">亲子游学</div>
+                    <div class="item">国内游学</div>
+                    <div class="item">国内夏令营</div>
+                    <div class="item">亲子游学</div>
+                </div>
+                <div class="btns flex">
+                    <div class="btn reset-btn">重置</div>
+                    <div class="btn on be-sure">确定</div>
+                </div>
+            </div>
+        </div>
+        <div class="item-desc desc02">
+            <div class="item-ct">
+                <div class="desc-title">出行国家</div>
+                <div class="desc-list flex">
+                    <div class="item on">全部2</div>
+                    <div class="item">国内游学</div>
+                    <div class="item">国内夏令营</div>
+                    <div class="item">亲子游学</div>
+                    <div class="item">国内游学</div>
+                    <div class="item">国内夏令营</div>
+                    <div class="item">亲子游学</div>
+                    <div class="item">国内游学</div>
+                    <div class="item">国内夏令营</div>
+                    <div class="item">亲子游学</div>
+                </div>
+                <div class="btns flex">
+                    <div class="btn reset-btn">重置</div>
+                    <div class="btn on be-sure">确定</div>
+                </div>
+            </div>
+        </div>
+        <div class="item-desc desc03">
+            <div class="item-ct">
+                <div class="desc-title">适应年龄</div>
+                <div class="desc-list flex">
+                    <div class="item on">全部3</div>
+                    <div class="item">国内游学</div>
+                    <div class="item">国内夏令营</div>
+                    <div class="item">亲子游学</div>
+                    <div class="item">国内游学</div>
+                    <div class="item">国内夏令营</div>
+                    <div class="item">亲子游学</div>
+                    <div class="item">国内游学</div>
+                    <div class="item">国内夏令营</div>
+                    <div class="item">亲子游学</div>
+                </div>
+                <div class="btns flex">
+                    <div class="btn reset-btn">重置</div>
+                    <div class="btn on be-sure">确定</div>
+                </div>
+            </div>
+        </div>
+        <div class="item-desc desc04">
+            <div class="item-ct">
+                <div class="desc-title">参加类型</div>
+                <div class="desc-list flex">
+                    <div class="item on">全部4</div>
+                    <div class="item">国内游学</div>
+                    <div class="item">国内夏令营</div>
+                    <div class="item">亲子游学</div>
+                    <div class="item">国内游学</div>
+                    <div class="item">国内游学</div>
+                    <div class="item">国内夏令营</div>
+                    <div class="item">亲子游学</div>
+                    <div class="item">国内游学</div>
+                    <div class="item">国内夏令营</div>
+                    <div class="item">亲子游学</div>
+                </div>
+                <div class="btns flex">
+                    <div class="btn reset-btn">重置</div>
+                    <div class="btn on be-sure">确定</div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="art-exchang-list flex">
+	<script type="text/template">
+        <a class="item pr disBlock" href="artDetail.html?id={id}">
+            <img src="../images/artExchange/recommendPic.jpg" alt="" width="100%">
+            <div class="item-descs runout2 pa">{title}</div>
+        </a>
+	</script>
+    </div>
+</div>
+
+<script src="../js/jquery-1.9.1.min.js"></script>
+<script>
+    $(".art-filter-title .item").click(function () {
+        var index=$(this).index()+1;
+        $(this).addClass('on').siblings().removeClass('on');
+        console.log('11111111',$(this).hasClass('on'));
+        if($(this).hasClass('on')){
+            $(".art-exchang-list").css('display','none');
+            $(".item-desc").css("display","none");
+            $(".desc0"+index).css('display','flex');
+            $('.myart .artOn').css({
+                'position':'absolute',
+                'width':'100%',
+                'height':'100%',
+                'background-color':'#f7f7f7'
+            })
+        }
+    })
+$(".artOn").click(function () {
+    $(".item-desc").css("display","none");
+    $(this).removeAttr('style');
+    $('.art-exchang-list').removeAttr('style');
+})
+    $('.desc-list .item').click(function () {
+        $(this).addClass('on').siblings().removeClass('on');
+    })
+    $('.reset-btn').click(function () {
+        $('.desc-list .item').removeClass('on');
+        $('.desc-list .item:first-child').addClass('on');
+    })
+    $(".be-sure").click(function () {
+        $(".item-desc").css("display","none");
+        $(this).removeAttr('style');
+        $('.art-exchang-list').removeAttr('style');
+    })
+	function formatTemplate(dta, tmpl) {  
+		var format = {  
+			name: function(x) {  
+				return x ; 
+			}  
+		};  
+		return tmpl.replace(/{(\w+)}/g, function(m1, m2) {  
+			if (!m2)  
+				return "";  
+			return (format && format[m2]) ? format[m2](dta[m2]) : dta[m2];  
+		});  
+	}
+	$(document).ready(function(){
+		var baseurl = 'http://47.107.191.81:8080';
+		var category = 'government';
+		var curPage = 1;
+		var pageSize = 8;
+		$.ajax({
+			url: baseurl+"/art/services/page/"+curPage+"/"+pageSize,
+			data: {'category':category,'curPage':curPage,'pageSize':pageSize},
+			dataType: "json",
+			type: "POST",
+			success: function(res){
+				if(res.resultCode == 200){
+					var html = $('script[type="text/template"]').html();
+					var arr = []; 
+					$.each(res.resultData.content, function(i, o) {  
+						arr.push(formatTemplate(o, html));  
+					});  
+					$('.art-exchang-list').append(arr.join('')); 
+				}
+				//$('.hot-list').html(suggest);
+			}
+		});
+	});
+</script>
+</body>
+</html>

@@ -1,0 +1,552 @@
+body,
+ul,
+li,
+div,
+a,
+p,
+h1,
+h2,
+h3,
+h4,
+dl,
+dt,
+dd {
+    margin: 0;
+    padding: 0;
+    text-decoration: none;
+    list-style: none;
+}
+
+body {
+    width: 100%;
+    background-color: #fff;
+}
+
+.container {
+    width: 1200px;
+    margin: 0 auto;
+}
+
+
+/* 导航开始 */
+
+.top {
+    width: 100%;
+    height: 48px;
+    background-color: #0F205C;
+    position: relative;
+}
+
+.top .top-logo {
+    float: left;
+}
+
+.top .top-logo .top-logo-l {
+    position: absolute;
+    left: 14px;
+    top: 10px;
+    width: 26px;
+    height: 26px;
+    /* background-color: rgba(255, 255, 255, 1); */
+}
+
+.top .top-logo .top-logo-r {
+    position: absolute;
+    left: 67px;
+    top: 5px;
+    width: 223px;
+    height: 33px;
+}
+
+.top .top-left {
+    float: right;
+    position: relative;
+}
+
+.search {
+    float: left;
+    margin-top: 2px;
+    position: relative;
+}
+
+.search img {
+    width: 19px;
+    height: 19px;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    right: 5px;
+}
+
+.top .top-left input {
+    width: 230px;
+    height: 44px;
+    line-height: 20px;
+    color: #fff;
+    float: left;
+    background-color: rgba(255, 255, 255, 0.22);
+    text-align: left;
+    border: 0px;
+    padding: 0px 38px 0px 18px;
+}
+
+.top .top-left input::placeholder {
+    color: #fff;
+}
+
+.top .top-left ul {
+    float: left;
+    height: 48px;
+    line-height: 48px;
+    margin: 0px 25px;
+}
+
+.top .top-left ul li {
+    float: left;
+    opacity: 0.75;
+    color: white;
+    font-size: 12px;
+    text-align: center;
+    font-family: SourceHanSansSC-regular;
+}
+
+.top .top-left ul li::after {
+    content: "";
+    display: inline-block;
+    width: 1px;
+    height: 17px;
+    background-color: #fff;
+    vertical-align: middle;
+    margin: 0px 18px;
+}
+
+.top .top-left ul li:nth-last-of-type(1)::after {
+    display: none;
+}
+
+.top .top-left ul li a {
+    display: inline-block;
+    vertical-align: middle;
+    color: white;
+}
+
+
+/* logo导航结束 */
+
+
+/* 文字导航开始 */
+
+.top2 {
+    width: 100%;
+    height: 50px;
+    line-height: 20px;
+    background-color: rgba(255, 255, 255, 1);
+    box-shadow: 0px 1px 5px 1px rgba(170, 170, 170, 1);
+    border: 1px solid rgba(255, 255, 255, 0);
+    box-sizing: border-box;
+}
+
+.top2 ul li {
+    float: left;
+    line-height: 50px;
+    color: rgba(17, 30, 92, 1);
+    font-size: 16px;
+    text-align: left;
+    font-family: SourceHanSansSC-regular;
+    margin-right: 28px;
+}
+
+.top-logo-r img {
+    width: 223px;
+    margin-top: 5px;
+}
+
+.top2 ul li a {
+    color: rgba(17, 30, 92, 1);
+}
+
+.top2 ul li:nth-child(1) {
+    width: 32px;
+    height: 24px;
+    margin-left: 24px;
+}
+
+.top2 ul li:nth-child(2) {
+    width: 80px;
+    height: 24px;
+}
+
+.top2 ul li:nth-child(3) {
+    width: 64px;
+    height: 24px;
+}
+
+.top2 ul li:nth-child(4) {
+    width: 64px;
+    height: 24px;
+}
+
+.top2 ul li:nth-child(5) {
+    width: 64px;
+    height: 24px;
+}
+
+.top2 ul li:nth-child(6) {
+    width: 64px;
+    height: 24px;
+}
+
+.top2 ul li:nth-child(7) {
+    width: 64px;
+    height: 24px;
+}
+
+.top2 ul li:nth-child(8) {
+    width: 32px;
+    height: 24px;
+}
+
+.top2 ul li:nth-child(9) {
+    width: 32px;
+    height: 24px;
+}
+
+.top2 ul li:nth-child(10) {
+    width: 32px;
+    height: 24px;
+}
+
+
+/* 导航部分结束 */
+
+
+/* 文本内容开始 */
+
+.container {
+    width: 1200px;
+    margin: 0 auto;
+}
+
+.content .content01 {
+    width: 900px;
+    height: 188px;
+    margin-top: 21px;
+    padding: 30px 32px;
+    background-color: blue;
+    position: relative;
+    box-sizing: border-box;
+    float: left;
+}
+
+.content .content01 .content01-img {
+    float: left;
+}
+
+.content .content01 .content01-img img {
+    width: 129px;
+    height: 129px;
+}
+
+.content .content01 .content01-r {
+    float: left;
+    margin-left: 30px;
+}
+
+.content .content01 .content01-r h2 {
+    color: rgba(66, 164, 211, 1);
+    font-size: 24px;
+    text-align: left;
+    font-family: SourceHanSansSC-regular;
+}
+
+.content .content01 .content01-r h2 span {
+    font-size: 14px;
+}
+
+.content .content01 .content01-r p {
+    opacity: 0.58;
+    color: rgba(16, 16, 16, 1);
+    font-size: 14px;
+    text-align: left;
+    font-family: SourceHanSansSC-regular;
+    margin-top: 4px;
+    margin-bottom: 16px;
+}
+
+.content .content01 .content01-r ul li {
+    float: left;
+    width: 95px;
+    height: 34px;
+    line-height: 34px;
+    text-align: center;
+    border: 1px solid rgba(255, 255, 255, 0);
+    border-radius: 3px;
+    color: #fff;
+    margin-right: 13px;
+}
+
+.content .content01 .content01-r ul li:first-child {
+    border-radius: 3px;
+    background-color: rgba(235, 104, 48, 1);
+    font-size: 14px;
+    text-align: center;
+    font-family: Roboto;
+    border: 1px solid rgba(255, 255, 255, 0);
+}
+
+.content .content01 .content01-r ul li:nth-child(2) {
+    border-radius: 3px;
+    background-color: rgba(112, 196, 111, 1);
+    text-align: center;
+    border: 1px solid rgba(255, 255, 255, 0);
+}
+
+.content .content01 .content01-r ul li:nth-child(3) {
+    background-color: rgba(55, 145, 235, 1);
+}
+
+.content .content01 .content01-d {
+    width: 110px;
+    height: 44px;
+    position: absolute;
+    line-height: 44px;
+    top: 22px;
+    right: 0;
+    border-radius: 90px 0 0 90px;
+    background-color: rgba(66, 164, 211, 1);
+    text-align: center;
+    border: 1px solid rgba(255, 255, 255, 0);
+}
+
+.content .content01 .content01-d span {
+    width: 20px;
+    height: 20px;
+    font-size: 20px;
+    vertical-align: bottom;
+    margin-left: 10px;
+    margin-right: 12px;
+}
+
+.content .content01 .content01-d b {
+    position: absolute;
+    right: -22px;
+    top: -34px;
+    display: inline-block;
+    width: 21px;
+    height: 100px;
+    line-height: 20px;
+    background-color: rgba(242, 242, 242, 1);
+    text-align: center;
+    border: 1px solid rgba(255, 255, 255, 0);
+}
+
+.content .content01 .content01-d {
+    color: rgba(255, 255, 255, 1);
+    font-size: 14px;
+    text-align: left;
+    font-family: SourceHanSansSC-regular;
+}
+
+.content .content02 {
+    width: 279px;
+    height: 323px;
+    background-color: red;
+    float: right;
+    margin-top: 21px;
+}
+
+.content .content03 {
+    width: 900px;
+    height: 772px;
+    background-color: red;
+    margin-top: 13px;
+    float: left;
+}
+
+
+/* 
+.content03 {
+    width: 400px;
+    height: 300px;
+    border: 1px solid #ccc;
+    margin: 100px auto;
+    overflow: hidden;
+} */
+
+.content03 #hd {
+    height: 34px;
+}
+
+.content03 #hd span {
+    display: inline-block;
+    width: 95px;
+    height: 32px;
+    line-height: 32px;
+    color: rgba(110, 110, 110, 1);
+    border-radius: 5px;
+    background-color: #ddd;
+    text-align: center;
+    border: 1px solid rgba(255, 255, 255, 0);
+}
+
+.content03 #hd span.current {
+    background-color: #5FA9DF;
+    color: #fff;
+}
+
+.content03 #bd>div {
+    width: 845px;
+    height: 678px;
+    background-color: blue;
+    display: none;
+    padding: 34px 22px;
+    box-sizing: border-box;
+}
+
+.content03 #bd div.current {
+    display: block;
+}
+
+.content03 .content03-1 ul li {
+    float: left;
+    width: 188px;
+    height: 166px;
+    background-color: #ccc;
+    margin-right: 15px;
+    text-align: center;
+}
+
+.content03 .content03-1 {
+    overflow: hidden;
+    padding-bottom: 41px;
+    border-bottom: 1px solid red;
+}
+
+.content03 .content03-1 ul li:last-child {
+    margin-right: 0;
+}
+
+.content03 .content03-1 ul li h2 {
+    width: 140px;
+    height: 40px;
+    border-bottom: 1px solid rgba(187, 187, 187, 1);
+    margin: 0 auto;
+    font-size: 20px;
+    margin-top: 14px;
+}
+
+.content03 .content03-1 ul li h1 {
+    width: 139px;
+    height: 40px;
+    margin: 0 auto;
+    margin-top: 17px;
+    color: rgba(66, 164, 211, 1);
+    font-size: 28px;
+    font-family: SourceHanSansSC-regular;
+}
+
+.content03 .content03-1 ul li p {
+    width: 150px;
+    height: 20px;
+    margin: 0 auto;
+    color: rgba(111, 111, 111, 1);
+    font-size: 12px;
+    text-align: center;
+    font-family: SourceHanSansSC-regular;
+}
+
+.content03 .content03-1 ul li:nth-child(2) p {
+    text-align: left;
+}
+
+.content03 .content03-1 ul li:nth-child(2) p:nth-child(2) {
+    margin-top: 17px;
+}
+
+.content03 .content03-2 h2 {
+    margin-top: 30px;
+    height: 24px;
+    color: rgba(95, 169, 223, 1);
+    font-size: 16px;
+    text-align: left;
+    font-family: SourceHanSansSC-regular;
+}
+
+.content03 .content03-2 p {
+    width: 800px;
+    height: 130px;
+    color: rgba(162, 162, 162, 1);
+    font-size: 14px;
+    text-align: left;
+    margin-top: 12px;
+    font-family: SourceHanSansSC-regular;
+}
+
+.content .content04 {
+    width: 280px;
+    height: 697px;
+    background-color: yellow;
+    float: right;
+    margin-top: 28px;
+}
+
+.content .content04 h2 {
+    width: 160px;
+    height: 26px;
+    line-height: 24px;
+    color: rgba(0, 63, 119, 1);
+    font-size: 16px;
+    text-align: left;
+    margin-bottom: 7px;
+    font-family: SourceHanSansSC-regular;
+}
+
+.content .content04 h2 span {
+    display: inline-block;
+    width: 3px;
+    height: 14px;
+    background-color: rgba(0, 52, 99, 1);
+    border: 1px solid rgba(255, 255, 255, 0);
+    vertical-align: middle;
+    margin-right: 6px;
+}
+
+.content04-l {
+    width: 296px;
+    height: 1px;
+    background-color: red;
+    /*margin-top: 7px;*/
+    margin-left: -7px;
+}
+
+.content04 ul {
+    margin-top: 17px;
+}
+
+.content04>ul>li {
+    width: 257px;
+    height: 34px;
+    line-height: 34px;
+    padding-left: 11px;
+    box-sizing: border-box;
+    box-shadow: 0px 0px 0px 0px rgba(255, 255, 255, 1);
+    border: 1px solid rgba(255, 255, 255, 0);
+    white-space: nowrap;
+}
+
+.content04>ul>li:nth-child(1),
+.content04>ul>li:nth-child(3),
+.content04>ul>li:nth-child(5),
+.content04>ul>li:nth-child(7) {
+    background-color: rgba(217, 237, 255, 1);
+}
+
+.content04>ul>li:nth-child(4) {
+    height: 88px;
+    margin-top: 8px;
+    margin-bottom: 22px;
+}
+
+.content04>ul>li:last-child {
+    font-size: 13px;
+}

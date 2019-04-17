@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>资料下载</title>
+    <link rel="stylesheet" href="./css/gerenzhongxin.css">
+    <link rel="stylesheet" href="../../css/mainLi.css">
+    <link rel="stylesheet" href="../../leftHover/animate.css">
+    <link rel="stylesheet" href="../../leftHover/leftTree.css">
+    <style>
+        .newHeader{
+            width:972px;
+            line-height: 82px;
+            height: 81px;
+            display: inline-flex;
+            justify-content: left;
+            align-items: center;
+            color: rgba(89, 89, 89, 1);
+            font-size: 14px;
+            text-align: left;
+            font-family: 方正兰亭黑-标准;
+        }
+    </style>
+</head>
+
+<body>
+<div class="liHeader"></div>
+
+    <div class="banner">
+        <div class="banner-l">
+            <img src="./images/代理商-合作banner.jpg" alt="">
+        </div>
+        <div class="content">
+            <div class="touxiang">
+                <!-- <img src="./images/snaxian.png" alt=""> -->
+            </div>
+            <div class="xinxi">
+                <h2>某某代理商<span>黄金</span></h2>
+                <p>用户类别：启用中</p>
+            </div>
+        </div>
+    </div>
+
+    <div class="neirong">
+        <div class="tab">
+            <div class="tab-t neirong-l" id="tab-t1">
+                <ul>
+                    <li class="tab-span1">资料下载</li>
+                </ul>
+            </div>
+
+            <div class="show guoji neirong-r marginLeft">
+                <div class="selectContent">
+                    <!-- 分界线 -->
+                    <div class="contentCenter">
+                        <div class="contentDl">
+                            <div class="contentHeader newHeader" style="">
+                                日期及价格
+                            </div>
+                        </div>
+                        <div class="file-list" style="height:auto;display: none">
+                            <div class="file-item">
+                                <span>2019第八届维也纳夏季音乐会行程A线（上海1-15）_201901152329471(1)_7262.pdf</span>
+                                <button>下载</button>
+                            </div>
+                            <div class="file-item">
+                                <span>2019第八届维也纳夏季音乐会行程A线（上海1-15）_201901152329471(1)_7262.pdf</span>
+                                <button>下载</button>
+                            </div>
+                            <div class="file-item">
+                                <span>2019第八届维也纳夏季音乐会行程A线（上海1-15）_201901152329471(1)_7262.pdf</span>
+                                <button>下载</button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="contentCenter">
+                        <div class="contentDl">
+                            <div class="contentHeader newHeader" style="">
+                                日期及价格
+                            </div>
+                        </div>
+                        <div class="file-list" style="height: auto;display: none;">
+                            <div class="file-item">
+                                <span>2019第八届维也纳夏季音乐会行程A线（上海1-15）_201901152329471(1)_7262.pdf</span>
+                                <button>下载</button>
+                            </div>
+                            <div class="file-item">
+                                <span>2019第八届维也纳夏季音乐会行程A线（上海1-15）_201901152329471(1)_7262.pdf</span>
+                                <button>下载</button>
+                            </div>
+                            <div class="file-item">
+                                <span>2019第八届维也纳夏季音乐会行程A线（上海1-15）_201901152329471(1)_7262.pdf</span>
+                                <button>下载</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </div>
+
+    <script src="../../js/jquery.min.js"></script>
+    <script>
+        $(".contentDl").click(function () {
+            $(this).siblings(".file-list").slideToggle();
+            $(this).parent().siblings().find('.file-list').hide();
+            $(this).parent().siblings().find('.indication').css({
+                'transform':'rotateZ(90deg)',
+                'transition':'all 0.3s ease-in 0s'
+            })
+            $(this).find('.indication').css({
+                'transform':'rotateZ(90deg)',
+                'transition':'all 0.3s ease-in 0s'
+            });
+        })
+    </script>
+<!--底部 start-->
+div.liFooter
+<!--底部  end-->
+<script>
+    $(function(){
+        $(".liHeader").load("../../liHeader.html")
+        $(".liFooter").load("../../liFooter.html")
+    })
+    //侧边框
+    $("#left-panel-link").mouseover(function () {
+        $("#left-panel").addClass("animated fadeInLeftBig");
+        $("#left-panel").css("display","block");
+
+    });
+    $("#left-panel-link").mouseout(function () {
+        $("#left-panel").removeClass("fadeInLeftBig");
+        $("#left-panel").mouseover(function () {
+            $(this).css("display","block")
+        });
+        $("#left-panel").mouseout(function () {
+            $(this).css("display","none")
+        })
+    });
+    $(".box ul li a").mouseover(function () {
+        $(this).find("img").attr("src","/studyAbordPc/images/iconRightBlue.png");
+    });
+    $(".box ul li a").mouseout(function () {
+        $(this).find("img").attr("src","/studyAbordPc/images/iconRight.png");
+    });
+    //search
+    $(".icon-top-search").click(function () {
+        $(this).hide();
+        $(this).siblings(".search").show(1000);
+    });
+    $(".search img").click(function () {
+        $(this).parent().hide(1000);
+        $(this).parent().siblings(".icon-top-search").show();
+    });
+    //登录
+    $(".login-desc .login-header span").click(function () {
+        $(this).addClass("on").siblings().removeClass("on");
+        var len=$(this).length;
+        var index=$(this).index()+1;
+        // alert(index);
+        $(".login-box .desc").addClass("undis");
+        $(".login-box .desc0"+index).removeClass("undis");
+    })
+</script>
+</body>
+
+</html>

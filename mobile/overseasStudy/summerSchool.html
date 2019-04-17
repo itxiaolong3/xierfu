@@ -1,0 +1,241 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>夏校</title>
+    <meta name = "viewport" content = "width = device-width, initial-scale = 1.0, maximum-scale = 1.0, user-scalable = 0" />
+    <meta name="format-detection" content="telephone=no" />
+    <meta name="format-detection" content="email=no" />
+    <link rel="stylesheet" href="../css/base.css">
+    <link rel="stylesheet" href="../index/css/mainIndex.css">
+    <link rel="stylesheet" href="../artExchange/css/mainArtExchange.css">
+    <link rel="stylesheet" href="../css/swiper.min.css">
+    <link rel="stylesheet" href="../css/main.css">
+    <link rel="stylesheet" href="css/overseas.css">
+</head>
+<body>
+<div class="myart">
+    <div class="header pr">
+        夏校
+        <a class="header-left pa flex disBlock" href="index.html">
+            <img src="../images/artExchange/iconLeft.png" alt="" >
+            <span>返回</span>
+        </a>
+    </div>
+</div>
+<img src="../images/index/banner.jpg" alt="" width="100%">
+<!--summer hot product-->
+<div class="hot-product summer-hot-product">
+    <b class="title">热门产品</b>
+    <p>2019年热门产品中深受欢迎的TOP10产品</p>
+    <div class="swiper-container hotProduct hot-product-swiper">
+        <div class="swiper-wrapper">
+            <div class="swiper-slide on">高中夏校</div>
+            <div class="swiper-slide">大学夏校</div>
+        </div>
+    </div>
+    <!-- Swiper -->
+    <div class="swiper-container summer-hot-swiper">
+        <div class="swiper-wrapper">
+            <div class="swiper-slide">
+                <img src="../images/artDetail/detail01.jpg" alt="" width="100%">
+                <h3>乔治城中学</h3>
+                <p>Georgetown University</p>
+            </div>
+            <div class="swiper-slide">
+                <img src="../images/artDetail/detail01.jpg" alt="" width="100%">
+                <h3>乔治城中学</h3>
+                <p>Georgetown University</p>
+            </div>
+            <div class="swiper-slide">
+                <img src="../images/artDetail/detail01.jpg" alt="" width="100%">
+                <h3>乔治城中学</h3>
+                <p>Georgetown University</p>
+            </div>
+            <div class="swiper-slide">
+                <img src="../images/artDetail/detail01.jpg" alt="" width="100%">
+                <h3>乔治城中学</h3>
+                <p>Georgetown University</p>
+            </div>
+
+        </div>
+    </div>
+</div>
+
+<script src="../js/swiper.min.js"></script>
+<script src="../js/jquery-1.9.1.min.js"></script>
+<script>
+    var swiper = new Swiper('.hot-product-swiper', {
+        slidesPerView: 3.5,
+        centeredSlides: false,
+        spaceBetween: 5
+    });
+    $(".hotProduct .swiper-slide").click(function () {
+        $(".hotProduct .swiper-slide").removeClass('on');
+        $(this).addClass('on');
+    })
+    var swiper = new Swiper('.summer-hot-swiper', {
+        slidesPerView: 2.4,
+        centeredSlides: false,
+        paginationClickable: true,
+        spaceBetween: 10
+    });
+</script>
+
+<!--summer hot product end-->
+<!--hot summer school-->
+<div class="summer-school">
+    <div class="hot-product">
+        <b class="title">热门夏校</b>
+        <p>初来乍到 ，这些内容也许是你想要的</p>
+    </div>
+    <div class="hot-product ">
+        <div class="swiper-container summer-school-swiper hotProduct">
+            <div class="swiper-wrapper">
+                <div class="swiper-slide on">高中夏校</div>
+                <div class="swiper-slide">大学夏校</div>
+            </div>
+        </div>
+        <div class="school-list">
+            <div class="item flex">
+                <div class="desc">
+                    <h3>乔治城中学</h3>
+                    <p>Georgetown University</p>
+                    <div class="age-country flex">
+                        <div class="age">针对年龄：10-15</div>
+                        <div class="country">国家/地区：美国/康涅狄格州</div>
+                    </div>
+                </div>
+                <a href="javacript:;" class="check-detail-btn">查看详情</a>
+            </div>
+            <div class="item flex">
+                <div class="desc">
+                    <h3>乔治城中学</h3>
+                    <p>Georgetown University</p>
+                    <div class="age-country flex">
+                        <div class="age">针对年龄：10-15</div>
+                        <div class="country">国家/地区：美国/康涅狄格州</div>
+                    </div>
+                </div>
+                <a href="javacript:;" class="check-detail-btn">查看详情</a>
+            </div>
+            <div class="item flex">
+                <div class="desc">
+                    <h3>乔治城中学</h3>
+                    <p>Georgetown University</p>
+                    <div class="age-country flex">
+                        <div class="age">针对年龄：10-15</div>
+                        <div class="country">国家/地区：美国/康涅狄格州</div>
+                    </div>
+                </div>
+                <a href="javacript:;" class="check-detail-btn">查看详情</a>
+            </div>
+            <div class="item flex">
+                <div class="desc">
+                    <h3>乔治城中学</h3>
+                    <p>Georgetown University</p>
+                    <div class="age-country flex">
+                        <div class="age">针对年龄：10-15</div>
+                        <div class="country">国家/地区：美国/康涅狄格州</div>
+                    </div>
+                </div>
+                <a href="javacript:;" class="check-detail-btn">查看详情</a>
+            </div>
+            <div class="item flex">
+                <div class="desc">
+                    <h3>乔治城中学</h3>
+                    <p>Georgetown University</p>
+                    <div class="age-country flex">
+                        <div class="age">针对年龄：10-15</div>
+                        <div class="country">国家/地区：美国/康涅狄格州</div>
+                    </div>
+                </div>
+                <a href="javacript:;" class="check-detail-btn">查看详情</a>
+            </div>
+        </div>
+    </div>
+    <script>
+        var swiper = new Swiper('.summer-school-swiper', {
+            slidesPerView: 3.5,
+            centeredSlides: false,
+            spaceBetween: 5
+        });
+        $(".summer-school-swiper .swiper-slide").click(function () {
+            $(".summer-school-swiper .swiper-slide").removeClass('on');
+            $(this).addClass('on');
+        })
+    </script>
+</div>
+<!--hot summer school end-->
+<!--news-->
+<div class="hot-product">
+    <b class="title">新闻</b>
+    <p>初来乍到 ，这些内容也许是你想要的</p>
+</div>
+<div class="index-news">
+    <div class="news-list">
+        <div class="item flex pr">
+            <div class="img-wrap pr">
+                <img src="../images/index/news1.png" alt="" class="pa">
+            </div>
+            <div class="item-desc">
+                <div class="title">西班牙留学费用是多少？</div>
+                <div class="ct">让孩子在自然环境中关心他人，在克服困境中...</div>
+                <div class="flex">
+                    <div class="check-box flex">
+                        <img src="../images/index/check.png" alt="" class="icon-check">
+                        <span>2342</span>
+                    </div>
+                    <div class="check-box flex">
+                        <img src="../images/index/time.png" alt="" class="icon-check">
+                        <span>2018-11-23</span>
+                    </div>
+                </div>
+            </div>
+            <div class="border pa"></div>
+        </div>
+        <div class="item flex pr">
+            <div class="img-wrap pr">
+                <img src="../images/index/news1.png" alt="" class="pa">
+            </div>
+            <div class="item-desc">
+                <div class="title">西班牙留学费用是多少？</div>
+                <div class="ct">让孩子在自然环境中关心他人，在克服困境中...</div>
+                <div class="flex">
+                    <div class="check-box flex">
+                        <img src="../images/index/check.png" alt="" class="icon-check">
+                        <span>2342</span>
+                    </div>
+                    <div class="check-box flex">
+                        <img src="../images/index/time.png" alt="" class="icon-check">
+                        <span>2018-11-23</span>
+                    </div>
+                </div>
+            </div>
+            <div class="border pa"></div>
+        </div>
+        <div class="item flex pr">
+            <div class="img-wrap pr">
+                <img src="../images/index/news1.png" alt="" class="pa">
+            </div>
+            <div class="item-desc">
+                <div class="title">西班牙留学费用是多少？</div>
+                <div class="ct">让孩子在自然环境中关心他人，在克服困境中...</div>
+                <div class="flex">
+                    <div class="check-box flex">
+                        <img src="../images/index/check.png" alt="" class="icon-check">
+                        <span>2342</span>
+                    </div>
+                    <div class="check-box flex">
+                        <img src="../images/index/time.png" alt="" class="icon-check">
+                        <span>2018-11-23</span>
+                    </div>
+                </div>
+            </div>
+            <div class="border pa"></div>
+        </div>
+    </div>
+</div>
+<!--news end-->
+</body>
+</html>

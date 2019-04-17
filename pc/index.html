@@ -1,0 +1,414 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>主页</title>
+    <link rel="stylesheet" href="./css/index.css">
+    <link rel="stylesheet" href="./css/mainLi.css">
+    <script src="./js/jquery.min.js"></script>
+    <link rel="stylesheet" href="leftHover/leftTree.css">
+    <link rel="stylesheet" href="leftHover/animate.css">
+    <link rel="stylesheet" href="imgHover/translateelement.css">
+    <script src="js/jquery.SuperSlide.2.1.1.js"></script>
+</head>
+<body>
+    <!--加入头部  start-->
+    <div class="liHeader"></div>
+    <!--加入头部  end-->
+    <div class="banner">
+        <div class="banner-l fl">
+            <!--左侧轮播-->
+            <div id="slideBox" class="slideBox">
+                <div class="bd">
+                    <ul class="banner-bd">
+                        <li><a href="./src/艺术交流a/yishu-fenlei.html" target="_blank"><img src="./images/banner.png" /></a></li>
+                        <li><a href="./src/艺术交流a/yishu-fenlei.html" target="_blank"><img src="./images/banner.png" /></a></li>
+                        <li><a href="./src/艺术交流a/yishu-fenlei.html" target="_blank"><img src="./images/banner.png" /></a></li>
+                    </ul>
+                </div>
+            </div>
+            <script type="text/javascript">
+                jQuery(".slideBox").slide({mainCell:".bd ul",effect:"fold",autoPlay:true});
+            </script>
+        </div>
+        <div class="banner-r fr">
+            <ul>
+                <li>
+                    <div class="disBlock pr">
+                        <img src="./images/小banner-1.png" alt="" class="small-banner">
+                        <div class="banner-title pa">艺术交流</div>
+                        <a class="hover-title pa disBlock" href="./src/艺术交流a/yishu.html" style="display: none;">
+                            <div class="hover-bg pa"></div>
+                            <div class="hover-desc pa">
+                                <h3>艺术交流</h3>
+                                <p>查看详情</p>
+                            </div>
+                        </a>
+                    </div>
+                </li>
+                <li>
+                    <div class="disBlock pr">
+                        <img src="./images/小banner-2.png" alt="">
+                        <div class="banner-title pa">海外游学</div>
+                        <a class="hover-title pa undis disBlock" href="./src/海外游学首页/haiwaiyouxue.html" >
+                            <div class="hover-bg pa"></div>
+                            <div class="hover-desc pa">
+                                <h3>海外游学</h3>
+                                <p>查看详情</p>
+                            </div>
+                        </a>
+                    </div>
+                </li>
+                <li>
+                    <div class="disBlock pr">
+                        <img src="./images/小banner-3.png" alt="">
+                        <div class="banner-title pa">海外留学</div>
+                        <a class="hover-title pa undis disBlock" href="#" >
+                            <div class="hover-bg pa"></div>
+                            <div class="hover-desc pa">
+                                <h3>海外留学</h3>
+                                <p>查看详情</p>
+                            </div>
+                        </a>
+                    </div>
+                </li>
+            </ul>
+        </div>
+    </div>
+    <div class="cioff">
+        <p>CIOFF是谁？</p>
+        <p>西奥夫教育科技集团（ CIOFFeducation group）始创于2007年1月份。隶属于联合国教科文组织（CIOFF）西奥夫理事会的成员机构，总部位于美国洛杉矶。在德国 　法兰克福、奥地利维也纳、中国台北、加拿大多伦多、澳大利亚墨尔本设立了西奥夫国际运营中心；中国运营总部设于北京，在上海、昆明、深圳、杭州、宁波、　 郑州、南京、成都设立了运营中心，集团旗下拥有国际游学、国内研学、低龄留学和国际赛事四大平台项目。
+        </p>
+    </div>
+    <div class="own">
+        <ul class="li-own-header" style="width:337px;margin:30px auto 0;height:auto;">
+            <li>我们的专业</li>
+            <li>【我们的服务】</li>
+            <li>选择我们的理由</li>
+        </ul>
+        <ul>
+            <li>
+                <img src="./images/图标-05.jpg" alt="">
+                <p>丰富的</p>
+                <p>艺术赛事交流</p>
+            </li>
+            <li>
+                <img src="./images/图标-02.jpg" alt="">
+                <p>48年</p>
+                <p>来的卓越教育</p>
+            </li>
+            <li>
+                <img src="./images/图标-07.jpg" alt="">
+                <p>英语世界</p>
+                <p>中最大的学校网站</p>
+            </li>
+            <li>
+                <img src="./images/图标-03.jpg" alt="">
+                <p>每年来自150</p>
+                <p>个国家的50,000名学生</p>
+            </li>
+            <li>
+                <img src="./images/图标-04.jpg" alt="">
+                <p>97%</p>
+                <p>的学生推荐</p>
+            </li>
+        </ul>
+    </div>
+    <div class="remen">
+        <h2>热门产品</h2>
+    </div>
+    <div class="hot-product">
+        <div class="title overflow">
+            <div class="fl item on">国际艺术节</div>
+            <div class="fl item">公派艺术节</div>
+            <div class="fl item">国际赛事</div>
+            <div class="fl item">热门游学</div>
+            <div class="fl item">高中夏校</div>
+            <div class="fl item">大学夏校</div>
+           <div class="fl item">研学旅行</div>
+        </div>
+
+    </div>
+
+    <div class="hot-pic overflow hot-pic01"></div>
+
+<script>
+    $(".hot-product .title .item").click(function () {
+        $(this).addClass("on").siblings().removeClass("on");
+        var index=$(this).index()+1;
+        console.log(index,'这个是什么');
+        var len=$(this).length;
+        var category = 'international';
+        if (index==1){
+            category='international'
+        }else if(index==2){
+            category='government'
+        }else{
+            category='master'
+        };
+		hot(category);
+    })
+</script>
+<a class="hot-product-more disBlock" href="/pc/src/艺术交流a/yishu-fenlei.html">查看更多</a>
+
+	<div class="mudidi">
+        <h2>探索我们广泛的学习目的地</h2>
+        <p>
+            遍布全球的合作院校让留学体验更便捷，无论您是在寻找留学还是在海外进行激动人心的冒险， 我们都有适合您的课程
+        </p>
+        <ul>
+            <li class="pr">
+				<img src="images/目的地-野外营地.jpg" alt="">
+				<h4 class="pa">全球营地</h4>
+				<div class="desc-index pa">
+					<div class="desc-bg pa"></div>
+					<div class="desc-ct pa">
+						<h3>全球营地</h3>
+						<div class="ct">无论您是在寻找强化培训还是在海外进行激动人心的冒险，我们都有适我们都有适合您的语言课程...</div>
+						<a href="javascript:;" class="disBlock more-btn">了解更多 ></a>
+					</div>
+				</div>
+			</li>
+            <li class="pr">
+				<img src="images/目的地-高中.jpg" alt="">
+				<h4 class="pa">高中</h4>
+				<div class="desc-index pa">
+					<div class="desc-bg pa"></div>
+					<div class="desc-ct pa">
+						<h3>高中</h3>
+						<div class="ct">无论您是在寻找强化培训还是在海外进行激动人心的冒险，我们都有适我们都有适合您的语言课程...</div>
+						<a href="javascript:;" class="disBlock more-btn">了解更多 ></a>
+					</div>
+				</div>
+			</li>
+            <li class="pr">
+				<img src="images/目的地-大学.jpg" alt="">
+				<h4 class="pa">大学</h4>
+				<div class="desc-index pa">
+					<div class="desc-bg pa"></div>
+					<div class="desc-ct pa">
+						<h3>大学</h3>
+						<div class="ct" style="width:320px;">无论您是在寻找强化培训还是在海外进行激动人心的冒险，我们都有适我们都有适合您的语言课程...</div>
+						<a href="javascript:;" class="disBlock more-btn">了解更多 ></a>
+					</div>
+				</div>
+			</li>
+            <li class="pr">
+				<img src="images/目的地-研究生.jpg" alt="">
+				<h4 class="pa">小学/初中</h4>
+				<div class="desc-index pa">
+					<div class="desc-bg pa"></div>
+					<div class="desc-ct pa">
+						<h3>小学/初中</h3>
+						<div class="ct" style="width:320px;">无论您是在寻找强化培训还是在海外进行激动人心的冒险，我们都有适我们都有适合您的语言课程...</div>
+						<a href="javascript:;" class="disBlock more-btn">了解更多 ></a>
+					</div>
+				</div>
+			</li>
+            <li class="pr">
+				<img src="images/目的地-其他.jpg" alt="">
+				<h4 class="pa">其他目的地</h4>
+				<div class="desc-index pa">
+					<div class="desc-bg pa"></div>
+					<div class="desc-ct pa">
+						<h3>其他目的地</h3>
+						<div class="ct" style="width:320px;">无论您是在寻找强化培训还是在海外进行激动人心的冒险，我们都有适我们都有适合您的语言课程...</div>
+						<a href="javascript:;" class="disBlock more-btn">了解更多 ></a>
+					</div>
+				</div>
+			</li>
+        </ul>
+    </div>
+    <div class="hezuo">
+        <h2>携手共赢，与全球合作伙伴共建教育生态</h2>
+        <ul>
+            <li><img src="./images/合作伙伴/1.jpg" alt=""></li>
+            <li><img src="./images/合作伙伴/2.jpg" alt=""></li>
+            <li><img src="./images/合作伙伴/3.jpg" alt=""></li>
+            <li><img src="./images/合作伙伴/4.jpg" alt=""></li>
+            <li><img src="./images/合作伙伴/5.jpg" alt=""></li>
+            <li><img src="./images/合作伙伴/6.jpg" alt=""></li>
+            <li><img src="./images/合作伙伴/7.jpg" alt=""></li>
+            <li><img src="./images/合作伙伴/8.jpg" alt=""></li>
+            <li><img src="./images/合作伙伴/9.jpg" alt=""></li>
+            <li><img src="./images/合作伙伴/10.jpg" alt=""></li>
+            <li><img src="./images/合作伙伴/13.jpg" alt=""></li>
+            <li><img src="./images/合作伙伴/14.jpg" alt=""></li>
+        </ul>
+    </div>
+
+    <div class="liFooter"></div>
+    <script src="./js/template-web.js"></script>
+    <script src="./js/index.js"></script>
+    <script src="leftHover/jquery.panelslider.min.js"></script>
+    <script>
+        $(function(){
+            $(".liHeader").load("liHeader.html")
+            $(".liFooter").load("liFooter.html")
+        })
+        //图片mask
+        $(".banner-r ul li").bind("mouseenter mouseleave",function(e) {
+            var w = $(this).width();
+            var h = $(this).height();
+            var x = (e.pageX - this.offsetLeft - (w / 2)) * (w > h ? (h / w) : 1);
+            var y = (e.pageY - this.offsetTop - (h / 2)) * (h > w ? (w / h) : 1);
+            //alert(x);
+            var direction = Math.round((((Math.atan2(y, x) * (180 / Math.PI)) + 180) / 90) + 3) % 4;
+            //direction的值为“0,1,2,3”分别对应着“上，右，下，左”
+            var eventType = e.type;
+            //alert(e.type);
+            if(e.type == 'mouseenter'){
+                if(direction==1){
+                    $(this).find('.hover-title').css({'display':'block','left':-w+'px','top':'0px'}).animate({'left':'0px'});
+                }else if(direction==3){
+                    $(this).find('.hover-title').css({'display':'block','left':-w+'px','top':'0px'}).animate({'left':'0px'});
+                }else if(direction==2){
+                    $(this).find('.hover-title').css({'display':'block','left':-w+'px','top':'0px'}).animate({'left':'0px'});
+                }else if(direction==0){
+                    $(this).find('.hover-title').css({'display':'block','left':-w+'px','top':'0px'}).animate({'left':'0px'});
+                }
+                //当鼠标经过的时候，图片上的字变没
+                $(this).find(".banner-title").hide();
+            }else{
+                if(direction==1){
+                    $(this).find('.hover-title').animate({'left':-w+'px'});
+                }else if(direction==3){
+                    $(this).find('.hover-title').animate({'left':-w+'px'});
+                }else if(direction==2){
+                    $(this).find('.hover-title').animate({'left':-w+'px'});
+                }else if(direction==0){
+                    $(this).find('.hover-title').animate({'left':-w+'px'});
+                }
+                //当鼠标经过的时候，图片上的字变没
+
+                    $(this).find(".banner-title").show();
+
+
+            }
+
+        });
+        //侧边栏
+        $("#left-panel-link").mouseover(function () {
+            $("#left-panel").addClass("animated fadeInLeftBig");
+            $("#left-panel").css("display","block");
+        });
+        $("#left-panel-link").mouseout(function () {
+            $("#left-panel").removeClass("fadeInLeftBig");
+            $("#left-panel").mouseover(function () {
+                $(this).css("display","block")
+            });
+            $("#left-panel").mouseout(function () {
+                $(this).css("display","none")
+            })
+        });
+        $(".icon-top-search").click(function () {
+            $(this).hide();
+            $(this).siblings(".search").show(1000);
+        });
+        $(".search img").click(function () {
+            $(this).parent().hide(1000);
+            $(this).parent().siblings(".icon-top-search").show();
+        });
+
+        $('#left-panel-link').panelslider();
+        $('body').click(function() {
+            $.panelslider.close();
+        });
+        $(".box ul li a").mouseover(function () {
+            $(this).find("img").attr("src","images/iconRightBlue.png");
+        });
+        $(".box ul li a").mouseout(function () {
+            $(this).find("img").attr("src","images/iconRight.png");
+        });
+
+    </script>
+<script>
+function hot(category){
+	var baseurl = 'http://47.107.191.81:8080';
+	//默认热门
+	var suggest = '';
+	var i = '0';
+	$.ajax({
+		url: baseurl+"/art/services/suggest/"+category+"/1/6",
+		dataType: "json",
+		type: "GET",
+		success: function(res){
+			if(res.resultCode == 200){
+				for(var o in res.resultData.content){
+					if(res.resultData.content[o].pictures.length > 0){
+						var img = 'http://47.107.191.81:8080'+res.resultData.content[o].pictures[i].filePath;
+					}else{
+						var img = 'images/目的地-大学.jpg';
+					}
+					suggest += '<a class="item fl pr disBlock" href="/pc/src/艺术交流a/yishu-xiangqing.html?id='+res.resultData.content[o].id+'"><img src="'+img+'" alt=""><div class="hot-title pa">'+res.resultData.content[o].title+'</div><div class="undis pa item-a"><div class="hot-bg pa"></div><div class="hot-desc pa"><h3>'+res.resultData.content[o].title+'</h3><p>'+res.resultData.content[o].description+'</p></div></div></a>';
+				}
+			}
+			$('.hot-pic01').html(suggest);
+		}
+	});
+}
+$(document).ready(function(){
+	hot('international');
+	//轮播
+	var baseurl = 'http://47.107.191.81:8080';
+	var lunbo = '';
+	$.ajax({
+		url: baseurl+"/services/welcome/banners",
+		dataType: "json",
+		type: "GET",
+		success: function(res){
+			if(res.resultCode == 200){
+				for(var o in res.resultData.WELCOME_MARQUEE){
+					 console.log('index',res.resultData.WELCOME_MARQUEE[o]);
+					lunbo += '<li><a href="'+res.resultData.WELCOME_MARQUEE[o].toUrl+'" target="_blank"><img src="'+baseurl+res.resultData.WELCOME_MARQUEE[o].filePath+'" alt=""></a></li>';
+				}
+			}
+			$('.banner-bd').html(lunbo);
+			$(".slideBox").slide({mainCell:".bd ul",effect:"fold",autoPlay:true,delayTime:2000});
+			$(function(){
+			   var hei=$(".banner-r").height()+8;
+			   console.log(hei);
+			   $(".banner-l img").height(hei);
+                $(".banner-l").height(hei);
+			})
+		}
+	});
+	//新闻
+	//var xinwen = '';
+	//var hostxinwen = '';
+	//$.ajax({
+	//	url: baseurl+"/news/services/hotnews/1/5",
+	//	dataType: "json",
+	//	type: "GET",
+	//	success: function(res){
+	//		if(res.resultCode == 200){
+	//			for(var o in res.resultData.content){
+					//alert(res.resultData[o].text);
+	//				xinwen += '<a class="item flex pr disBlock" ><div class="img-wrap pr"><img src="../images/index/news1.png" alt="" class="pa"></div><div class="item-desc"><div class="title">'+res.resultData.content[o].title+'</div><div class="ct">'+res.resultData.content[o].description+'</div><div class="flex"><div class="check-box flex"><img src="../images/index/check.png" alt="" class="icon-check"><span>'+res.resultData.content[o].clickCnt+'</span></div><div class="check-box flex"><img src="../images/index/time.png" alt="" class="icon-check"><span>'+res.resultData.content[o].publishDate+'</span></div></div></div><div class="border pa"></div></a>';
+					//alert(xinwen);
+	//				hostxinwen += '<a class="swiper-slide disBlock"><span>'+res.resultData.content[o].title+'</span></a>';
+	//			}
+	//		}
+	//		$('.news-list').html(xinwen);
+	//		$('.new-list').html(hostxinwen);
+			//alert(caidan);
+	//		var swiper = new Swiper('.newsct', {
+	//			direction: 'vertical',
+	//			slidesPerView: 1,
+	//			paginationClickable: true,
+	//			spaceBetween: 30,
+	//			mousewheelControl: true,
+	//			autoplay: 2500,
+	//			loop:true
+	//		});
+	//	}
+	//});
+
+
+});
+</script>
+</body>
+
+</html>
